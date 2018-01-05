@@ -9,10 +9,6 @@ end
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'
 # Use sqlite3 as the database for Active Record
-<<<<<<< HEAD
-=======
-gem 'sqlite3'
->>>>>>> 09ecc084915324b4412a00adb0aedec83b835f4b
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
@@ -38,10 +34,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'slim', '~> 3.0', '>= 3.0.9'
 
 group :development, :test do
-<<<<<<< HEAD
   gem 'sqlite3'
-=======
->>>>>>> 09ecc084915324b4412a00adb0aedec83b835f4b
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   # Adds support for Capybara system testing and selenium driver
@@ -51,24 +44,16 @@ end
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
-<<<<<<< HEAD
   gem 'listen', '>= 3.0.5', '< 3.2'
   gem 'web-console', '>= 3.3.0'
-=======
-  gem 'web-console', '>= 3.3.0'
-  gem 'listen', '>= 3.0.5', '< 3.2'
->>>>>>> 09ecc084915324b4412a00adb0aedec83b835f4b
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
-<<<<<<< HEAD
 group :production do
   gem 'pg'
 end
 
-=======
->>>>>>> 09ecc084915324b4412a00adb0aedec83b835f4b
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
