@@ -1,13 +1,19 @@
-table
-  tr
-    th Event
-    th Date
-    th Location
-    th Contact
-    
-  - @tournaments.each do |tournament|
-    tr
-      td = tournament.name
-      td = tournament.start_date
-      td = tournament.location
-      td = tournament.contact
+.container
+  .tournament
+    table.table
+      thead
+        tr
+          th Event
+          th Date
+          th Location
+          th Contact
+      tbody  
+        - @tournaments.each do |year, tournaments|
+          tr
+            td.year-marker colspan="4" = year
+          - tournaments.each do |tournament|
+            tr
+              td = tournament.name
+              td = tournament.start_date.to_formatted_s(:long_ordinal)
+              td = tournament.location
+              td = tournament.contact

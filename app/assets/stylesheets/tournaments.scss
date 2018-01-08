@@ -1,3 +1,14 @@
 // Place all the styles related to the tournaments controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.container {
+  background-color: white;
+}
+
+.year-marker {
+  text-align: center;
+  background-color: #f1f1f1;
+  padding: 4px 0 3px 0 !important;
+  font-weight: 600;
+}
