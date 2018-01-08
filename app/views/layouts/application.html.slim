@@ -5,9 +5,14 @@ html
     = csrf_meta_tags
 
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
-    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application'
 
   body
+    - if notice
+      p.alert.alert-success = notice
+    - if alert
+      p.alert.alert-danger = alert
+    = render 'shared/small_nav'
     = render 'shared/global_nav'
-
+    .navbar-filler
     = yield

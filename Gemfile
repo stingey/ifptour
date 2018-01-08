@@ -18,6 +18,8 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'slim', '~> 3.0', '>= 3.0.9'
 gem 'devise'
+gem 'jquery-rails'
+
 
 group :development, :test do
   gem 'sqlite3'

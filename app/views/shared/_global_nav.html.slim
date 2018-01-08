@@ -1,10 +1,10 @@
 ul.nav.navbar-main
-  = image_tag 'ifptry.png', class: 'ifp-logo pr-5'
-  li.nav-item.px-3 TOURNAMENTS
-  li.nav-item.px-3 RESULTS
-  li.nav-item.px-3 PRO SHOP
-  li.nav-item.px-3 PLAYER RANKINGS
-  li.nav-item.px-3 PHOTOS
-  li.nav-item.px-3 HALL OF FAME
-  li.nav-item.px-3 RULES OF PLAY
-  li.nav-item.px-3 FOOSBALL CLUBS USA
+  = link_to image_tag('ifptry.png', class: 'ifp-logo pr-5'), root_path
+  li.px-3 = link_to 'TOURNAMENTS', tournaments_path, class: 'nav-item'
+  li.px-3 = link_to 'RESULTS', results_path, class: 'nav-item'
+  li.px-3 = link_to 'PLAYER RANKINGS', rankings_path, class: 'nav-item'
+  li.px-3 = link_to 'PRO SHOP', pro_shop_show_path, class: 'nav-item'
+  li.px-3 = link_to 'PHOTOS', photos_path, class: 'nav-item'
+  li.px-3 = link_to 'HALL OF FAME', hall_of_fames_path, class: 'nav-item'
+  li.px-3 = link_to 'RULES OF PLAY', rules_path, class: 'nav-item'
+  li.px-3 = link_to 'FOOSBALL CLUBS USA', clubs_path, class: 'nav-item'
