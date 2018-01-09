@@ -1,10 +1,44 @@
-ul.nav.navbar-main
+/ ul.nav.navbar.navbar-main
+/   = link_to image_tag('ifptry.png', class: 'ifp-logo pr-5'), root_path
+/   li.px-3 = link_to 'TOURNAMENTS', tournaments_path, class: 'nav-item'
+/   li.px-3 = link_to 'RESULTS', results_path, class: 'nav-item'
+/   / li.px-3 = link_to 'PLAYER RANKINGS', rankings_path, class: 'nav-item dropdown'
+/   li.px-3.nav-item.dropdown
+/     a.nav-link.dropdown-toggle PLAYER RANKINGS
+/     .dropdown-menu aria-labelledby="navbarDropdownMenuLink"
+/       a.dropdown-item THING
+/       a.dropdown-item other
+/       a.dropdown-item bill
+/   li.px-3 = link_to 'PRO SHOP', pro_shop_show_path, class: 'nav-item'
+/   li.px-3 = link_to 'PHOTOS', photos_path, class: 'nav-item'
+/   li.px-3 = link_to 'HALL OF FAME', hall_of_fames_path, class: 'nav-item'
+/   li.px-3 = link_to 'RULES OF PLAY', rules_path, class: 'nav-item'
+/   li.px-3 = link_to 'FOOSBALL CLUBS USA', clubs_path, class: 'nav-item'
+
+nav.navbar.navbar-toggleable-md.navbar-light.bg-faded.sticky-top.main-nav
+  button.navbar-toggler.navbar-toggler-right type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation"
+    span.navbar-toggler-icon
   = link_to image_tag('ifptry.png', class: 'ifp-logo pr-5'), root_path
-  li.px-3 = link_to 'TOURNAMENTS', tournaments_path, class: 'nav-item'
-  li.px-3 = link_to 'RESULTS', results_path, class: 'nav-item'
-  li.px-3 = link_to 'PLAYER RANKINGS', rankings_path, class: 'nav-item'
-  li.px-3 = link_to 'PRO SHOP', pro_shop_show_path, class: 'nav-item'
-  li.px-3 = link_to 'PHOTOS', photos_path, class: 'nav-item'
-  li.px-3 = link_to 'HALL OF FAME', hall_of_fames_path, class: 'nav-item'
-  li.px-3 = link_to 'RULES OF PLAY', rules_path, class: 'nav-item'
-  li.px-3 = link_to 'FOOSBALL CLUBS USA', clubs_path, class: 'nav-item'
+  .collapse.navbar-collapse id="navbarNavDropdown"
+    ul.navbar-nav
+      li.nav-item
+        = link_to 'TOURNAMENTS', tournaments_path, class: 'nav-link'
+      li.nav-item
+        = link_to 'RESULTS', results_path, class: 'nav-link'
+      li.nav-item.dropdown
+        = link_to 'PLAYER RANKINGS', rankings_path, class: 'nav-link dropdown-toggle', id: 'navbarDropdownMenuLink', 'data-toggle': 'dropdown', 'aria-haspopup': 'true', 'aria-expanded': 'false'
+        .dropdown-menu aria-labelledby="navbarDropdownMenuLink"
+          a.dropdown-item SINGLES
+          a.dropdown-item DOUBLES
+          a.dropdown-item WOMENS SINGLES
+          a.dropdown-item WOMENS DOUBLES
+      li.nav-item
+        = link_to 'PRO SHOP', pro_shop_show_path, class: 'nav-link'
+      li.nav-item
+        = link_to 'PHOTOS', photos_path, class: 'nav-link'
+      li.nav-item
+        = link_to 'HALL OF FAME', hall_of_fames_path, class: 'nav-link'
+      li.nav-item
+        = link_to 'RULES OF PLAY', rules_path, class: 'nav-link'
+      li.nav-item
+        = link_to 'FOOSBALL CLUBS USA', clubs_path, class: 'nav-link'

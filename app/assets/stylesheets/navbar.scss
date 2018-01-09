@@ -1,30 +1,28 @@
 // Main Navbar
-.navbar-main {
-  line-height: 4.4em;
-  background-color: #76ff03;
-  position: relative;
+.main-nav {
+  background-color: #18ffff;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  width: 100%;
-  &.fix {
-    position: fixed;
-    top: 0;
-    margin-bottom: 50px;
-  }
+  line-height: 3em;
 
   .nav-item {
-    color: #373737;
-    font-weight: 500;
+    font-size: 13px;
+    font-weight: 600;
+  }
+
+  .dropdown-item {
     font-size: 12px;
+    font-weight: 500;
   }
 }
 
 .ifp-logo {
-  height: 4.4em;
+  height: 3.5em;
 }
 
 // Small Navbar
 
 .small-nav {
+  line-height: 2.2em;
   background-color: #373737;
   list-style-type: none;
   margin: 0;
@@ -40,8 +38,3 @@
   }
 }
 
-// navbar filler div
-.navbar-filler {
-  height: 4.4em;
-  display: none;
-}
