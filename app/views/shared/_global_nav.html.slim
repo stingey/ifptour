@@ -28,10 +28,10 @@ nav.navbar.navbar-toggleable-md.navbar-light.bg-faded.sticky-top.main-nav
       li.nav-item.dropdown
         = link_to 'PLAYER RANKINGS', rankings_path, class: 'nav-link dropdown-toggle', id: 'navbarDropdownMenuLink', 'data-toggle': 'dropdown', 'aria-haspopup': 'true', 'aria-expanded': 'false'
         .dropdown-menu aria-labelledby="navbarDropdownMenuLink"
-          a.dropdown-item SINGLES
-          a.dropdown-item DOUBLES
-          a.dropdown-item WOMENS SINGLES
-          a.dropdown-item WOMENS DOUBLES
+          = link_to "SINGLES", rankings_singles_path, class: 'dropdown-item'
+          = link_to "DOUBLES", rankings_doubles_path, class: 'dropdown-item'
+          = link_to "WOMENS SINGLES", womens_singles_rankings_path, class: 'dropdown-item'
+          = link_to "WOMENS DOUBLES", womens_doubles_rankings_path, class: 'dropdown-item'
       li.nav-item
         = link_to 'PRO SHOP', pro_shop_show_path, class: 'nav-link'
       li.nav-item
