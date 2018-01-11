@@ -10,7 +10,31 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180107222116) do
+ActiveRecord::Schema.define(version: 20180111050201) do
+
+  create_table "players", force: :cascade do |t|
+    t.string "first_name", null: false
+    t.string "last_name", null: false
+    t.string "gender", null: false
+    t.string "state"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "ranking_details", force: :cascade do |t|
+    t.integer "player_id"
+    t.integer "singles_points"
+    t.integer "doubles_points"
+    t.integer "womens_singles_points"
+    t.integer "womens_doubles_points"
+    t.string "singles_rank"
+    t.string "dobules_rank"
+    t.string "womens_singles_rank"
+    t.string "womens_doubles_rank"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["player_id"], name: "index_ranking_details_on_player_id"
+  end
 
   create_table "tournaments", force: :cascade do |t|
     t.string "name"

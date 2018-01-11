@@ -1,0 +1,17 @@
+.container.rankings
+  table.table.col-md-12
+    thead
+      tr
+        th Rank
+        th Name
+        th Class
+        th Gender
+        th.text-right Points
+    tbody  
+      - @players.each.with_index(1) do |player, index|
+        tr
+          td = index
+          td = "#{player.first_name} #{player.last_name}"
+          td = singles ? player.rank_singles&.capitalize : player.rank_doubles&.capitalize
+          td = player.gender
+          td.text-right = singles ? player.ranking_detail.singles_points : player.ranking_detail.doubles_points

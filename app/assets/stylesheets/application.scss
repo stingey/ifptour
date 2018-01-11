@@ -13,9 +13,17 @@
  */
 @import "navbar";
 @import "tournaments";
+@import "rankings";
+@import "forms";
 
 body {
   font-family: "Helvetica Neue";
   color: #373737;
   background-color: #f1f1f1;
+}
+
+.container {
+  thead{
+    border-top: 4px solid white;
+  }
 }

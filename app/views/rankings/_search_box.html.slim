@@ -1,0 +1,5 @@
+= form_tag(send("rankings_#{controller_name}_path"), method: :get) do
+  = text_field_tag :term, params[:term]
+  = submit_tag 'Search'
+
+button.btn.btn-outline-secondary = link_to "New Player", new_player_path, class: 's'

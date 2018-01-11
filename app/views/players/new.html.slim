@@ -1,0 +1,23 @@
+.container
+  h2 add new player
+  = form_for @player do |f|
+    div.form-group
+      = f.text_field :first_name, placeholder: 'First Name', class: 'form-control'
+    div.form-group
+      = f.text_field :last_name, placeholder: 'Last Name', class: 'form-control'
+    div.form-group
+      = f.collection_select :gender, ["M", "F"], :to_s, :to_s,{ include_blank: 'Gender' }, { class: 'form-control' }
+    div.form-group
+      = f.text_field :state, placeholder: 'State', class: 'form-control'
+
+    = f.fields_for :ranking_detail, RankingDetail.new do |d|
+      div.form-group
+        = d.text_field :singles_points, placeholder: 'Singles Points', class: 'form-control'
+      div.form-group
+        = d.text_field :doubles_points, placeholder: 'Doubles Points', class: 'form-control'
+      div.form-group
+        = d.text_field :womens_singles_points, placeholder: 'Womens Singles Points', class: 'form-control'
+      div.form-group
+        = d.text_field :womens_doubles_points, placeholder: 'Womens Doubles Points', class: 'form-control'
+    div
+      = f.submit 'create', class: 'btn btn-primary'

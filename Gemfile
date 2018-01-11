@@ -18,6 +18,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'slim', '~> 3.0', '>= 3.0.9'
 gem 'devise'
 gem 'jquery-rails'
+gem 'ffaker', '~> 2.8'
 
 
 group :development, :test do
