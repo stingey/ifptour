@@ -3,3 +3,13 @@
   margin: auto;
   font-size: 14px;
 }
+
+.womens-points {
+  // width: 50%;
+  // display: none;
+  // margin: auto;
+  &.hide {
+    display: none;
+    background-color: blue;
+  }
+}

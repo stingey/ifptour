@@ -28,7 +28,7 @@ ActiveRecord::Schema.define(version: 20180111050201) do
     t.integer "womens_singles_points"
     t.integer "womens_doubles_points"
     t.string "singles_rank"
-    t.string "dobules_rank"
+    t.string "doubles_rank"
     t.string "womens_singles_rank"
     t.string "womens_doubles_rank"
     t.datetime "created_at", null: false

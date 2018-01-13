@@ -7,11 +7,14 @@
         th Class
         th Gender
         th.text-right Points
-    tbody  
+    tbody
+      - if @players.empty?
+        tr
+          td.text-center colspan="5" No Results Found  
       - @players.each.with_index(1) do |player, index|
         tr
           td = index
           td = "#{player.first_name} #{player.last_name}"
-          td = singles ? player.rank_singles&.capitalize : player.rank_doubles&.capitalize
+          td = singles ? player.ranking_detail&.singles_rank&.capitalize : player.ranking_detail&.doubles_rank&.capitalize
           td = player.gender
           td.text-right = singles ? player.ranking_detail.singles_points : player.ranking_detail.doubles_points

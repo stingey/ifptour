@@ -19,6 +19,7 @@ gem 'slim', '~> 3.0', '>= 3.0.9'
 gem 'devise'
 gem 'jquery-rails'
 gem 'ffaker', '~> 2.8'
+gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.2'
 
 
 group :development, :test do

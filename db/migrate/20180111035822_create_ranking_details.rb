@@ -7,7 +7,7 @@ class CreateRankingDetails < ActiveRecord::Migration[5.1]
       t.integer :womens_singles_points
       t.integer :womens_doubles_points
       t.string :singles_rank
-      t.string :dobules_rank
+      t.string :doubles_rank
       t.string :womens_singles_rank
       t.string :womens_doubles_rank
 

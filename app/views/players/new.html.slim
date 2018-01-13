@@ -1,12 +1,12 @@
-.container
-  h2 add new player
+.container.pt-4
+  h3.text-center Add Player
   = form_for @player do |f|
     div.form-group
       = f.text_field :first_name, placeholder: 'First Name', class: 'form-control'
     div.form-group
       = f.text_field :last_name, placeholder: 'Last Name', class: 'form-control'
     div.form-group
-      = f.collection_select :gender, ["M", "F"], :to_s, :to_s,{ include_blank: 'Gender' }, { class: 'form-control' }
+      = f.collection_select :gender, ["M", "F"], :to_s, :to_s,{ include_blank: 'Gender' }, { class: 'form-control', id: 'gender-selector' }
     div.form-group
       = f.text_field :state, placeholder: 'State', class: 'form-control'
 
@@ -16,8 +16,8 @@
       div.form-group
         = d.text_field :doubles_points, placeholder: 'Doubles Points', class: 'form-control'
       div.form-group
-        = d.text_field :womens_singles_points, placeholder: 'Womens Singles Points', class: 'form-control'
+        = d.text_field :womens_singles_points, placeholder: 'Womens Singles Points', class: 'form-control womens-points hide'
       div.form-group
-        = d.text_field :womens_doubles_points, placeholder: 'Womens Doubles Points', class: 'form-control'
-    div
-      = f.submit 'create', class: 'btn btn-primary'
+        = d.text_field :womens_doubles_points, placeholder: 'Womens Doubles Points', class: 'form-control womens-points hide'
+      div.form-group
+        = f.submit 'create', class: 'btn btn-primary form-control'

@@ -1,5 +1,10 @@
-= form_tag(send("rankings_#{controller_name}_path"), method: :get) do
-  = text_field_tag :term, params[:term]
-  = submit_tag 'Search'
+.container.pt-4
+  .d-inline-block.float-right
+    = form_tag(send("rankings_#{controller_name}_path"), method: :get) do
+      .search-box
+        = text_field_tag :term, params[:term], placeholder: 'search', class: 'input'
+        button type="submit"
+          i.fa.fa-search
 
-button.btn.btn-outline-secondary = link_to "New Player", new_player_path, class: 's'
+  .d-inline-block
+    = link_to "New Player", new_player_path, class: 'btn btn-outline-primary'

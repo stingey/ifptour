@@ -38,3 +38,30 @@
   }
 }
 
+button {
+  a:link {
+    text-decoration: none;
+  }
+}
+
+// filters bar
+
+.search-box {
+  input {
+    padding-left: 30px;
+    font-size: 15px;
+    height: 2.5em;
+    border-radius: 5px;
+    border: 1px solid #bfc3c5;
+  }
+  i {
+    color: #373737;
+  }
+  button {
+    position: relative;
+    padding: 0;
+    border: 0;
+    background-color: white;
+    right: 191px;
+  }
+}
