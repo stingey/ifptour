@@ -14,7 +14,7 @@
       - @players.each.with_index(1) do |player, index|
         tr
           td = index
-          td = "#{player.first_name} #{player.last_name}"
+          td = link_to "#{player.first_name.capitalize} #{player.last_name.capitalize}", player_path(player), class: "player-name"
           td = singles ? player.ranking_detail&.singles_rank&.capitalize : player.ranking_detail&.doubles_rank&.capitalize
           td = player.gender
           td.text-right = singles ? player.ranking_detail.singles_points : player.ranking_detail.doubles_points

@@ -3,6 +3,10 @@ class PlayersController < ApplicationController
     @player = Player.new
   end
 
+  def show
+    @player = Player.find(params[:id])
+  end
+
   def create
     @player = Player.new(player_params)
     if @player.save

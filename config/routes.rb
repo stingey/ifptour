@@ -26,7 +26,7 @@ Rails.application.routes.draw do
 
   resource :pro_shop, only: %i(show)
 
-  resources :players, only: %i(index new create)
+  resources :players, only: %i(index new create show)
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

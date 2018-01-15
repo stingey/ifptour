@@ -21,7 +21,6 @@ gem 'jquery-rails'
 gem 'ffaker', '~> 2.8'
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.2'
 
-
 group :development, :test do
   gem 'sqlite3'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -32,6 +31,8 @@ group :development, :test do
 end
 
 group :development do
+  gem 'awesome_print', require:"ap"
+
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'listen', '>= 3.0.5', '< 3.2'
   gem 'web-console', '>= 3.3.0'
