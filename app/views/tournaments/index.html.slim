@@ -1,4 +1,4 @@
-.container
+.container.pt-4
   .tournament
     table.table
       thead
@@ -14,6 +14,7 @@
             - tournaments.each do |tournament|
               tr
                 td = tournament.name
-                td = tournament.start_date.to_formatted_s(:long_ordinal)
+                / td = tournament.start_date == tournament.end_date ? tournament.start_date.strftime('%B %e').ordinalize : "#{tournament.start_date.strftime('%B %e')} - #{tournament.end_date.day.ordinalize}"
+                td = date_helper(tournament.start_date, tournament.end_date)
                 td = tournament.location
                 td = tournament.contact

@@ -11,6 +11,13 @@ tournaments = [
   ['$60K Hall Of Fame Classic', Date.new(2018, 3, 28), Date.new(2018, 4, 1), 'Mary Moore', 'Las Vegas, NV'],
   ['$25K Kentucky State/Tour Kickoff', Date.new(2017, 1, 26), Date.new(2017, 1, 29), 'Mary Moore', 'Lexington, KY'],
   ['NRW Foosball Clubs Series', Date.new(2017, 2, 4), Date.new(2017, 2, 4), 'John O\'Brien', 'Oswego, NY'],
+  ['$10K Bart O\'Hearn Celebration', Date.new(2017, 2, 10), Date.new(2017, 2, 12), 'Joe Koonce', 'Austin, TX'],
+  ['$7.5K Florida State', Date.new(2017, 2, 17), Date.new(2017, 2, 19), 'Rob Kadle', 'Tampa, FL'],
+  ['$50K Hall of Fame Classic', Date.new(2017, 3, 8), Date.new(2017, 3, 12), 'Mary Moore', 'Las Vegas, NV'],
+  ['Utah Business Games', Date.new(2017, 3, 23), Date.new(2017, 3, 24), 'Mary Moore', 'Salt Lake City, UT'],
+  ['$3.5K New Orleans City Open', Date.new(2017, 3, 24), Date.new(2017, 3, 26), 'Mark Matarrese', 'New Orleans, LA'],
+  ['NY State Junior Championships', Date.new(2017, 4, 1), Date.new(2017, 4, 1), 'John O\'Brien', 'Champlain, NY'],
+  ['$20K Maryland State', Date.new(2017, 4, 20), Date.new(2017, 4, 23), 'John Lee', 'Linthicum Hts, MD']
 ]
 
 tournaments.each do |name, start_date, end_date, contact, location|
