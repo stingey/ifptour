@@ -43,4 +43,3 @@ end
                        womens_singles_points: rando + rand(1000),
                        womens_doubles_points: rando + rand(600))
 end
-

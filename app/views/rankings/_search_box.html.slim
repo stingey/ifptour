@@ -1,4 +1,4 @@
-.container.pt-4.pb-1
+.container.pt-4.pb-3
   .d-inline-block.float-right
     = form_tag(send("rankings_#{controller_name}_path"), method: :get) do
       .search-box
@@ -6,5 +6,5 @@
         button type="submit"
           i.fa.fa-search
 
-  .d-inline-block
-    = link_to "New Player", new_player_path, class: 'btn btn-outline-primary'
+  .d-inline-block.new-button
+    = link_to "new player", new_player_path, class: 'btn btn-outline-primary' if current_user.try(:admin?)

@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).on('turbolinks:load', function() {
   $('#gender-selector').change(function() {
     if ($('#gender-selector').val() === 'F') {
       $('.womens-points').removeClass('hide');
@@ -6,4 +6,4 @@ $(document).ready(function() {
       $('.womens-points').val('').addClass('hide');
     }
   });
-});
+}.bind(this));

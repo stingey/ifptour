@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180111050201) do
+ActiveRecord::Schema.define(version: 20180117040552) do
 
   create_table "players", force: :cascade do |t|
     t.string "first_name", null: false
@@ -23,8 +23,8 @@ ActiveRecord::Schema.define(version: 20180111050201) do
 
   create_table "ranking_details", force: :cascade do |t|
     t.integer "player_id"
-    t.integer "singles_points"
-    t.integer "doubles_points"
+    t.integer "singles_points", null: false
+    t.integer "doubles_points", null: false
     t.integer "womens_singles_points"
     t.integer "womens_doubles_points"
     t.string "singles_rank"
@@ -59,6 +59,7 @@ ActiveRecord::Schema.define(version: 20180111050201) do
     t.string "last_sign_in_ip"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.boolean "admin", default: false
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
