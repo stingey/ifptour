@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'photos/index'
+
   get 'doubles/index'
 
   get 'singles/index'
@@ -19,7 +21,7 @@ Rails.application.routes.draw do
     resources :womens_doubles, only: %i(index)
   end
 
-  resources :photos, only: %i(index show)
+  resources :photos, only: %i(index show create update new edit)
   resources :hall_of_fames, only: %i(index)
   resources :rules, only: %i(index)
   resources :clubs, only: %i(index)

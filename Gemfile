@@ -20,6 +20,9 @@ gem 'devise'
 gem 'jquery-rails'
 gem 'ffaker', '~> 2.8'
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.2'
+gem 'carrierwave', '~> 1.2', '>= 1.2.2'
+gem 'mini_magick'
+gem 'jquery-fileupload-rails', '~> 0.4.7'
 
 group :development, :test do
   gem 'sqlite3'

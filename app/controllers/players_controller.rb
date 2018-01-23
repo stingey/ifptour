@@ -1,5 +1,5 @@
 class PlayersController < ApplicationController
-  before_action :authenticate, only: [:new, :show]
+  before_action :authenticate, only: [:new]
 
   def new
     @player = Player.new

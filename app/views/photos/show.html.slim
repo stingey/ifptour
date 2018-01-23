@@ -1,0 +1,3 @@
+.container.py-4
+  .photo-container
+    = link_to(image_tag(@photo.image.default.url, alt: 'Image'), @photo.image.url, class: "photo-thing") if @photo.image?
