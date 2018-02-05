@@ -39,7 +39,7 @@ class ImageUploader < CarrierWave::Uploader::Base
   end
 
   version :carousel do
-    process resize_to_fit: [850, 850]
+    process resize_to_fit: [800, 800]
   end
 
   version :thumb do

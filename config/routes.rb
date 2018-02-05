@@ -21,7 +21,7 @@ Rails.application.routes.draw do
     resources :womens_doubles, only: %i(index)
   end
 
-  resources :photos, only: %i(index show create update new edit)
+  resources :photos, only: %i(index show create new destroy)
   resources :hall_of_fames, only: %i(index)
   resources :rules, only: %i(index)
   resources :clubs, only: %i(index)

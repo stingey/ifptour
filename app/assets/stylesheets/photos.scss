@@ -1,13 +1,44 @@
 // Place all the styles related to the photos controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.photo-container {
-  width: 650px;
+.photos-container {
+  width: fit-content;
+  margin: auto;
+  // padding: 20px;
+}
+.photo-show {
+  width: fit-content;
   margin: auto;
 }
 
 .photo {
-  padding: 4px;
-  width: 33.33%;
-  margin: auto;
+  display: inline-block;
+  // width: 25%;
+  width: 24.5002%;
+  height: 200px;
+  overflow: hidden;
+  // padding: 1px;
+  margin: .251%;
+  position: relative;
+  
+  .delete-x {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    // padding-left: 10px;
+    // left: 5px;
+  }
+  
+  img {
+    margin: -20px 0 0 0;
+  }
+}
+
+.fa-trash {
+  font-size: 1.2em;
+  color: #bfc3c5;
+  font-weight: 200;
+  &:hover {
+    color: gray;
+  }
 }

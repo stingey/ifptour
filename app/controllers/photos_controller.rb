@@ -1,4 +1,6 @@
 class PhotosController < ApplicationController
+  before_action :authenticate, only: [:new, :create, :destroy]
+
   def index
     @photos = Photo.order(created_at: :desc)
   end
@@ -12,7 +14,6 @@ class PhotosController < ApplicationController
   end
 
   def create
-    puts "\n\n\n#{params.inspect}\n\n\n"
     @photo = Photo.new(photo_params)
     if @photo.save
       redirect_to photos_path
@@ -28,6 +29,12 @@ class PhotosController < ApplicationController
     else
       render :edit
     end
+  end
+
+  def destroy
+    @photo = Photo.find(params[:id])
+    @photo.destroy
+    redirect_to photos_path
   end
 
   private

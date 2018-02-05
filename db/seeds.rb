@@ -24,8 +24,6 @@ tournaments.each do |name, start_date, end_date, contact, location|
   Tournament.create(name: name, start_date: start_date, end_date: end_date, contact: contact, location: location)
 end
 
-
-
 150.times do
   rando = 600 + rand(4700)
   player = Player.create(first_name: FFaker::Name.first_name_male, last_name: FFaker::Name.last_name, gender: 'M')
@@ -43,3 +41,5 @@ end
                        womens_singles_points: rando + rand(1000),
                        womens_doubles_points: rando + rand(600))
 end
+
+User.create(email: "test@this.com", password: "asdfasdf", admin: true)

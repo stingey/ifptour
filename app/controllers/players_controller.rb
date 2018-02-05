@@ -1,5 +1,5 @@
 class PlayersController < ApplicationController
-  before_action :authenticate, only: [:new]
+  before_action :authenticate, only: [:new, :create]
 
   def new
     @player = Player.new
@@ -19,10 +19,6 @@ class PlayersController < ApplicationController
   end
 
   private
-
-  def authenticate
-    redirect_to rankings_singles_path unless current_user.try(:admin)
-  end
 
   def player_params
     params.require(:player).permit(:first_name, :last_name, :gender, :state,

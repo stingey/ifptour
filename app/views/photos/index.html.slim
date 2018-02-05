@@ -1,13 +1,13 @@
 .container.py-4
-  h3.text-center Gallery
-  .new-button
-    = link_to "add a photo", new_photo_path, class: 'btn btn-outline-primary'
-  
-  - @photos.each do |photo|
-    = link_to(image_tag(photo.image.thumb.url, alt: 'Image', class: 'photo'), photo_path(photo))
+  h3.text-center.pb-4 Gallery
+  - if current_user.try(:admin?)
+    .new-button.pb-1.pl-1
+      = link_to "add a photo", new_photo_path, class: 'btn btn-outline-primary'
 
-/ .container.pt-4
-/   h3.text-center Gallery
-/   table.table
-/     tbody
-/       td
+  .photos-container
+    - @photos.each do |photo|
+      .photo
+        = link_to(image_tag(photo.image.thumb.url, alt: 'Image'), photo_path(photo))
+        - if current_user.try(:admin?)
+          = link_to photo_path(photo), method: :delete, class: 'delete-x' do
+            i.fa.fa-trash
