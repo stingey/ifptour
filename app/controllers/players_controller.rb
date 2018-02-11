@@ -3,6 +3,7 @@ class PlayersController < ApplicationController
 
   def new
     @player = Player.new
+    @player.build_ranking_detail
   end
 
   def show

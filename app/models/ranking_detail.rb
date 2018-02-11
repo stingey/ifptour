@@ -10,7 +10,16 @@ class RankingDetail < ApplicationRecord
 
   after_save :set_rank
 
+  validates :singles_points, presence: true
+  validates :doubles_points, presence: true
+  validates :womens_singles_points, presence: true, if: :female?
+  validates :womens_doubles_points, presence: true, if: :female?
+
   private
+
+  def female?
+    player.gender == "F"
+  end
 
   def set_rank
     RANKS_HASH.each do |rank, range|

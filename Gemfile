@@ -23,6 +23,7 @@ gem 'font-awesome-rails'
 gem 'carrierwave', '~> 1.2', '>= 1.2.2'
 gem 'mini_magick'
 gem 'jquery-fileupload-rails', '~> 0.4.7'
+gem 'simple_form'
 
 group :development, :test do
   gem 'sqlite3'

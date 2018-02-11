@@ -9,11 +9,5 @@ module Rankings
 
     def show
     end
-
-    private
-
-    def singles?
-      controller_name.include?('singles')
-    end
   end
 end

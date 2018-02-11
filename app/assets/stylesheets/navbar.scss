@@ -74,3 +74,18 @@ button {
 .new-button {
   heigth: 2.4em;
 }
+
+// dropdown menu
+
+.dropdown-menu {
+  a:active {
+    background-color: #009999;
+  }
+}
+
+
+// sign-in notice bar
+.alert {
+  margin-bottom: 0;
+  line-height: 20px;
+}
