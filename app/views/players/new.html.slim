@@ -1,31 +1,4 @@
 .container.pt-4
   h3.text-center Add Player
-  = simple_form_for @player do |f|
-    .error.pb-2 = f.error_notification
-    div.form-group
-      = f.input_field :first_name, placeholder: 'First Name', class: 'form-control'
-      .error = f.error :first_name
-    div.form-group
-      = f.input_field :last_name, placeholder: 'Last Name', class: 'form-control'
-      .error = f.error :last_name
-    div.form-group
-      = f.collection_select :gender, ["M", "F"], :to_s, :to_s,{ include_blank: 'Gender' }, { class: 'form-control', id: 'gender-selector' }
-      .error = f.error :gender
-    div.form-group
-      = f.text_field :state, placeholder: 'State', class: 'form-control'
 
-    = f.simple_fields_for :ranking_detail do |d|
-      div.form-group
-        = d.input_field :singles_points, placeholder: 'Singles Points', class: 'form-control'
-        .error = d.error :singles_points
-      div.form-group
-        = d.input_field :doubles_points, placeholder: 'Doubles Points', class: 'form-control'
-        .error = d.error :doubles_points
-      div.form-group
-        = d.input_field :womens_singles_points, placeholder: 'Womens Singles Points', class: 'form-control womens-points hide'
-        .error = d.error :womens_singles_points
-      div.form-group
-        = d.input_field :womens_doubles_points, placeholder: 'Womens Doubles Points', class: 'form-control womens-points hide'
-        .error = d.error :womens_doubles_points
-      div.submit-button.pb-4
-        = f.submit 'create', class: 'btn btn-primary new-player-btn'
+  = render 'form'

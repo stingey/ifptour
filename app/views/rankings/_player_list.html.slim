@@ -11,9 +11,9 @@
       - if @players.empty?
         tr
           td.text-center colspan="5" No Results Found  
-      - @players.each.with_index(1) do |player, index|
+      - @players.each do |player|
         tr
-          td = index
+          td = player.ranking_detail.singles_position
           td = link_to "#{player.first_name.capitalize} #{player.last_name.capitalize}", player_path(player), class: "player-name"
           td = singles ? player.ranking_detail&.singles_rank&.capitalize : player.ranking_detail&.doubles_rank&.capitalize
           td = player.gender

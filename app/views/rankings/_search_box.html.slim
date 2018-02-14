@@ -6,5 +6,7 @@
         button type="submit"
           i.fa.fa-search
 
-  .d-inline-block.new-button
+  .d-inline-block.button
     = link_to "new player", new_player_path, class: 'btn btn-outline-primary' if current_user.try(:admin?)
+  .d-inline-block.button.px-3
+    = link_to "re-rank all players", rankings_ranks_path, method: :post, class: 'btn btn-outline-primary' if current_user.try(:admin?)

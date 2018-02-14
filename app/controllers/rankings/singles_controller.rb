@@ -1,5 +1,5 @@
 module Rankings
-  class SinglesController < BaseController
+  class SinglesController < ApplicationController
     def index
       players = Player.all
       if params[:term]

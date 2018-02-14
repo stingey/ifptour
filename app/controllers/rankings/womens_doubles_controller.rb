@@ -1,5 +1,5 @@
 module Rankings
-  class WomensDoublesController < BaseController
+  class WomensDoublesController < ApplicationController
     def index
       players = Player.where(gender: 'F')
       if params[:term]

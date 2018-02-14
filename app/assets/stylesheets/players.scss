@@ -11,9 +11,16 @@
 }
 
 .new-player-btn {
-  background-color: #009999;
+  &:hover {
+    background-color: #009999;
+    border: 1px solid #009999;
+    color: white;
+  }
+  color: #009999;
+  background-color: white;
   border: 1px solid #009999;
   width: 100%;
+
 }
 
 .submit-button {

@@ -4,7 +4,7 @@ class RankingDetail < ApplicationRecord
                 amateur: [1500, 1999],
                 expert: [2000, 2999],
                 pro: [3000, 4999],
-                master: [5000, 9000]}.freeze
+                master: [5000, 1000000]}.freeze
 
   belongs_to :player
 

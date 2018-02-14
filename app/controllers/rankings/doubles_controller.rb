@@ -1,5 +1,5 @@
 module Rankings
-  class DoublesController < BaseController
+  class DoublesController < ApplicationController
     def index
       players = Player.all
       if params[:term]

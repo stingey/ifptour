@@ -15,6 +15,7 @@ Rails.application.routes.draw do
   resources :results, only: %i(index show)
 
   namespace :rankings do
+    resource :ranks, only: %i(create)
     resources :singles, only: %i(index)
     resources :doubles, only: %i(index)
     resources :womens_singles, only: %i(index)
@@ -25,10 +26,9 @@ Rails.application.routes.draw do
   resources :hall_of_fames, only: %i(index)
   resources :rules, only: %i(index)
   resources :clubs, only: %i(index)
-
   resource :pro_shop, only: %i(show)
 
-  resources :players, only: %i(index new create show)
+  resources :players, only: %i(index new create show edit update)
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

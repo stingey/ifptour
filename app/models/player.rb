@@ -9,4 +9,8 @@ class Player < ApplicationRecord
 
   scope :female, -> { where(gender: 'F') }
   scope :male, -> { where(gender: 'M') }
+
+  def full_name
+    "#{first_name.capitalize} #{last_name.capitalize}"
+  end
 end

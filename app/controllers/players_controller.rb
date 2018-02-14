@@ -6,6 +6,10 @@ class PlayersController < ApplicationController
     @player.build_ranking_detail
   end
 
+  def edit
+    @player = Player.find(params[:id])
+  end
+
   def show
     @player = Player.find(params[:id])
   end
@@ -13,9 +17,18 @@ class PlayersController < ApplicationController
   def create
     @player = Player.new(player_params)
     if @player.save
-      redirect_to root_path
+      redirect_back(fallback_location: rankings_singles_path)
     else
       render 'new'
+    end
+  end
+
+  def update
+    @player = Player.find(params[:id])
+    if @player.update(player_params)
+      redirect_to root_path
+    else
+      render 'edit'
     end
   end
 

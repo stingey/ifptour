@@ -3,3 +3,5 @@
   p.player-detail Rank: rank goes here
   p.player-detail Points: points go here
   p.player-detail Double Points: points go here
+  .button
+    = link_to "edit employee", edit_player_path, class: 'btn btn-outline-primary' if current_user.try(:admin?)
