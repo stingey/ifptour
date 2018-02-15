@@ -1,4 +1,5 @@
 - provide(:title, 'Singles')
 = render partial: 'rankings/search_box'
-
-= render partial: 'rankings/player_list', locals: { singles: true }
+.container.rankings
+  .rank-header Singles
+  = render partial: 'rankings/player_list'

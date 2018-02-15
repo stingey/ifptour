@@ -17,7 +17,7 @@ class PlayersController < ApplicationController
   def create
     @player = Player.new(player_params)
     if @player.save
-      redirect_back(fallback_location: rankings_singles_path)
+      redirect_to rankings_singles_path
     else
       render 'new'
     end
@@ -26,7 +26,7 @@ class PlayersController < ApplicationController
   def update
     @player = Player.find(params[:id])
     if @player.update(player_params)
-      redirect_to root_path
+      redirect_to rankings_singles_path
     else
       render 'edit'
     end

@@ -58,6 +58,10 @@ button {
     height: 2.5em;
     border-radius: 5px;
     border: 1px solid #bfc3c5;
+    &:focus {
+      outline: none;
+      border-color: #009999;
+    }
   }
   i {
     color: #373737;

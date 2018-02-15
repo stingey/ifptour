@@ -2,12 +2,14 @@
   width: 50%;
   margin: auto;
   font-size: 14px;
+  &:focus {
+    border-color: #009999;
+  }
 }
 
 .womens-points {
   &.hide {
     display: none;
-    background-color: blue;
   }
 }
 
