@@ -5,7 +5,9 @@
         = text_field_tag :term, params[:term], placeholder: 'search', class: 'input'
         button type="submit"
           i.fa.fa-search
-
+          - if @search
+            = link_to send("rankings_#{controller_name}_path") do
+              i.fa.fa-times
   .d-inline-block.button
     = link_to "new player", new_player_path, class: 'btn btn-outline-primary' if current_user.try(:admin?)
   .d-inline-block.button.px-3
