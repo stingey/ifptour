@@ -12,3 +12,14 @@
     = link_to "new player", new_player_path, class: 'btn btn-outline-primary' if current_user.try(:admin?)
   .d-inline-block.button.px-3
     = link_to "re-rank all players", rankings_ranks_path, method: :post, class: 'btn btn-outline-primary' if current_user.try(:admin?)
+  .d-inline-block.button.dropdown
+    =link_to "class filter", '#', class: 'btn btn-outline-primary dropdown-toggle', id: 'rankDropdownLink', 'data-toggle': 'dropdown', 'aria-haspopup': 'true'
+    .dropdown-menu aria-labelledby="rankDropdownLink"
+      = link_to "Master", send("rankings_#{controller_name}_path", class: 'master'), class: 'dropdown-item'
+      = link_to "Pro", send("rankings_#{controller_name}_path", class: 'pro'), class: 'dropdown-item'
+      = link_to "Expert", send("rankings_#{controller_name}_path", class: 'expert'), class: 'dropdown-item'
+      = link_to "Amateur", send("rankings_#{controller_name}_path", class: 'amateur'), class: 'dropdown-item'
+      = link_to "Rookie", send("rankings_#{controller_name}_path", class: 'rookie'), class: 'dropdown-item'
+      = link_to "Beginner", send("rankings_#{controller_name}_path", class: 'beginner'), class: 'dropdown-item'
+      = link_to "Junior Pro", send("rankings_#{controller_name}_path", class: 'junior_pro'), class: 'dropdown-item'
+      = link_to "Junior Amateur", send("rankings_#{controller_name}_path", class: 'junior_amateur'), class: 'dropdown-item'
