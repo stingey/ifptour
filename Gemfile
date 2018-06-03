@@ -25,6 +25,7 @@ gem 'mini_magick'
 gem 'jquery-fileupload-rails', '~> 0.4.7'
 gem 'simple_form'
 gem 'delayed_job_active_record'
+gem 'byebug'
 
 group :development, :test do
   gem 'sqlite3'

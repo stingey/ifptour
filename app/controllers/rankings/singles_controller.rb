@@ -4,7 +4,7 @@ module Rankings
       players = Player.all
       if params[:term]
         @search = true
-        players_result = players.where('first_name LIKE ? OR last_name LIKE ?', "%#{params[:term]}%", "%#{params[:term]}%")
+        players_result = players.where("first_name || ' ' || last_name LIKE ?", "%#{params[:term]}%")
                                 .joins(:ranking_detail)
                                 .order('ranking_details.singles_points desc')
       else
