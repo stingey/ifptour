@@ -25,13 +25,13 @@ tournaments.each do |name, start_date, end_date, contact, location|
 end
 
 150.times do
-  rando = 600 + rand(4700)
+  rando = 200 + rand(4700)
   player = Player.create(first_name: FFaker::Name.first_name_male, last_name: FFaker::Name.last_name, gender: 'M')
   RankingDetail.create(player_id: player.id, singles_points: rando, doubles_points: rando - rand(500))
 end
 
 40.times do
-  rando = 600 + rand(3500)
+  rando = 200 + rand(3500)
   player = Player.create(first_name: FFaker::Name.first_name_female,
                          last_name: FFaker::Name.last_name,
                          gender: 'F')

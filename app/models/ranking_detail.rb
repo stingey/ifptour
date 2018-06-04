@@ -11,6 +11,8 @@ class RankingDetail < ApplicationRecord
     master: [5000, 1000000]
               }.freeze
 
+  RANKS = %w(master pro expert amateur rookie beginner new_player junior_pro junior_amateur).freeze
+
   belongs_to :player
 
   after_save :set_rank

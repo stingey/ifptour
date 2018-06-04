@@ -2,13 +2,17 @@ module Rankings
   class WomensDoublesController < ApplicationController
     def index
       players = Player.where(gender: 'F')
-      if params[:term]
-        players_result = players.where('first_name LIKE ? OR last_name LIKE ?', "%#{params[:term]}%", "%#{params[:term]}%")
+      if params[:term].present?
+        @search = true
+        players_result = players.where("first_name || ' ' || last_name LIKE ?", "%#{params[:term]}%")
                                 .joins(:ranking_detail)
                                 .order('ranking_details.womens_doubles_points desc')
       else
         players_result = players.joins(:ranking_detail)
                                 .order('ranking_details.womens_doubles_points desc')
+      end
+      if params[:rank_class].present?
+        players_result = players_result.joins(:ranking_detail).where('ranking_details.womens_doubles_rank == ?', params[:rank_class])
       end
       @players = players_hash(players_result)
     end
