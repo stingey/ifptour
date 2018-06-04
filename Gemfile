@@ -25,10 +25,9 @@ gem 'mini_magick'
 gem 'jquery-fileupload-rails', '~> 0.4.7'
 gem 'simple_form'
 gem 'delayed_job_active_record'
-gem 'byebug'
+gem 'pg'
 
 group :development, :test do
-  gem 'sqlite3'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   # Adds support for Capybara system testing and selenium driver
@@ -48,7 +47,6 @@ group :development do
 end
 
 group :production do
-  gem 'pg'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
