@@ -1,5 +1,8 @@
 ul.small-nav
   li = link_to 'Sign Out', destroy_user_session_path, method: :delete, class: 'items' if user_signed_in?
-  li = link_to 'Admin', new_user_session_path, class: 'items'
+  - unless user_signed_in?
+    li = link_to 'Admin', new_user_session_path, class: 'items'
+  - if current_user.try(:admin)
+    li = link_to 'Admin Menu', admins_path, class: 'items'
   li.items Registration
   li.title.text-center International Foosball Promotions

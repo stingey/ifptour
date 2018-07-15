@@ -1,5 +1,5 @@
 class PhotosController < ApplicationController
-  before_action :authenticate, only: [:new, :create, :destroy]
+  before_action :authenticate, only: %i[new create destroy]
 
   def index
     @photos = Photo.order(created_at: :desc)
