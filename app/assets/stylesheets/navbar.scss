@@ -87,10 +87,13 @@ button {
   }
 }
 
-
 // sign-in notice bar
 .alert {
   margin-bottom: 0;
   line-height: 20px;
   text-align: center;
+}
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 30px white inset;
 }
