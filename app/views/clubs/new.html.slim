@@ -1,0 +1,21 @@
+.container
+  h2 New Club
+  = simple_form_for @club do |f|
+    .error.pb-2 = f.error_notification
+    div.form-group
+      = f.input_field :name, placeholder: 'Name', class: 'form-control'
+      .error = f.error :name
+    div.form-group
+      = f.input_field :city, placeholder: 'City', class: 'form-control'
+      .error = f.error :city
+    div.form-group
+      = f.input_field :state, placeholder: 'State', class: 'form-control'
+      .error = f.error :state
+    div.form-group
+      = f.input_field :address1, placeholder: 'Address Line 1', class: 'form-control'
+      .error = f.error :address1
+    div.form-group
+      = f.input_field :address2, placeholder: 'Address Line 2', class: 'form-control'
+      .error = f.error :address2
+    div.submit-button.pb-4
+      = f.submit 'submit', class: 'btn btn-primary new-player-btn'

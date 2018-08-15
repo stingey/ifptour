@@ -1,0 +1,15 @@
+h4 Add Players
+
+.pb-1
+  input.player-entry
+
+.pb-1
+  input.player-entry
+
+
+javascript:
+  $(document).ready(function () {
+    $('.player-entry').blur(function () {
+      console.log($(this).val());
+    })
+  })

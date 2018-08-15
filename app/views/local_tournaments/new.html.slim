@@ -1,0 +1,10 @@
+.container
+  h2 New Local Tournament
+  = simple_form_for [@club, @club.local_tournaments.build] do |f|
+    / = f.simple_fields_for :local_tournaments do |d|
+    .error.pb-2 = f.error_notification
+    div.form-group
+      = f.input_field :name, placeholder: 'Tournament Name', class: 'form-control'
+      .error = f.error :name
+    div.submit-button.pb-4
+      = f.submit 'submit', class: 'btn btn-primary new-player-btn'

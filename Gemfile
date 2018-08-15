@@ -26,9 +26,13 @@ gem 'jquery-fileupload-rails', '~> 0.4.7'
 gem 'simple_form'
 gem 'delayed_job_active_record'
 gem 'pg'
+gem 'challonge-api'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  # gem 'dotenv', '~> 2.1', '>= 2.1.1'
+  gem 'dotenv-rails'
+  gem 'rspec-rails'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '~> 2.13'

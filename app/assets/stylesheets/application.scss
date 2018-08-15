@@ -28,7 +28,19 @@ body {
 }
 
 .container {
+  h2 {
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
   thead{
     border-top: 4px solid white;
+  }
+}
+
+.clickable-row {
+  &:hover {
+    cursor: pointer;
+    color: #009999;
   }
 }

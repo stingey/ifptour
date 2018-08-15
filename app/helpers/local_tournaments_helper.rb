@@ -1,0 +1,2 @@
+module LocalTournamentsHelper
+end

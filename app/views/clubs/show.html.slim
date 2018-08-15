@@ -1,0 +1,16 @@
+.container.pt-4.pb-3
+  .d-inline-block.button
+    = link_to 'New Tournament', new_club_local_tournament_path(@club), class: 'btn btn-outline-primary' if current_user.try(:admin?)
+.container
+  h2 = @club.name
+  table.table
+    thead
+      tr
+        th style="width: 45%" Name
+        th style="width: 45%" Type
+        th style="width: 10%" Date
+    tbody
+      - @club.local_tournaments.each do |tournament|
+        tr.clickable-row data-link="#{club_path(2)}"
+          td = tournament.name
+          td = stuff

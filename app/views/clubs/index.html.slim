@@ -1,0 +1,20 @@
+.container.pt-4.pb-3
+  .d-inline-block.button
+    = link_to 'New Club', new_club_path, class: 'btn btn-outline-primary' if current_user.try(:admin?)
+.container
+  h2 Clubs
+  table.table
+    thead
+      tr
+        th style="width: 50%" Name
+        th style="width: 50%" Location
+    tbody
+      - @clubs.each do |club|
+        tr.clickable-row data-link="#{club_path(club)}"
+          td = club.name
+          td = "#{club.city}, #{club.state}"
+
+javascript:
+  $("tr[data-link]").click(function() {
+  window.location = $(this).data("link")
+  })
