@@ -46,6 +46,7 @@ class LocalTournamentsController < ApplicationController
     t.url = tournament.unique_url
     t.tournament_type = tournament.tournament_type
     t.quick_advance = true
+    t.show_rounds = true
     t.save
     tournament.participants.each do |participant|
       Challonge::Participant.create(:name => participant.titleize, :tournament => t)
