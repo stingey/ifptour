@@ -8,7 +8,7 @@ nav.navbar.navbar-toggleable-md.navbar-light.bg-faded.sticky-top.main-nav
         = link_to 'TOURNAMENTS', '#', class: 'nav-link dropdown-toggle', id: 'navbarDropdownTournamentsLink', 'data-toggle': 'dropdown', 'aria-haspopup': 'true'
         .dropdown-menu aria-labelledby="navbarDropdownTournamentsLink"
           = link_to 'TOUR TOURNAMENTS', tournaments_path, class: 'dropdown-item'
-          = link_to 'LOCAL TOURNAMENTS', clubs_path, class: 'dropdown-item'
+          = link_to 'LOCAL TOURNAMENTS', all_local_tournaments_path, class: 'dropdown-item'
       li.nav-item
         = link_to 'RESULTS', results_path, class: 'nav-link'
       li.nav-item.dropdown

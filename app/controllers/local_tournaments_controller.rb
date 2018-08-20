@@ -24,6 +24,10 @@ class LocalTournamentsController < ApplicationController
     end
   end
 
+  def all_local_tournaments
+    @local_tournaments = LocalTournament.order(created_at: :desc)
+  end
+
   def add_player
     tournament = LocalTournament.find(params[:local_tournament_id])
     tournament.participants << params[:players][:name]

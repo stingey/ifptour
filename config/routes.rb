@@ -27,6 +27,7 @@ Rails.application.routes.draw do
   resources :photos, only: %i[index show create new destroy]
   resources :hall_of_fames, only: %i[index]
   resources :rules, only: %i[index]
+  get '/local-tournaments', to: 'local_tournaments#all_local_tournaments', as: :all_local_tournaments
   resources :clubs, only: %i[index new show create] do
     resources :local_tournaments, only: %i[index new show create] do
       post '/add-player', to: 'local_tournaments#add_player', as: :add_player

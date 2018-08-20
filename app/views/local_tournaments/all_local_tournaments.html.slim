@@ -1,0 +1,23 @@
+.container
+  h2 Local Tournaments
+  table.table
+    thead
+      tr
+        th style="width: 30%" Name
+        th style="width: 33%" Club
+        th style="width: 14%" Status
+        th style="width: 10%" Participants
+        th style="width: 18%" Date
+    tbody
+      - @local_tournaments.each do |tournament|
+        tr.clickable-row data-link="#{club_local_tournament_path(tournament.club, tournament)}"
+          td = tournament.name.titleize
+          td = tournament.club.name.titleize
+          td statusr
+          td style="text-align:center"= tournament.participants.count
+          td = tournament.created_at.strftime("%b %d, %Y")
+
+javascript:
+  $("tr[data-link]").click(function() {
+  window.location = $(this).data("link")
+  })
