@@ -1,5 +1,7 @@
+require 'httparty'
+
 class ChallongeApi
-  require 'httparty'
+  include HTTParty
 
   def self.finalize(tournament_id)
     url = "https://api.challonge.com/v1/tournaments/#{tournament_id}/finalize.json"
