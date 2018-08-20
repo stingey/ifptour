@@ -1,3 +1,12 @@
 .container
   h2 = @tournament.name
+  h4 Player List
+  ol
+    - @tournament.participants.each do |participant|
+      li
+        div style="display:inline-block;width:150px;padding-right: 10px" = participant.humanize
+        div style="display:inline-block" = link_to '×', club_local_tournament_remove_player_path(@tournament.club, @tournament, participant), method: :delete
   = render 'players_form'
+  / = link_to 'generate tournament', club_local_tournament_generate_tournament_path(@tournament.club, @tournament)
+  = link_to club_local_tournament_generate_tournament_path(@tournament.club, @tournament) do
+    p = @tournament.challonge_url.blank? ? "Generate Bracket" : "View Live Bracket"

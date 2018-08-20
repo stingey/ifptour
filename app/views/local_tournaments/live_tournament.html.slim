@@ -1,0 +1,17 @@
+
+.tournament-container
+  img src="#{@tournament.challonge_url}" class="tournament-img"
+
+.div style="padding:20px"
+  h4 Matches
+  - @challonge_tournament.matches.select{|match| match.attributes[:state] == "open"}.each do |match|
+    .match-result-card
+      .card-item = match.suggested_play_order
+      = simple_form_for :match_result, url: club_local_tournament_enter_match_result_path(@tournament.club, @tournament, match.id), html: { class: "card-item"} do |f|
+        - player_one = @challonge_tournament.participants.find{|participant| participant.id == match.player1_id}
+        - player_two = @challonge_tournament.participants.find{|participant| participant.id == match.player2_id}
+        = f.select :winner, options_for_select([[player_one.name, player_one.id], [player_two.name, player_two.id]]), { include_blank: 'Select' }, {class: 'card-item'}
+        = f.submit
+
+  = link_to 'finalize', club_local_tournament_finalize_path(@tournament.club, @tournament), method: :post
+

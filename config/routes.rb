@@ -28,7 +28,14 @@ Rails.application.routes.draw do
   resources :hall_of_fames, only: %i[index]
   resources :rules, only: %i[index]
   resources :clubs, only: %i[index new show create] do
-    resources :local_tournaments, only: %i[index new show create]
+    resources :local_tournaments, only: %i[index new show create] do
+      post '/add-player', to: 'local_tournaments#add_player', as: :add_player
+      delete '/remove-player/:player_name', to: 'local_tournaments#remove_player', as: :remove_player
+      get '/generate-tournament', to: 'local_tournaments#generate_tournament', as: :generate_tournament
+      get '/live-tournament', to: 'local_tournaments#live_tournament', as: :live_tournament
+      post '/enter-match-result/:match_id', to: 'local_tournaments#enter_match_result', as: :enter_match_result
+      post '/finalize', to: 'local_tournaments#finalize', as: :finalize
+    end
   end
   resource :pro_shop, only: %i[show]
 

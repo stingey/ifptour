@@ -6,5 +6,8 @@
     div.form-group
       = f.input_field :name, placeholder: 'Tournament Name', class: 'form-control'
       .error = f.error :name
+    div.form-group
+      = f.collection_select :tournament_type, ['single elimination', 'double elimination'], :to_s, :to_s,{ include_blank: false }, { class: 'form-control' }
+      .error = f.error :gender
     div.submit-button.pb-4
       = f.submit 'submit', class: 'btn btn-primary new-player-btn'

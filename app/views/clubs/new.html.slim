@@ -3,7 +3,7 @@
   = simple_form_for @club do |f|
     .error.pb-2 = f.error_notification
     div.form-group
-      = f.input_field :name, placeholder: 'Name', class: 'form-control'
+      = f.input_field :name, placeholder: 'Club Name', class: 'form-control'
       .error = f.error :name
     div.form-group
       = f.input_field :city, placeholder: 'City', class: 'form-control'

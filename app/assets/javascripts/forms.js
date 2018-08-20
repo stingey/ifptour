@@ -1,5 +1,5 @@
 $(document).on('turbolinks:load', function() {
-  $(".alert").delay(5000).hide(0);
+  $(".alert").delay(2000).slideUp(300);
   checkGender();
   $('#gender-selector').change(function() {
     checkGender();
