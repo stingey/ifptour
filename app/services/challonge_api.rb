@@ -1,5 +1,3 @@
-require 'httparty'
-
 class ChallongeApi
   include HTTParty
 
