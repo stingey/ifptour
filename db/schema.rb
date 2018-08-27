@@ -44,6 +44,7 @@ ActiveRecord::Schema.define(version: 20180813234007) do
     t.string "name"
     t.text "participants", default: [], array: true
     t.string "tournament_type", default: "double elimination"
+    t.integer "format"
     t.string "unique_url"
     t.string "challonge_url"
     t.string "challonge_id"

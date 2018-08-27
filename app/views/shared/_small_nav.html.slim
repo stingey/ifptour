@@ -4,5 +4,4 @@ ul.small-nav
     li = link_to 'Admin', new_user_session_path, class: 'items'
   - if current_user.try(:admin)
     li = link_to 'Admin Menu', admins_path, class: 'items'
-  li.items Registration
   li.title.text-center International Foosball Promotions

@@ -1,4 +1,6 @@
 class LocalTournamentsController < ApplicationController
+  include TeamFormatterConcern
+
   after_action :allow_iframe, only: :live_tournament
 
   def index
@@ -7,7 +9,7 @@ class LocalTournamentsController < ApplicationController
 
   def new
     @club = Club.find(params[:club_id])
-    @club.local_tournaments.build
+    @local_tournament = @club.local_tournaments.build
   end
 
   def show
@@ -15,10 +17,10 @@ class LocalTournamentsController < ApplicationController
   end
 
   def create
-    club = Club.find(params[:club_id])
-    tournament = club.local_tournaments.build(local_tournaments_params)
-    if tournament.save
-      redirect_to club_local_tournament_path(tournament.club_id, tournament.id)
+    @club = Club.find(params[:club_id])
+    @local_tournament = @club.local_tournaments.build(local_tournaments_params)
+    if @local_tournament.save
+      redirect_to club_local_tournament_path(@local_tournament.club_id, @local_tournament.id)
     else
       render 'new'
     end
@@ -52,9 +54,7 @@ class LocalTournamentsController < ApplicationController
     t.quick_advance = true
     t.show_rounds = true
     t.save
-    tournament.participants.each do |participant|
-      Challonge::Participant.create(:name => participant.titleize, :tournament => t)
-    end
+    format_teams(tournament, t.id)
     t.start!
     tournament.update(challonge_url: t.live_image_url, challonge_id: t.id)
 
@@ -86,7 +86,7 @@ class LocalTournamentsController < ApplicationController
   private
 
   def local_tournaments_params
-    params.require(:local_tournament).permit(:name)
+    params.require(:local_tournament).permit(:name, :tournament_type, :format)
   end
 
   def allow_iframe

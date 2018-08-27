@@ -4,6 +4,7 @@ class CreateLocalTournaments < ActiveRecord::Migration[5.1]
       t.string :name
       t.text :participants, array: true, default: []
       t.string :tournament_type, default: 'double elimination'
+      t.integer :format
       t.string :unique_url
       t.string :challonge_url
       t.string :challonge_id
