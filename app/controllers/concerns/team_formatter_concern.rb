@@ -69,7 +69,6 @@ module TeamFormatterConcern
   end
 
   def order_teams(teams_array)
-    debugger
     six_team_order = [0, 3, 4, 1, 2, 5]
     eight_team_order = [0, 4, 6, 2, 3, 7, 5, 1]
     ten_team_order = [0, 5, 8, 3, 4, 9, 6, 1, 2, 7]
