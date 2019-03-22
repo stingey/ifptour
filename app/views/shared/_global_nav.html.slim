@@ -22,8 +22,9 @@ nav.navbar.navbar-toggleable-md.navbar-light.bg-faded.sticky-top.main-nav
       - if ENV['USE_PRO_SHOP'] == 'true'
         li.nav-item
           = link_to 'PRO SHOP', pro_shop_show_path, class: 'nav-link'
-      li.nav-item
-        = link_to 'PHOTOS', photos_path, class: 'nav-link'
+      - if ENV['USE_PHOTOS'] == 'true'
+        li.nav-item
+          = link_to 'PHOTOS', photos_path, class: 'nav-link'
       - if ENV['USE_HALL_OF_FAME'] == 'true'
         li.nav-item
           = link_to 'HALL OF FAME', hall_of_fames_path, class: 'nav-link'
