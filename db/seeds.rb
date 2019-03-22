@@ -35,11 +35,11 @@ end
 #   player = Player.create(first_name: FFaker::Name.first_name_female,
 #                          last_name: FFaker::Name.last_name,
 #                          gender: 'F')
-#   RankingDetail.create(player_id: player.id, 
+#   RankingDetail.create(player_id: player.id,
 #                        singles_points: rando,
 #                        doubles_points: rando - rand(500),
 #                        womens_singles_points: rando + rand(1000),
 #                        womens_doubles_points: rando + rand(600))
 # end
 
-User.create(email: "test@this.com", password: "asdfasdf", admin: true)
+User.create(email: 'test@this.com', password: 'asdfasdf', admin: true)

@@ -5,6 +5,9 @@ application up and running.
 
 https://ifptour.herokuapp.com/
 
+http://localhost:3000/users/sign_in
+email: 'test@this.com', password: 'asdfasdf'
+
 chal cred uname foosballadmin pword foosballadmin
 
 How to reset PG Database on Heroku?
