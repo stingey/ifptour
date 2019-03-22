@@ -1,0 +1,36 @@
+# .rubocop.yml
+
+AllCops:
+  TargetRubyVersion: 2.6.1
+  Exclude:
+    - db/*
+    - db/**/*
+    - lib/*
+    - lib/**/*
+    - spec/**/*
+    - bin/*
+    - node_modules/**/*
+    - test/**/*
+    - Guardfile
+    - config/initializers/devise.rb
+
+Metrics/LineLength:
+  Max: 125
+
+Style/Documentation:
+  Enabled: false
+
+Style/FormatStringToken:
+  EnforcedStyle: template
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Metrics/AbcSize:
+  Enabled: false
+
+Metrics/CyclomaticComplexity:
+  Enabled: false
+
+Metrics/PerceivedComplexity:
+  Enabled: false

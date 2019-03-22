@@ -1,5 +1,5 @@
 class Player < ApplicationRecord
-  has_one :ranking_detail
+  has_one :ranking_detail, dependent: :destroy
 
   accepts_nested_attributes_for :ranking_detail, allow_destroy: true
 

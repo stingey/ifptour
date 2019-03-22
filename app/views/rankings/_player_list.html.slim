@@ -9,11 +9,11 @@ table.table.col-md-12
   tbody
     - if @players.empty?
       tr
-        td.text-center colspan="5" No Results Found  
+        td.text-center colspan="5" No Results Found
     - @players.each do |player|
       tr
         td = player[:position]
-        td = link_to "#{player[:player_name]}", player_path(player[:id]), class: "player-name"
+        td = link_to "#{player[:player_name].titleize}", player_path(player[:id]), class: "player-name"
         td = player[:rank]
         td = player[:gender]
         td.text-right = player[:points]

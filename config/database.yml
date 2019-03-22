@@ -27,3 +27,7 @@ development:
   adapter: postgresql
   encoding: unicode
   database: development
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: development
