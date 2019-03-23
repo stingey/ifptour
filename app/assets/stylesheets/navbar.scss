@@ -2,7 +2,6 @@
 .main-nav {
   background-color: #00ffff;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  line-height: 3em;
 
   .nav-item {
     font-size: 13px;
@@ -16,13 +15,12 @@
 }
 
 .ifp-logo {
-  height: 3.5em;
+  height: 50px;
 }
 
 // Small Navbar
 
 .small-nav {
-  line-height: 2em;
   background-color: #373737;
   list-style-type: none;
   margin: 0;
