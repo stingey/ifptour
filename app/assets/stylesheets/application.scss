@@ -21,11 +21,38 @@
 @import "landing";
 @import "devise";
 @import "local_tournaments";
+@import "bootstrap";
+@import "tables";
+
+@media screen and (max-width: 992px) {
+   .container {
+      width: 100% !important;
+      max-width: none;
+   }
+}
+
 
 body {
   font-family: "Helvetica Neue";
   color: #373737;
   background-color: #f1f1f1;
+}
+
+select {
+  &:focus {
+    outline: none !important;
+    box-shadow:none !important;
+    border-color: #bfc3c5 !important;
+  }
+}
+
+.btn-outline-primary {
+  color: #bfc3c5;
+  border: solid 1px #bfc3c5;
+  &:hover {
+    background-color: #009999;
+    border: solid 1px #009999;
+  }
 }
 
 .container {

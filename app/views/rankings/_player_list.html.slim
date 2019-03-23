@@ -1,19 +1,23 @@
-table.table.col-md-12
-  thead
-    tr
-      th Rank
-      th Name
-      th Class
-      th Gender
-      th.text-right Points
-  tbody
-    - if @players.empty?
-      tr
-        td.text-center colspan="5" No Results Found
-    - @players.each do |player|
-      tr
-        td = player[:position]
-        td = link_to "#{player[:player_name].titleize}", player_path(player[:id]), class: "player-name"
-        td = player[:rank]
-        td = player[:gender]
-        td.text-right = player[:points]
+.container
+  .row.table-header.py-3.mx-1
+    .col-2.col-sm-2 Rank
+    .col-5.col-sm-4 Name
+    .col-3.col-sm-2 Class
+    .col-3.col-sm-2.d-none.d-sm-block Gender
+    .col-2.col-sm-2.text-right Points
+  - if @players.empty?
+    p.py-3.text-center No Results Found
+
+  - @players.each do |player|
+    .row.py-2.mx-1.table-row.clickable-row data-link="#{player_path(player[:id])}"
+      .col-2.col-sm-2 = player[:position]
+      .col-5.col-sm-4 = player[:player_name].titleize
+      .col-3.col-sm-2 = player[:rank]
+      .col-3.col-sm-2.d-none.d-sm-block = player[:gender]
+      .col-2.col-sm-2.text-right = player[:points]
+
+
+javascript:
+  $(".clickable-row").click(function() {
+  window.location = $(this).data("link")
+  })

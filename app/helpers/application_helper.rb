@@ -5,7 +5,7 @@ module ApplicationHelper
   end
 
   def full_title(title = '')
-    base_title = "IFP Tour"
+    base_title = 'PFT'
     if title.empty?
       base_title
     else

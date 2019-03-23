@@ -1,17 +1,15 @@
 // Place all the styles related to the rankings controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.rankings {
-  td {
-    width: 25%;
-  }
-}
+
 
 .rank-header {
   background-color: #f1f1f1;
   font-weight: 600;
-  font-size: 16px;
+  font-size: 18px;
   padding: 4px 0 3px 0;
   border-top: 1px solid #eceeef;
   text-align: center;
+  font-style: italic;
+  font-family: serif;
 }
