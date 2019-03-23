@@ -1,14 +1,30 @@
 
 @media screen and (max-width: 576px) {
-   .search-item {
-     .btn, input {
-       width: 100% !important;
-     }
-      width: 90% !important;
-      color: blue;
-      margin: 10px auto;
-   }
+  .logo-image {
+    padding-right: 0 !important;
+  }
+  ::-webkit-input-placeholder {
+   text-align: center;
+   color: #bfc3c5;
+  }
+  .search-box {
+    input {
+      padding: 0 10px !important;
+    }
+  }
+  .search-item {
+    display: block !important;
+    .btn, input {
+      width: 100% !important;
+    }
+  }
 }
+
+.search-item {
+  display: inline-block;
+  margin: 5px 5px;
+}
+
 // Main Navbar
 .main-nav {
   background-color: #00ffff;
@@ -25,8 +41,9 @@
   }
 }
 
-.ifp-logo {
+.logo-image {
   height: 50px;
+  padding-right: 40px;
 }
 
 // Small Navbar
@@ -62,10 +79,14 @@ button {
 
 .search-box {
   position: relative;
+  top: 1px;
+  ::-webkit-input-placeholder {
+   color: #bfc3c5;
+  }
   input {
     padding-left: 30px;
     font-size: 15px;
-    height: 2.5em;
+    height: 38px;
     border-radius: 5px;
     border: 1px solid #bfc3c5;
     &:focus {
