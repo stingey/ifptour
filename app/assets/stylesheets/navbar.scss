@@ -9,11 +9,12 @@
   }
   .search-box {
     input {
-      padding: 0 10px !important;
+      padding: 0 30px !important;
     }
   }
   .search-item {
     display: block !important;
+    margin: auto;
     .btn, input {
       width: 100% !important;
     }

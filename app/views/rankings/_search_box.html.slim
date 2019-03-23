@@ -8,23 +8,11 @@
     .search-item.button.dropdown
       = select_tag :rank_class, options_for_select(RankingDetail::RANKS.map(&:titleize), selected: params[:rank_class]), { include_blank: 'all', class: 'btn btn-outline-primary dropdown-toggle class-filter', id: 'RankingClassSelector'}
     .search-item.search-box
-      = text_field_tag :term, params[:term], placeholder: 'search', class: 'input', id: 'player-search-field'
-      button.search-glass type="submit"
+      = text_field_tag :term, params[:term], placeholder: 'search', class: 'input'
+      button type="submit"
         i.fa.fa-search
       - if @search
         = link_to send("rankings_#{controller_name}_path") do
           i.fa.fa-times
 
-javascript:
-  $(document).ready(function(){
-    $('#player-search-field').click(function() {
-      $('button.search-glass').addClass('d-none');
-    })
-    $('#player-search-field').focusout(function() {
-      if ($('#player-search-field').val().length < 1) {
-        $('button.search-glass').removeClass('d-none');
-      }
-    })
-
-  })
 
