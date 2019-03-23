@@ -1,16 +1,15 @@
 .container.pt-4.pb-3
-  .d-inline-block.float-right
-    = form_tag(send("rankings_#{controller_name}_path"), method: :get) do
-      .d-inline-block.button.dropdown
-        = select_tag :rank_class, options_for_select(RankingDetail::RANKS.map(&:titleize), selected: params[:rank_class]), { include_blank: "class filter", class: 'btn btn-outline-primary dropdown-toggle form-control class-filter', id: 'RankingClassSelector'}
-      .d-inline-block.search-box
-        = text_field_tag :term, params[:term], placeholder: 'search', class: 'input'
-        button type="submit"
-          i.fa.fa-search
-          - if @search
-            = link_to send("rankings_#{controller_name}_path") do
-              i.fa.fa-times
-  .d-inline-block.button
-    = link_to "new player", new_player_path, class: 'btn btn-outline-primary' if current_user.try(:admin?)
-  .d-inline-block.button.px-3
-    = link_to "re-rank all players", rankings_ranks_path, method: :post, class: 'btn btn-outline-primary' if current_user.try(:admin?)
+  = form_tag(send("rankings_#{controller_name}_path"), method: :get) do
+    .search-item.button
+        = link_to "new player", new_player_path, class: 'btn btn-outline-primary' if current_user.try(:admin?)
+    .search-item.button
+      = link_to "re-rank all players", rankings_ranks_path, method: :post, class: 'btn btn-outline-primary' if current_user.try(:admin?)
+    .search-item.button.dropdown
+      = select_tag :rank_class, options_for_select(RankingDetail::RANKS.map(&:titleize), selected: params[:rank_class]), { include_blank: "All", class: 'btn btn-outline-primary dropdown-toggle class-filter', id: 'RankingClassSelector'}
+    .search-item.search-box
+      = text_field_tag :term, params[:term], placeholder: 'search', class: 'input'
+      button type="submit"
+        i.fa.fa-search
+        - if @search
+          = link_to send("rankings_#{controller_name}_path") do
+            i.fa.fa-times

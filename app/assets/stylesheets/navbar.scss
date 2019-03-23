@@ -1,3 +1,14 @@
+
+@media screen and (max-width: 576px) {
+   .search-item {
+     .btn, input {
+       width: 100% !important;
+     }
+      width: 90% !important;
+      color: blue;
+      margin: 10px auto;
+   }
+}
 // Main Navbar
 .main-nav {
   background-color: #00ffff;
@@ -50,6 +61,7 @@ button {
 // filters bar
 
 .search-box {
+  position: relative;
   input {
     padding-left: 30px;
     font-size: 15px;
@@ -65,11 +77,12 @@ button {
     color: #373737;
   }
   button {
-    position: relative;
+    position: absolute;
     padding: 0;
     border: 0;
     background-color: white;
-    right: 191px;
+    top: 6px;
+    left: 8px;
   }
 }
 
