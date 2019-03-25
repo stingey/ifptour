@@ -1,2 +1,24 @@
+.rank-header Local Tournaments
 .container
-  h2 local stuff
+  .row.table-header.py-3.mx-1
+    .col-4.col-sm-2 Name
+    .col-5.col-sm-4 Club
+    .col-1.col-sm-2 Status
+    .col-3.col-sm-2.d-none.d-sm-block # of participants
+    .col-3.col-sm-2.d-none.d-sm-block Date
+  - if @local_tournaments.empty?
+    p.py-3.text-center No Results Found
+
+  - @local_tournaments.each do |tournament|
+    .row.py-2.mx-1.table-row.clickable-row data-link="#{club_local_tournament_live_tournament_path(tournament.club_id, tournament.id)}"
+      .col-4.col-sm-2 = tournament.name.titleize
+      .col-5.col-sm-4 = tournament.club.name.titleize
+      .col-1.col-sm-2 = tournament.finished? ? 'finished' : 'running'
+      .col-3.col-sm-2.d-none.d-sm-block.text-center = tournament.participants.count
+      .col-3.col-sm-2.d-none.d-sm-block = tournament.created_at.strftime("%b %d, %Y")
+
+
+javascript:
+  $(".clickable-row").click(function() {
+  window.location = $(this).data("link")
+  })

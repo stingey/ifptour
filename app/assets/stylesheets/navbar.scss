@@ -5,7 +5,7 @@
   }
   ::-webkit-input-placeholder {
    text-align: center;
-   color: #bfc3c5;
+   color: $light-gray;
   }
   .search-box {
     input {
@@ -28,7 +28,7 @@
 
 // Main Navbar
 .main-nav {
-  background-color: #00ffff;
+  background-color: $teal;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 
   .nav-item {
@@ -50,7 +50,7 @@
 // Small Navbar
 
 .small-nav {
-  background-color: #373737;
+  background-color: $dark-gray;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -58,14 +58,14 @@
 
   .items {
     float: right;
-    color: #bfc3c5;
+    color: $light-gray;
     font-size: 12px;
     font-weight: 350;
     padding-right: 20px;
   }
 
   .title {
-    color: #bfc3c5;
+    color: $light-gray;
     font-size: 14px;
   }
 }
@@ -82,21 +82,21 @@ button {
   position: relative;
   top: 1px;
   ::-webkit-input-placeholder {
-   color: #bfc3c5;
+   color: $light-gray;
   }
   input {
     padding-left: 30px;
     font-size: 15px;
     height: 38px;
     border-radius: 5px;
-    border: 1px solid #bfc3c5;
+    border: 1px solid $light-gray;
     &:focus {
       outline: none;
-      border-color: #009999;
+      border-color: $dark-teal;
     }
   }
   i {
-    color: #373737;
+    color: $dark-gray;
   }
   button {
     position: absolute;
@@ -116,13 +116,13 @@ button {
 
 .dropdown-menu {
   a:active {
-    background-color: #009999;
+    background-color: $dark-teal;
   }
 }
 
 // sign-in notice bar
 .alert {
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
   line-height: 20px;
   text-align: center;
 }

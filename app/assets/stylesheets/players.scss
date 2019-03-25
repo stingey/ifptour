@@ -10,32 +10,10 @@
   color: #009999;
 }
 
-.new-player-btn {
-  &:hover {
-    background-color: #009999;
-    border: 1px solid #009999;
-    color: white;
-  }
-  color: #009999;
-  background-color: white;
-  border: 1px solid #009999;
-  width: 100%;
-
-}
-
-.submit-button {
-  width: 50%;
-  margin: auto;
-}
-
 // errors on player form
 .error {
   color: red;
   font-size: 12px;
   width: 50%;
   margin: auto;
-}
-
-.error-header {
-  
 }

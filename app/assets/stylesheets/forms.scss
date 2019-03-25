@@ -13,6 +13,16 @@
   }
 }
 
+.green-outline {
+  border: 1px solid $dark-teal !important;
+  color: #009999 !important;
+  &:hover {
+    background-color: #009999;
+    color: white !important;
+    border: 1px solid #009999;
+  }
+}
+
 .btn-outline-primary {
   color: #aeb2b4;
   border: 1px solid #bfc3c5;

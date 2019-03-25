@@ -4,7 +4,7 @@ class LocalTournamentsController < ApplicationController
   after_action :allow_iframe, only: :live_tournament
 
   def index
-    @tournaments = LocalTournament.all
+    @local_tournaments = LocalTournament.all
   end
 
   def new
@@ -24,6 +24,13 @@ class LocalTournamentsController < ApplicationController
     else
       render 'new'
     end
+  end
+
+  def destroy
+    @club = Club.find(params[:club_id])
+    @local_tournament = LocalTournament.find(params[:id])
+    @local_tournament.destroy
+    redirect_to club_path(@club)
   end
 
   def all_local_tournaments
@@ -46,7 +53,22 @@ class LocalTournamentsController < ApplicationController
 
   def generate_tournament
     tournament = LocalTournament.find(params[:local_tournament_id])
-    return redirect_to club_local_tournament_live_tournament_path(tournament.club_id, tournament.id) unless tournament.challonge_url.blank?
+    return redirect_to club_local_tournament_live_tournament_path(tournament.club_id, tournament.id) if tournament.started?
+
+    challonge_bracket = find_or_create_challonge_tournament(tournament)
+    tournament.update(challonge_url: challonge_bracket.live_image_url, challonge_id: challonge_bracket.id)
+    ChallongeApi.clear_out_participants(tournament.challonge_id)
+    format_teams(tournament)
+    challonge_bracket = ChallongeApi.start(tournament.challonge_id)
+    tournament.update(started: challonge_bracket.parsed_response.dig('tournament', 'started_at').present?)
+    redirect_to club_local_tournament_live_tournament_path(tournament.club, tournament)
+  rescue TeamFormatterError => e
+    redirect_to club_local_tournament_path(tournament.club, tournament), alert: e
+  end
+
+  def find_or_create_challonge_tournament(tournament)
+    return Challonge::Tournament.find(tournament.challonge_id) if tournament.challonge_id.present?
+
     t = Challonge::Tournament.new
     t.name = tournament.name
     t.url = tournament.unique_url
@@ -54,11 +76,11 @@ class LocalTournamentsController < ApplicationController
     t.quick_advance = true
     t.show_rounds = true
     t.save
-    format_teams(tournament, t.id)
-    t.start!
-    tournament.update(challonge_url: t.live_image_url, challonge_id: t.id)
+    t
+  end
 
-    redirect_to club_local_tournament_live_tournament_path(tournament.club_id, tournament.id)
+  def update_challonge_tournament(tournament)
+    ChallongeApi.update_tournament(tournament)
   end
 
   def live_tournament
@@ -80,7 +102,10 @@ class LocalTournamentsController < ApplicationController
     tournament = LocalTournament.find(params[:local_tournament_id])
     challonge_tournament = Challonge::Tournament.find(tournament.challonge_id)
     ChallongeApi.finalize(challonge_tournament.id)
+    tournament.update(finished: true)
     redirect_to club_local_tournament_live_tournament_path(tournament.club_id, tournament.id)
+  rescue ChallongeApiError => e
+    redirect_to club_local_tournament_live_tournament_path(tournament.club_id, tournament.id), alert: e.errors.first
   end
 
   private

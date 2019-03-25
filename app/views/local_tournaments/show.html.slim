@@ -9,4 +9,6 @@
   = render 'players_form'
   / = link_to 'generate tournament', club_local_tournament_generate_tournament_path(@tournament.club, @tournament)
   = link_to club_local_tournament_generate_tournament_path(@tournament.club, @tournament) do
-    p = @tournament.challonge_url.blank? ? "Generate Bracket" : "View Live Bracket"
+    p = @tournament.started? ? 'View Live Bracket' : 'Generate Bracket'
+
+  = link_to 'delete', club_local_tournament_path(@tournament.club, @tournament), method: :delete
