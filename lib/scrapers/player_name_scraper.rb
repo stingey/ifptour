@@ -2,54 +2,73 @@ require 'HTTParty'
 require 'byebug'
 require 'Nokogiri'
 require 'net/http'
+require 'csv'
 
 class PlayerNameScraper
+   URLS = ['http://www.ifptour.com/tournaments/2018/2018_Hall_Of_Fame_Classic_p1.htm',
+          'http://www.ifptour.com/tournaments/2018/2018_Hall_Of_Fame_Classic_p2.htm',
+          'http://ifptour.com/tournaments/2016/2016_Hall_Of_Fame_Classic_p1.htm',
+          'http://ifptour.com/tournaments/2016/2016_Hall_Of_Fame_Classic_p2.htm',
+          'http://www.ifptour.com/tournaments/2018/2018_FL_State.htm',
+          'http://www.ifptour.com/tournaments/2018/2018_WI_State.htm',
+          'http://www.ifptour.com/tournaments/2018/2018_IL_State.htm',
+          'http://ifptour.com/tournaments/2018/2018_NY_State_Junior_Championships.htm',
+          'http://ifptour.com/tournaments/2018/2018_TX_State_p1.htm',
+          'http://www.ifptour.com/tournaments/2018/2018_MD_State.htm'
+          ]
 
-  URLS = ['http://www.ifptour.com/tournaments/2018/2018_Hall_Of_Fame_Classic_p1.htm',
-          'http://www.ifptour.com/tournaments/2018/2018_Hall_Of_Fame_Classic_p2.htm']
-
-  EXCLUDE = %w[& SINGLES MIXED DOUBLES Hotel Vegas Tornado Results Classic IFP continued FAME "Kid"]
-
-  MANUAL_NAMES = ['TOMMY ADKISSON', 'BOBBY DIAZ', 'STEVEN SIMONS']
+  EXCLUDE = %w[& singles mixed doubles hotel vegas tornado results classic ifp
+               continued fame "kid" dyp estates _________________ forward examples goalie foosball wisconsin
+               tampa harrisville maryland york texas illinois]
 
   def get_player_names
-    full_players = []
+    full_players_unfiltered = []
     URLS.each do |url|
       doc = HTTParty.get(url)
       parse_page = Nokogiri::HTML(doc)
-      players = parse_page.css('.postbody1').map do |player|
-        next if EXCLUDE.any? { |word| player.children.text.include?(word) }
-        player_without_place = player.children.text.scan(/[^ ]* (.*)/).flatten.first
-        name_array = player_without_place&.split(' ')
-        2.times { name_array&.pop }
-        name_array&.unshift(name_array&.pop)
-        first_name_first_name_array = name_array&.join(' ')
-      end.compact
-    full_players << players
+      parse_page.css('.postbody1')&.each do |player|
+        next if player.children.count > 1
+        next if player.text.empty?
+        next if EXCLUDE.any? { |word| player.children.text.downcase.include?(word) }
+        next if player.text == " "
+        full_players_unfiltered << player.text
+      end
     end
-    full_players << MANUAL_NAMES
-    final_player_list = full_players.flatten.uniq.compact.reject(&:empty?)
-    hash = {keywords: final_player_list }
-    hash
+    full_players_unfiltered
   end
 
-  def start_point_scraper
-    hash = get_player_names
-    hash[:keywords] = hash[:keywords].first(150)
-    puts hash
-    params = {
-      api_key: "tYdHK07eiTMu",
-      start_url: "http://ifp.everguide.com/commander/tour/public/PlayerProfile.aspx",
-      start_template: "main_template",
-      start_value_override: hash.to_json,
-      send_email: "1"
-    }
+  def format_player_names
+    players = get_player_names
+    players_filtered = []
+    players.each do |player|
+      name_into_array = player.split(' ')
+      name_into_array.shift
+      name_into_array.pop
+      name_into_array.pop
+      players_filtered << name_into_array.join(' ')
+    end
+    players_filtered.map(&:downcase).uniq
+  end
 
-    url = URI.parse('https://www.parsehub.com/api/v2/projects/tuZ-EOVOWTsH/run')
-    url.query = URI.encode_www_form(params)
+  def put_first_name_first
+    player_names = format_player_names
+    ordered_names = player_names.map do |player_name|
+      name_array = player_name.split(' ')
+      first_name = name_array.pop
+      name_array.unshift(first_name)
+      name_array.join(' ')
+    end
+    ordered_names
+  end
 
-    puts Net::HTTP.post_form(url, params)
+  def write_to_file
+    names = put_first_name_first
+    CSV.open('spec/scraper/data_input/player_master_list.csv', 'wb') do |csv|
+      names.each do |name|
+        csv << [name]
+      end
+    end
   end
 end
 
-PlayerNameScraper.new.start_point_scraper
+PlayerNameScraper.new.write_to_file

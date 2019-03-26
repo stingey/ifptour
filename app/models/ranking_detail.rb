@@ -31,6 +31,15 @@ class RankingDetail < ApplicationRecord
     end
   end
 
+  def highest_rank
+    rank_array = [singles_rank, doubles_rank, womens_singles_rank, womens_doubles_rank].map do |rank|
+      next if rank.blank?
+
+      RANKS.find_index(rank&.downcase)
+    end.compact
+    RANKS[rank_array.min].titleize
+  end
+
   def female?
     player.gender == 'F'
   end

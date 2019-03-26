@@ -1,7 +1,10 @@
 .container.py-4
-  h3.text-center = "#{@player.first_name} #{@player.last_name}"
-  p.player-detail Rank: rank goes here
-  p.player-detail Points: points go here
-  p.player-detail Double Points: points go here
+  h3.text-center = @player.full_name
+  p.text-center = "Rank: #{@player.ranking_detail.highest_rank}"
+  p.text-center = "Singles Points: #{@player.ranking_detail.singles_points}"
+  p.text-center = "Doubles Points: #{@player.ranking_detail.doubles_points}"
+  - if @player.ranking_detail.womens_singles_points.present?
+    p.text-center = "Women's Singles Points: #{@player.ranking_detail.womens_singles_points}"
+    p.text-center = "Women's Doubles Points: #{@player.ranking_detail.womens_doubles_points}"
   .button
     = link_to "edit employee", edit_player_path, class: 'btn btn-outline-primary' if current_user.try(:admin?)
