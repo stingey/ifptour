@@ -3,6 +3,17 @@ class ChallongeApi
 
   API_KEY = ENV['CHALLONGE_KEY']
 
+  def self.create_tournament(tournament)
+    url = "https://api.challonge.com/v1/tournaments.json"
+    query = { api_key: API_KEY, tournament: { name: tournament.name,
+                                              url: tournament.unique_url,
+                                              quick_advance: true,
+                                              show_rounds: true} }
+    query[:tournament][:tournament_type] = 'double elimination' if
+      tournament.tournament_type == 'double_elimination'
+    HTTParty.post(url, query: query)
+  end
+
   def self.add_team(tournament_id, team)
     url = "https://api.challonge.com/v1/tournaments/#{tournament_id}/participants.json"
     query = { api_key: API_KEY, participant: { name: team } }
@@ -46,8 +57,14 @@ class ChallongeApi
     json_response
   end
 
+  def self.delete_tournament(tournament_id)
+    url = "https://api.challonge.com/v1/tournaments/#{tournament_id}.json"
+    query = { api_key: API_KEY }
+    HTTParty.delete(url, query: query)
+  end
+
   def self.check_for_errors(json_response)
-    return unless json_response.parsed_response.is_a?(Array) && json_response.parsed_response.dig('errors')&.any?
+    return unless json_response.parsed_response.is_a?(Hash) && json_response.parsed_response.dig('errors')&.any?
 
     raise ChallongeApiError.new(errors: json_response.parsed_response['errors'])
   end

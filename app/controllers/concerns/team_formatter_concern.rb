@@ -31,7 +31,6 @@ module TeamFormatterConcern
 
   # if odd number of teams
   def teams_odd(array)
-    debugger
     team = []
     array.shuffle!
     array.each_slice(2){|t| team << t }

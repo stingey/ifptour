@@ -1,20 +1,27 @@
 - provide(:title, 'Tournaments')
-.container.pt-4
-  .tournament
-    table.table
-      thead
-        tr
-          th Event
-          th Date
-          th Location
-          th Contact
-      tbody
-        - @tournaments.each do |year, tournaments|
-          tr
-            td.year-marker colspan="4" = year
-            - tournaments.each do |tournament|
-              tr
-                td = tournament.name
-                td = date_helper(tournament.start_date, tournament.end_date)
-                td = tournament.location
-                td = tournament.contact
+
+.container
+  .row.table-header.py-3.mx-1.no-bottom-border
+    .col-6.col-sm-5 Event
+    .col-6.col-sm-3 Date
+    .col-3.col-sm-2.d-none.d-sm-block Location
+    .col-2.col-sm-2.d-none.d-sm-block Contact
+  - if @tournaments.empty?
+    p.py-3.text-center No Results Found
+
+  - @tournaments.each do |year, tournaments|
+    .rank-header = year
+    - tournaments.each_with_index do |tournament, index|
+      - unless index == tournaments.size - 1
+        .row.py-2.mx-1.table-row
+          .col-6.col-sm-5 = tournament.name
+          .col-6.col-sm-3 = date_helper(tournament.start_date, tournament.end_date)
+          .col-3.col-sm-2.d-none.d-sm-block = tournament.location
+          .col-2.col-sm-2.d-none.d-sm-block = tournament.contact
+      - else
+        .row.py-2.mx-1.table-row.no-bottom-border
+          .col-6.col-sm-5 = tournament.name
+          .col-6.col-sm-3 = date_helper(tournament.start_date, tournament.end_date)
+          .col-3.col-sm-2.d-none.d-sm-block = tournament.location
+          .col-2.col-sm-2.d-none.d-sm-block = tournament.contact
+

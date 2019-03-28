@@ -29,6 +29,7 @@ class LocalTournamentsController < ApplicationController
   def destroy
     @club = Club.find(params[:club_id])
     @local_tournament = LocalTournament.find(params[:id])
+    ChallongeApi.delete_tournament(@local_tournament.challonge_id)
     @local_tournament.destroy
     redirect_to club_path(@club)
   end
@@ -55,8 +56,7 @@ class LocalTournamentsController < ApplicationController
     tournament = LocalTournament.find(params[:local_tournament_id])
     return redirect_to club_local_tournament_live_tournament_path(tournament.club_id, tournament.id) if tournament.started?
 
-    challonge_bracket = find_or_create_challonge_tournament(tournament)
-    tournament.update(challonge_url: challonge_bracket.live_image_url, challonge_id: challonge_bracket.id)
+    find_or_create_challonge_tournament(tournament)
     ChallongeApi.clear_out_participants(tournament.challonge_id)
     format_teams(tournament)
     challonge_bracket = ChallongeApi.start(tournament.challonge_id)
@@ -69,14 +69,9 @@ class LocalTournamentsController < ApplicationController
   def find_or_create_challonge_tournament(tournament)
     return Challonge::Tournament.find(tournament.challonge_id) if tournament.challonge_id.present?
 
-    t = Challonge::Tournament.new
-    t.name = tournament.name
-    t.url = tournament.unique_url
-    t.tournament_type = tournament.tournament_type
-    t.quick_advance = true
-    t.show_rounds = true
-    t.save
-    t
+    json_response = ChallongeApi.create_tournament(tournament)
+    tournament.update(challonge_url: json_response.parsed_response.dig('tournament', 'live_image_url'),
+                      challonge_id: json_response.parsed_response.dig('tournament', 'id'))
   end
 
   def update_challonge_tournament(tournament)

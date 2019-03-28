@@ -2,7 +2,6 @@ module Rankings
   class SinglesController < ApplicationController
     def index
       players = Player.all
-      # debugger
       if params[:term].present?
         @search = true
         players_result = players.where("first_name || ' ' || last_name ILIKE ?", "%#{params[:term]}%")

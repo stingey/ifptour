@@ -5,7 +5,7 @@
       = f.text_field :name, placeholder: 'Tournament Name', class: 'form-control', required: true
       = errors_for @local_tournament, :name
     div.form-group
-      = f.select :format, options_for_select(LocalTournament::ELIMINATIONS), { include_blank: 'select elimination' }, { class: 'form-control', required: true}
+      = f.select :tournament_type, options_for_select(LocalTournament::ELIMINATIONS), { include_blank: 'select elimination' }, { class: 'form-control', required: true}
       = errors_for @local_tournament, :tournament_type
     div.form-group
       = f.select :format, options_for_select(LocalTournament::FORMATS), { include_blank: 'select format' }, { class: 'form-control', required: true}

@@ -1,20 +1,21 @@
 .container.pt-4.pb-3
   .d-inline-block.button
     = link_to 'New Club', new_club_path, class: 'btn btn-outline-primary' if current_user.try(:admin?)
+
+.rank-header Foosball Clubs
 .container
-  h2 Clubs
-  table.table
-    thead
-      tr
-        th style="width: 50%" Name
-        th style="width: 50%" Location
-    tbody
-      - @clubs.each do |club|
-        tr.clickable-row data-link="#{club_path(club)}"
-          td = club.name
-          td = "#{club.city}, #{club.state}"
+  .row.table-header.py-3.mx-1
+    .col-6 Name
+    .col-6 Location
+  - if @clubs.empty?
+    p.py-3.text-center No Results Found
+
+  - @clubs.each do |club|
+    .row.py-2.mx-1.table-row.clickable-row data-link="#{club_path(club)}"
+      .col-6 = club.name.titleize
+      .col-6 = "#{club.city.titleize}, #{club.state.upcase}"
 
 javascript:
-  $("tr[data-link]").click(function() {
+  $(".clickable-row").click(function() {
   window.location = $(this).data("link")
   })

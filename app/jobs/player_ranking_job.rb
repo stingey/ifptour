@@ -1,4 +1,4 @@
-class PlayerRankingService
+class PlayerRankingJob
   COLUMNS = {
     singles: :singles_position=,
     doubles: :doubles_position=,
