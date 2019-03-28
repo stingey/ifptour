@@ -15,7 +15,17 @@
 
 .carousel-inner {
   margin: auto;
+  background-color: $dark-gray;
   // margin-bottom: 30px;
+}
+
+@media screen and (max-width: 1800px) {
+  .carousel-item {
+    height: 600px !important;
+    img {
+      width: 100% !important;
+    }
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -38,15 +48,27 @@
 
 @media screen and (max-width: 650px) {
   .carousel-item {
-    height: 200px !important;
+    height: 250px !important;
   }
 }
 
 @media screen and (max-width: 500px) {
   .carousel-item {
-    height: 150px !important;
+    height: 190px !important;
   }
 }
+
+// @media screen and (min-width: 1800px) {
+//   .carousel-item {
+//     height: 600px !important;
+//     width: 75% !important;
+//     margin: auto !important;
+//     img {
+//       width: 100% !important;
+//       margin: auto !important;
+//     }
+//   }
+// }
 
 
 .carousel-item {
@@ -57,6 +79,7 @@
   margin-right: auto;
   overflow: hidden;
   img {
+    width: 75%;
     position: absolute;
     margin: auto;
     top: 0;
