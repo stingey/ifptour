@@ -22,6 +22,12 @@ class ChallongeApi
     json_response
   end
 
+  def self.bulk_add_teams(tournament_id, participants_array)
+    url = "https://api.challonge.com/v1/tournaments/#{tournament_id}/participants/bulk_add.json"
+    query = { api_key: API_KEY, participants: participants_array }
+    HTTParty.post(url, query: query)
+  end
+
   def self.update_tournament(tournament)
     url = "https://api.challonge.com/v1/tournaments/#{tournament.challonge_id}.json"
     query = { api_key: API_KEY, tournament: { name: tournament.name,

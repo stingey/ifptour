@@ -43,16 +43,16 @@ select {
   &:focus {
     outline: none !important;
     box-shadow:none !important;
-    border-color: #bfc3c5 !important;
+    border-color: $light-gray !important;
   }
 }
 
 .btn-outline-primary {
-  color: #bfc3c5;
-  border: solid 1px #bfc3c5;
+  color: $light-gray;
+  border: solid 1px $light-gray;
   &:hover {
-    background-color: #009999;
-    border: solid 1px #009999;
+    background-color: $dark-teal;
+    border: solid 1px $dark-teal;
   }
 }
 
@@ -70,6 +70,6 @@ select {
 .clickable-row {
   &:hover {
     cursor: pointer;
-    color: #009999;
+    color: $dark-teal;
   }
 }

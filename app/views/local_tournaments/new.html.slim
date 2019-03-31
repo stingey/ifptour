@@ -1,14 +1,15 @@
 .container
   h2 New Local Tournament
   = form_for @local_tournament, url: club_local_tournaments_path(@club) do |f|
-    div.form-group
-      = f.text_field :name, placeholder: 'Tournament Name', class: 'form-control', required: true
-      = errors_for @local_tournament, :name
-    div.form-group
-      = f.select :tournament_type, options_for_select(LocalTournament::ELIMINATIONS), { include_blank: 'select elimination' }, { class: 'form-control', required: true}
-      = errors_for @local_tournament, :tournament_type
-    div.form-group
-      = f.select :format, options_for_select(LocalTournament::FORMATS), { include_blank: 'select format' }, { class: 'form-control', required: true}
-      = errors_for @local_tournament, :format
-    div.pb-4
-      = f.submit 'submit', class: 'btn btn-outline-primary green-outline'
+    .row
+      .col-12.col-sm-6.form-group
+        = f.text_field :name, placeholder: 'Tournament Name', class: 'form-control', required: true
+        = errors_for @local_tournament, :name
+      .col-12.col-sm-6.form-group
+        = f.select :tournament_type, options_for_select(LocalTournament::ELIMINATIONS), { include_blank: 'select elimination' }, { class: 'form-control', required: true}
+        = errors_for @local_tournament, :tournament_type
+      .col-12.col-sm-6.form-group
+        = f.select :format, options_for_select(LocalTournament::FORMATS), { include_blank: 'select format' }, { class: 'form-control', required: true}
+        = errors_for @local_tournament, :format
+      .col-12.form-group
+        = f.submit 'submit', class: 'btn btn-outline-primary green-outline w-100'

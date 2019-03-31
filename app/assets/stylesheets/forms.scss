@@ -3,8 +3,13 @@
   margin: auto;
   font-size: 14px;
   &:focus {
-    border-color: #009999;
+    border-color: $dark-teal !important;
   }
+}
+
+.btn-sm {
+  font-size: 13px !important;
+  padding: 1px 2px !important;
 }
 
 .womens-points {
@@ -15,25 +20,31 @@
 
 .green-outline {
   border: 1px solid $dark-teal !important;
-  color: #009999 !important;
+  color: $dark-teal !important;
   &:hover {
-    background-color: #009999;
+    background-color: $dark-teal;
     color: white !important;
-    border: 1px solid #009999;
+    border: 1px solid $dark-teal;
   }
 }
 
 .btn-outline-primary {
   color: #aeb2b4;
-  border: 1px solid #bfc3c5;
+  border: 1px solid $light-gray;
   &:hover {
-    background-color: #009999;
+    background-color: $dark-teal;
     color: white;
-    border: 1px solid #009999;
+    border: 1px solid $dark-teal;
   }
 }
 .fa {
-  color: #bfc3c5 !important;
+  color: $light-gray !important;
+}
+
+.form-control, textarea {
+outline: none;
+box-shadow:none !important;
+border:1px solid #ccc !important;
 }
 
 .fa-times {

@@ -1,6 +1,8 @@
 h4 Add Players
 
 = form_for :players, url: club_local_tournament_add_player_path(@tournament.club, @tournament) do |f|
-  = f.label :name
-  = f.text_field :name, required: true, autofocus: true
-  = f.submit 'Add Player'
+  .row
+    .col-12.col-sm-6.col-md-4.d-inline-block.form-group
+      = f.text_field :name, required: true, autofocus: true, class: 'form-control'
+    .col-12.col-sm-3.col-md-2
+      = f.submit 'Add Player', class: 'btn btn-outline-primary d-inline-block w-100'
