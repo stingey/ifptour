@@ -31,6 +31,7 @@ gem 'httparty', '~> 0.16.2'
 gem 'awesome_print', require:"ap"
 gem 'nokogiri'
 gem 'bootstrap'
+gem 'cancan'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

@@ -1,7 +1,7 @@
 class LocalTournamentsController < ApplicationController
   include TeamFormatterConcern
 
-  after_action :allow_iframe, only: :live_tournament
+  after_action :allow_iframe, only: :show
 
   def index
     @local_tournaments = LocalTournament.all
@@ -12,8 +12,15 @@ class LocalTournamentsController < ApplicationController
     @local_tournament = @club.local_tournaments.build
   end
 
+  def edit
+    @tournament = LocalTournament.find(params[:id])
+    authorize! :manage, @tournament
+  end
+
   def show
     @tournament = LocalTournament.find(params[:id])
+    authorize! :read, @tournament
+    @challonge_tournament = Challonge::Tournament.find(@tournament.challonge_id)
   end
 
   def create
@@ -54,16 +61,16 @@ class LocalTournamentsController < ApplicationController
 
   def generate_tournament
     tournament = LocalTournament.find(params[:local_tournament_id])
-    return redirect_to club_local_tournament_live_tournament_path(tournament.club_id, tournament.id) if tournament.started?
+    return redirect_to club_local_tournament_path(tournament.club_id, tournament.id) if tournament.started?
 
     find_or_create_challonge_tournament(tournament)
     ChallongeApi.clear_out_participants(tournament.challonge_id)
     format_teams(tournament)
     challonge_bracket = ChallongeApi.start(tournament.challonge_id)
     tournament.update(started: challonge_bracket.parsed_response.dig('tournament', 'started_at').present?)
-    redirect_to club_local_tournament_live_tournament_path(tournament.club, tournament)
+    redirect_to club_local_tournament_path(tournament.club, tournament)
   rescue TeamFormatterError => e
-    redirect_to club_local_tournament_path(tournament.club, tournament), alert: e
+    redirect_to edit_club_local_tournament_path(tournament.club, tournament), alert: e
   end
 
   def find_or_create_challonge_tournament(tournament)
@@ -78,11 +85,6 @@ class LocalTournamentsController < ApplicationController
     ChallongeApi.update_tournament(tournament)
   end
 
-  def live_tournament
-    @tournament = LocalTournament.find(params[:local_tournament_id])
-    @challonge_tournament = Challonge::Tournament.find(@tournament.challonge_id)
-  end
-
   def enter_match_result
     tournament = LocalTournament.find(params[:local_tournament_id])
     challonge_tournament = Challonge::Tournament.find(tournament.challonge_id)
@@ -90,7 +92,7 @@ class LocalTournamentsController < ApplicationController
     match.scores_csv = '3-1,3-2'
     match.winner_id = params[:match_result][:winner].to_i
     match.save
-    redirect_to club_local_tournament_live_tournament_path(tournament.club_id, tournament.id)
+    redirect_to club_local_tournament_path(tournament.club_id, tournament.id)
   end
 
   def finalize
@@ -98,9 +100,9 @@ class LocalTournamentsController < ApplicationController
     challonge_tournament = Challonge::Tournament.find(tournament.challonge_id)
     ChallongeApi.finalize(challonge_tournament.id)
     tournament.update(finished: true)
-    redirect_to club_local_tournament_live_tournament_path(tournament.club_id, tournament.id)
+    redirect_to club_local_tournament_path(tournament.club_id, tournament.id)
   rescue ChallongeApiError => e
-    redirect_to club_local_tournament_live_tournament_path(tournament.club_id, tournament.id), alert: e.errors.first
+    redirect_to club_local_tournament_path(tournament.club_id, tournament.id), alert: e.errors.first
   end
 
   private

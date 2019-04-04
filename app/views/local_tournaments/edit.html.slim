@@ -1,0 +1,19 @@
+.container.pt-4.pb-3
+  .d-inline-block.button
+    = link_to 'Delete Tournament', club_local_tournament_path(@tournament.club, @tournament), method: :delete, class: 'btn btn-outline-primary'
+.container
+  h2 = @tournament.name
+  = render 'players_form'
+  - unless @tournament.participants.empty?
+    h2 Player List
+  ol
+    - @tournament.participants.each do |participant|
+      li.pb-1
+        div style="display:inline-block;width:150px;padding-right: 10px" = participant.humanize
+        = link_to 'remove', club_local_tournament_remove_player_path(@tournament.club, @tournament, participant), method: :delete, class: 'btn btn-outline-primary btn-sm'
+
+  - if @tournament.started?
+    = link_to 'View Bracket', club_local_tournament_path(@tournament.club, @tournament), class: 'btn btn-outline-primary'
+  - else
+    = link_to 'Generate Bracket', club_local_tournament_generate_tournament_path(@tournament.club, @tournament), class: 'btn btn-outline-primary'
+

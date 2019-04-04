@@ -10,10 +10,13 @@
     p.py-3.text-center No Results Found
 
   - @local_tournaments.each do |tournament|
-    .row.py-2.mx-1.table-row.clickable-row data-link="#{club_local_tournament_live_tournament_path(tournament.club_id, tournament.id)}"
+    .row.py-2.mx-1.table-row.clickable-row data-link="#{club_local_tournament_path(tournament.club_id, tournament.id)}"
       .col-4.col-sm-2 = tournament.name.titleize
       .col-5.col-sm-4 = tournament.club.name.titleize
-      .col-1.col-sm-2 = tournament.finished? ? 'Finished' : 'Running'
+      - if tournament.challonge_url.present?
+        .col-1.col-sm-2 = tournament.finished? ? 'Finished' : 'Running'
+      - else
+        .col-1.col-sm-2 = 'Not Started'
       .col-3.col-sm-2.d-none.d-sm-block.text-center = tournament.participants.count
       .col-3.col-sm-2.d-none.d-sm-block = tournament.created_at.strftime("%b %d, %Y")
 

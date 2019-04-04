@@ -1,14 +1,9 @@
+# rubocop:disable Metrics/BlockLength
 Rails.application.routes.draw do
-
-  get 'photos/index'
-
-  get 'doubles/index'
-
-  get 'singles/index'
-
-  get 'pro_shop/show'
-
-  devise_for :users
+  devise_for :users, controllers: {
+    registrations: 'users/registrations',
+    passwords: 'users/passwords'
+  }
   root to: 'landing#index'
   resources :landing, only: %i[index]
   resources :tournaments, only: %i[index show]
@@ -29,11 +24,10 @@ Rails.application.routes.draw do
   resources :rules, only: %i[index]
   resources :local_tournaments, only: :index
   resources :clubs, only: %i[index new show create] do
-    resources :local_tournaments, only: %i[new show create destroy] do
+    resources :local_tournaments, only: %i[new show edit create destroy] do
       post '/add-player', to: 'local_tournaments#add_player', as: :add_player
       delete '/remove-player/:player_name', to: 'local_tournaments#remove_player', as: :remove_player
       get '/generate-tournament', to: 'local_tournaments#generate_tournament', as: :generate_tournament
-      get '/live-tournament', to: 'local_tournaments#live_tournament', as: :live_tournament
       post '/enter-match-result/:match_id', to: 'local_tournaments#enter_match_result', as: :enter_match_result
       post '/finalize', to: 'local_tournaments#finalize', as: :finalize
     end
@@ -44,3 +38,4 @@ Rails.application.routes.draw do
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
+# rubocop:enable Metrics/BlockLength
