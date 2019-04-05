@@ -10,11 +10,17 @@
 
   - @players.each do |player|
     .row.py-2.mx-1.table-row.clickable-row data-link="#{player_path(player[:id])}"
-      .col-2.col-sm-2 = player[:position]
-      .col-5.col-sm-4 = player[:player_name].titleize
-      .col-3.col-sm-2 = player[:rank]
-      .col-3.col-sm-2.d-none.d-sm-block = player[:gender]
-      .col-2.col-sm-2.text-right = player[:points]
+      .col-2.col-sm-2 = player.ranking_detail.try("#{controller_name}_position".to_sym)
+      .col-5.col-sm-4 = player.full_name.titleize
+      .col-3.col-sm-2 = player.ranking_detail.try("#{controller_name}_rank".to_sym)
+      .col-3.col-sm-2.d-none.d-sm-block = player.gender
+      .col-2.col-sm-2.text-right = player.ranking_detail.try("#{controller_name}_points".to_sym)
+  .d-sm-none
+    = paginate @players, window: 1, theme: 'twitter-bootstrap-4'
+  .d-none.d-sm-block.d-md-none
+    = paginate @players, window: 2, theme: 'twitter-bootstrap-4'
+  .d-none.d-md-block
+    = paginate @players, window: 3, theme: 'twitter-bootstrap-4'
 
 
 javascript:
