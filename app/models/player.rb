@@ -1,4 +1,5 @@
 class Player < ApplicationRecord
+  paginates_per 50
   has_one :ranking_detail, dependent: :destroy
 
   accepts_nested_attributes_for :ranking_detail, allow_destroy: true
