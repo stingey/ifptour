@@ -24,8 +24,9 @@ class CollectPlayerPointsJob
   end
 
   def perform
+    time_start = Time.now
     browser = Capybara.current_session
-    csv_text = File.read('spec/scraper/data_input/sample_player_list.csv')
+    csv_text = File.read('spec/scraper/data_input/full_player_master_list.csv')
     csv_name_file = CSV.parse(csv_text, headers: false)
 
     browser.visit 'http://ifp.everguide.com/commander/tour/public/PlayerProfile.aspx'
@@ -41,8 +42,10 @@ class CollectPlayerPointsJob
         csv << [row.first, name_and_state, ranking]
       end
     end
+    time_end = Time.now
     puts "\n\n\n*************************"
     puts "\n_________________________"
+    puts "\nfinished running in #{time_end - time_start}"
     puts 'player points have been loaded'
     puts "_________________________\n\n\n"
     Delayed::Job.enqueue(CreatePlayersWithPointsJob.new)
