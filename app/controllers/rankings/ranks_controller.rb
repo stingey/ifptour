@@ -6,6 +6,8 @@ module Rankings
     end
 
     def collect_points_job
+      return unless Rails.env.development?
+
       Delayed::Job.enqueue CollectPlayerPointsJob.new
       redirect_back fallback_location: root_path, notice: 'Collecting player points. Could take hours'
     end
