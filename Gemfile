@@ -34,6 +34,9 @@ gem 'bootstrap'
 gem 'cancan'
 gem 'kaminari'
 gem 'bootstrap4-kaminari-views'
+gem 'capybara', '~> 2.13'
+gem 'selenium-webdriver'
+gem 'chromedriver-helper'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -45,9 +48,6 @@ group :development, :test do
   gem 'pry-byebug'
   gem 'pry-rails'
   # Adds support for Capybara system testing and selenium driver
-  gem 'capybara', '~> 2.13'
-  gem 'selenium-webdriver'
-  gem 'chromedriver-helper'
 end
 
 group :development do

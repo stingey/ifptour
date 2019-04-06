@@ -11,7 +11,9 @@ Rails.application.routes.draw do
   resources :admins
 
   namespace :rankings do
-    resource :ranks, only: %i[create]
+    resource :ranks, only: %i[create] do
+      post '/collect-points-job', to: 'ranks#collect_points_job'
+    end
     resources :singles, only: %i[index]
     resources :doubles, only: %i[index]
     resources :womens_singles, only: %i[index]

@@ -4,5 +4,10 @@ module Rankings
       Delayed::Job.enqueue PlayerRankingJob.new
       redirect_back fallback_location: root_path, notice: 'Re-ranking players. Could take a moment.'
     end
+
+    def collect_points_job
+      Delayed::Job.enqueue CollectPlayerPointsJob.new
+      redirect_back fallback_location: root_path, notice: 'Collecting player points. Could take hours'
+    end
   end
 end

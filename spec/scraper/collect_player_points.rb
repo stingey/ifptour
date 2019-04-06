@@ -5,7 +5,7 @@ feature 'Collect Points' do
   scenario 'search names', js: true do
 
     # csv_text = File.read('spec/scraper/data_input/sample_player_list.csv')
-    csv_text = File.read('spec/scraper/data_input/player_master_list.csv')
+    csv_text = File.read('spec/scraper/data_input/sample_player_list.csv')
     csv_name_file = CSV.parse(csv_text, :headers => false)
 
     visit 'http://ifp.everguide.com/commander/tour/public/PlayerProfile.aspx'
