@@ -19,8 +19,8 @@ class RankingDetail < ApplicationRecord
 
   validates :singles_points, presence: true
   validates :doubles_points, presence: true
-  validates :womens_singles_points, presence: true, if: :female?
-  validates :womens_doubles_points, presence: true, if: :female?
+  # validates :womens_singles_points, presence: true, if: :female?
+  # validates :womens_doubles_points, presence: true, if: :female?
 
   def set_rank
     RANKS_HASH.each do |rank, range|

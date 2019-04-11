@@ -1,4 +1,3 @@
-name,name/state,ranking
 A PANAGOPOULOUS,A PANAGOPOULOUS (NY),1182/1182 Singles/Doubles Points ROOKIE
 A.C. Davis,A.C. Davis (NC),2282/2217 Singles/Doubles Points EXPERT
 A.J. Adleman,A.J. Adleman (WI),1800/1800 Singles/Doubles Points AMATEUR
@@ -93,7 +92,7 @@ ADAM FITZGERALD,ADAM FITZGERALD (OK),1800/1800 Singles/Doubles Points AMATEUR
 ADAM FOUST,ADAM FOUST (GA),1600/1612 Singles/Doubles Points AMATEUR
 ADAM FRENG,ADAM FRENG (SD),1800/1800 Singles/Doubles Points AMATEUR
 Adam Fugere,Adam Fugere (RI),1182/1182 Singles/Doubles Points ROOKIE
-Adam Gilson,Adam Gilson (CA),3814/3714 Singles/Doubles Points PRO
+Adam Gilson,Adam Gilson (CA),3814/3698 Singles/Doubles Points PRO
 Adam Godwin,Adam Godwin (NC),1182/1182 Singles/Doubles Points ROOKIE
 ADAM GORDON,ADAM GORDON (OK),1182/1182 Singles/Doubles Points ROOKIE
 ADAM HAAS,ADAM HAAS (WI),1800/1800 Singles/Doubles Points AMATEUR
@@ -138,8 +137,8 @@ Adam Wright,Adam Wright (CAN),801/801 Singles/Doubles Points BEGINNER
 Adam Yaw,Adam Yaw (NY),200/200 Singles/Doubles Points JUNIOR AMATEUR
 ADAM ZAMOJDO,ADAM ZAMOJDO (PL),1800/1800 Singles/Doubles Points AMATEUR
 Adel Yousfi,Adel Yousfi (Mühlhausen),3500/3500 Singles/Doubles Points PRO
-Adil Hizoune,Adil Hizoune (MD),4059/3783 Singles/Doubles Points PRO
-ADIL SAYEED,ADIL SAYEED (MY),1800/1800 Singles/Doubles Points AMATEUR
+Adil Hizoune,Adel Yousfi (Mühlhausen),3500/3500 Singles/Doubles Points PRO
+ADIL SAYEED,Adil Hizoune (MD),4059/3783 Singles/Doubles Points PRO
 Aditya Tehlan,Aditya Tehlan (),801/801 Singles/Doubles Points BEGINNER
 Aditya Tehlan,Aditya Tehlan (),801/801 Singles/Doubles Points BEGINNER
 ADNAN ZAGAREVIC,ADNAN ZAGAREVIC (GE),1800/1800 Singles/Doubles Points AMATEUR
@@ -151,19 +150,19 @@ ADRIAN AGUIRRE,ADRIAN AGUIRRE (TX),1182/1182 Singles/Doubles Points ROOKIE
 ADRIAN ARTHUR,ADRIAN ARTHUR (TX),1800/1800 Singles/Doubles Points AMATEUR
 ADRIAN BROWN,ADRIAN BROWN (AU),1800/1800 Singles/Doubles Points AMATEUR
 Adrian Distel,Adrian Distel (Kornwestheim),1900/1900 Singles/Doubles Points AMATEUR
-Adrian Endischee,Adrian Endischee (CO),801/801 Singles/Doubles Points BEGINNER
-ADRIAN HOINES,ADRIAN HOINES (SD),1800/1800 Singles/Doubles Points AMATEUR
+Adrian Endischee,Adrian Distel (Kornwestheim),1900/1900 Singles/Doubles Points AMATEUR
+ADRIAN HOINES,Adrian Endischee (CO),801/801 Singles/Doubles Points BEGINNER
 ADRIAN LAURENDEAU,ADRIAN LAURENDEAU (SD),1800/1800 Singles/Doubles Points AMATEUR
-Adrian Lopez,Adrian Lopez (CA),1005/1229 Singles/Doubles Points ROOKIE
+Adrian Lopez,Adrian Lopez (CA),1013/1229 Singles/Doubles Points ROOKIE
 ADRIAN SLIWA,"ADRIAN ""the brick wall"" SLIWA (IL)",2262/2674 Singles/Doubles Points EXPERT
 ADRIAN VALDEZ,ADRIAN VALDEZ (TX),1800/1800 Singles/Doubles Points AMATEUR
 ADRIAN VARRETTE,ADRIAN VARRETTE (TX),1800/1800 Singles/Doubles Points AMATEUR
-ADRIAN ZAMORA,ADRIAN ZAMORA (CA),5430/5500 Singles/Doubles Points MASTER
+ADRIAN ZAMORA,ADRIAN ZAMORA (CA),5504/5563 Singles/Doubles Points MASTER
 Adriano Cesta,Adriano Cesta (CAN),1795/1683 Singles/Doubles Points AMATEUR
 Adrien Hatt,Adrien Hatt (Sion),1600/1600 Singles/Doubles Points AMATEUR
 ADRIEN KASISKY,ADRIEN KASISKY (NY),1800/1800 Singles/Doubles Points AMATEUR
-ADRIENNE WISNER,ADRIENNE WISNER (XX),1800/1800 Singles/Doubles Points AMATEUR
-Afshin Mirzazadeh,Afshin Mirzazadeh (AZ),816/1106 Singles/Doubles Points ROOKIE
+ADRIENNE WISNER,ADRIEN KASISKY (NY),1800/1800 Singles/Doubles Points AMATEUR
+Afshin Mirzazadeh,ADRIENNE WISNER (XX),1800/1800 Singles/Doubles Points AMATEUR
 AGNA LAMMENS,AGNA LAMMENS (BE),1800/1800 Singles/Doubles Points AMATEUR
 AGUSTO PISSARRA,AGUSTO PISSARRA (WA),1800/1800 Singles/Doubles Points AMATEUR
 Ahalya Nirmalan,Ahalya Nirmalan (OH),801/801 Singles/Doubles Points BEGINNER
@@ -223,8 +222,8 @@ ALAN HOFER,ALAN HOFER (CA),1800/1800 Singles/Doubles Points AMATEUR
 ALAN KAUFFMAN,ALAN KAUFFMAN (IL),1800/1800 Singles/Doubles Points AMATEUR
 ALAN KAY,ALAN KAY (TX),1800/1800 Singles/Doubles Points AMATEUR
 ALAN KISO,ALAN KISO (CA),1800/1800 Singles/Doubles Points AMATEUR
-ALAN KWAN,ALAN KWAN (CAN),2477/2382 Singles/Doubles Points EXPERT
-Alan Lin,Alan Lin (TX),1017/1001 Singles/Doubles Points ROOKIE
+ALAN KWAN,ALAN KISO (CA),1800/1800 Singles/Doubles Points AMATEUR
+Alan Lin,ALAN KWAN (CAN),2477/2382 Singles/Doubles Points EXPERT
 ALAN MACAULAY,ALAN MACAULAY (CO),1800/1800 Singles/Doubles Points AMATEUR
 ALAN MAKOWSKI,ALAN MAKOWSKI (NJ),1800/1800 Singles/Doubles Points AMATEUR
 ALAN MCNEES,ALAN MCNEES (CO),1800/1800 Singles/Doubles Points AMATEUR
@@ -241,15 +240,15 @@ ALAN SELF,ALAN D SELF (TX),2208/2448 Singles/Doubles Points EXPERT
 ALAN SWARTZ,ALAN SWARTZ (OK),1840/1800 Singles/Doubles Points AMATEUR
 ALAN WALLACE,ALAN WALLACE (TX),1800/1800 Singles/Doubles Points AMATEUR
 Alan Watkins,Alan Watkins (NC),1182/1182 Singles/Doubles Points ROOKIE
-Alan Woods,Alan Woods (OR),800/800 Singles/Doubles Points BEGINNER
+Alan Woods,Alan Woods (OR),910/810 Singles/Doubles Points BEGINNER
 ALAN WRIGHT,ALAN WRIGHT (CA),1800/1800 Singles/Doubles Points AMATEUR
 ALANNA LYNCH,ALANNA LYNCH (MA),1182/1182 Singles/Doubles Points ROOKIE
 ALARIC CRAIN,ALARIC CRAIN (GA),1800/1800 Singles/Doubles Points AMATEUR
-Albert CHENG,Albert CHENG (CA),800/867 Singles/Doubles Points BEGINNER
+Albert CHENG,Albert CHENG (CA),810/977 Singles/Doubles Points BEGINNER
 ALBERT CHEOK KOK WEI,ALBERT CHEOK KOK WEI (MY),1800/1800 Singles/Doubles Points AMATEUR
 ALBERT DANYSH,ALBERT DANYSH (TX),1182/1182 Singles/Doubles Points ROOKIE
-ALBERT DE LAO,ALBERT DE LAO (TX),1848/1800 Singles/Doubles Points AMATEUR
-ALBERT DILLARD,ALBERT DILLARD (NC),1182/1182 Singles/Doubles Points ROOKIE
+ALBERT DE LAO,ALBERT DANYSH (TX),1182/1182 Singles/Doubles Points ROOKIE
+ALBERT DILLARD,ALBERT DE LAO (TX),1848/1800 Singles/Doubles Points AMATEUR
 ALBERT F HOEHN,ALBERT F HOEHN (TX),1800/1800 Singles/Doubles Points AMATEUR
 ALBERT GONZALEZ,ALBERT GONZALEZ (TX),1182/1182 Singles/Doubles Points ROOKIE
 Albert Hald Bjerrum,Albert Hald Bjerrum (DK),1908/2220 Singles/Doubles Points EXPERT
@@ -262,8 +261,8 @@ ALBERT SOLIS,ALBERT SOLIS (TX),1800/1800 Singles/Doubles Points AMATEUR
 ALBERT TAN,ALBERT TAN (XX),1800/1800 Singles/Doubles Points AMATEUR
 ALBERT TAYLOR,ALBERT TAYLOR (NY),1800/1800 Singles/Doubles Points AMATEUR
 ALBERT YURCO,ALBERT YURCO (CA),1800/1800 Singles/Doubles Points AMATEUR
-Alberto Carballo,Alberto Carballo (),1600/1600 Singles/Doubles Points AMATEUR
-Alden KRUSE,Alden KRUSE (CO),801/801 Singles/Doubles Points BEGINNER
+Alberto Carballo,ALBERT YURCO (CA),1800/1800 Singles/Doubles Points AMATEUR
+Alden KRUSE,Alberto Carballo (),1600/1600 Singles/Doubles Points AMATEUR
 ALDEN LUM,ALDEN LUM (NY),1800/1800 Singles/Doubles Points AMATEUR
 ALDO PETROLINO,ALDO PETROLINO (CA),1800/1800 Singles/Doubles Points AMATEUR
 ALDO ZEGGERS,ALDO ZEGGERS (BE),1800/1800 Singles/Doubles Points AMATEUR
@@ -314,7 +313,7 @@ Alex Pipkin,Alex Pipkin (MT),1298/1258 Singles/Doubles Points ROOKIE
 ALEX POPA,ALEX POPA (OK),801/801 Singles/Doubles Points BEGINNER
 ALEX PRIEDE,ALEX PRIEDE (OH),400/400 Singles/Doubles Points JUNIOR AMATEUR
 ALEX QUEAR,ALEX QUEAR (PA),1182/1182 Singles/Doubles Points ROOKIE
-Alex Romero,Alex Romero (CO),1487/1863 Singles/Doubles Points AMATEUR
+Alex Romero,Alex Romero (CO),1861/1919 Singles/Doubles Points AMATEUR
 ALEX SAMPLE,ALEX SAMPLE (SD),1800/1800 Singles/Doubles Points AMATEUR
 Alex Shovelton,Alex Shovelton (GB),2100/2100 Singles/Doubles Points EXPERT
 ALEX STILLWELL,ALEX STILLWELL (VA),1182/1182 Singles/Doubles Points ROOKIE
@@ -373,8 +372,8 @@ ALFRED LO,ALFRED LO (CAN),2150/2376 Singles/Doubles Points EXPERT
 ALFRED WALTERSHEIT,ALFRED WALTERSHEIT (MA),1182/1182 Singles/Doubles Points ROOKIE
 Alfredo Cavrera,Alfredo Cavrera (UT),800/800 Singles/Doubles Points BEGINNER
 ALFREDO NUNEZ,ALFREDO E NUNEZ (CA),1656/1628 Singles/Doubles Points AMATEUR
-Ali Alhabib,ALFREDO E NUNEZ (CA),1656/1628 Singles/Doubles Points AMATEUR
-ALI ESHRAGH,Ali Alhabib (),1900/1900 Singles/Doubles Points AMATEUR
+Ali Alhabib,Ali Alhabib (),1900/1900 Singles/Doubles Points AMATEUR
+ALI ESHRAGH,ALI ESHRAGH (CA),2008/2278 Singles/Doubles Points EXPERT
 Ali Hassan,Ali Hassan (VA),801/801 Singles/Doubles Points BEGINNER
 Ali Shahrooz,"Ali ""Rainz"" Shahrooz (IN)",1800/1800 Singles/Doubles Points AMATEUR
 ALI SUTHERLAND,ALI SUTHERLAND (AR),1800/1800 Singles/Doubles Points AMATEUR
@@ -417,7 +416,7 @@ ALLEN GORDON,ALLEN GORDON (AL),1800/1800 Singles/Doubles Points AMATEUR
 Allen Grable,Allen Grable (GA),801/801 Singles/Doubles Points BEGINNER
 Allen Grote,Allen Grote (SD),801/801 Singles/Doubles Points BEGINNER
 ALLEN HEAD,ALLEN HEAD (NC),1800/1800 Singles/Doubles Points AMATEUR
-Allen Heard,Allen Heard (MA),1239/1923 Singles/Doubles Points AMATEUR
+Allen Heard,Allen Heard (MA),1375/1923 Singles/Doubles Points AMATEUR
 ALLEN HOLLIER,ALLEN HOLLIER (LA),2325/2093 Singles/Doubles Points EXPERT
 ALLEN HOPKINS,ALLEN HOPKINS (IN),2166/2166 Singles/Doubles Points EXPERT
 ALLEN HOWE,ALLEN HOWE (FL),1800/1800 Singles/Doubles Points AMATEUR
@@ -443,8 +442,8 @@ Alvin Leung,Alvin Leung (UT),800/800 Singles/Doubles Points BEGINNER
 ALWOOD MAKEKAU,ALWOOD MAKEKAU (WA),3100/3100 Singles/Doubles Points PRO
 Aly Hassan,Aly Hassan (IL),812/1010 Singles/Doubles Points ROOKIE
 Alyssa Christensen,Alyssa Christensen (UT),800/800 Singles/Doubles Points BEGINNER
-ALYSSA VELLIS,ALYSSA VELLIS (CA),1800/1800 Singles/Doubles Points AMATEUR
-AMANDA DOUGAN,AMANDA DOUGAN (CA),1800/1800 Singles/Doubles Points / Women's Singles/Doubles Points
+ALYSSA VELLIS,Alyssa Christensen (UT),800/800 Singles/Doubles Points BEGINNER
+AMANDA DOUGAN,ALYSSA VELLIS (CA),1800/1800 Singles/Doubles Points AMATEUR
 AMANDA GAYTAN,AMANDA GAYTAN (TX),1800/1800 Singles/Doubles Points / Women's Singles/Doubles Points
 AMANDA MCLAREN,AMANDA MCLAREN (TX),1800/1800 Singles/Doubles Points / Women's Singles/Doubles Points
 AMARDEEP SINGH,AMARDEEP SINGH (II),1800/1800 Singles/Doubles Points AMATEUR
@@ -454,12 +453,12 @@ AMBER KRUEGER,AMBER KRUEGER (MN),1800/1800 Singles/Doubles Points AMATEUR
 AMBER MEEKS,AMBER MEEKS (TX),1800/1800 Singles/Doubles Points / Women's Singles/Doubles Points
 AMBER THORGESEN,AMBER THORGESEN (CO),1800/1800 Singles/Doubles Points AMATEUR
 Amedio Gilmore,"Amedio ""sideshow"" V Gilmore (WI)",4130/4224 Singles/Doubles Points PRO
-AMI ISHIBASHI,AMI ISHIBASHI (JA),1800/1800 Singles/Doubles Points / Women's Singles/Doubles Points
-AMIE ADDISON,AMIE ADDISON (MO),1182/1182 Singles/Doubles Points ROOKIE
+AMI ISHIBASHI,"Amedio ""sideshow"" V Gilmore (WI)",4130/4224 Singles/Doubles Points PRO
+AMIE ADDISON,AMI ISHIBASHI (JA),1800/1800 Singles/Doubles Points / Women's Singles/Doubles Points
 AMIE BROWN,AMIE BROWN (OK),1800/1800 Singles/Doubles Points AMATEUR
 Amie Lebo,"Amie ""Sam"" Lebo (AZ)",1800/1800 Singles/Doubles Points AMATEUR
-AMIE WEST,AMIE WEST (OK),1800/1800 Singles/Doubles Points AMATEUR
-AMIR BAYANI,AMIR BAYANI (GA),1182/1182 Singles/Doubles Points ROOKIE
+AMIE WEST,"Amie ""Sam"" Lebo (AZ)",1800/1800 Singles/Doubles Points AMATEUR
+AMIR BAYANI,AMIE WEST (OK),1800/1800 Singles/Doubles Points AMATEUR
 AMIR SALEHI,AMIR SALEHI (CA),1800/1800 Singles/Doubles Points AMATEUR
 Ammon Hallsted,Ammon Hallsted (UT),800/800 Singles/Doubles Points BEGINNER
 AMOS NGANDJONG,AMOS NGANDJONG (CM),1800/1800 Singles/Doubles Points AMATEUR
@@ -494,8 +493,8 @@ ANDRE PIERRE,ANDRE PIERRE (TX),1600/1600 Singles/Doubles Points AMATEUR
 Andre Schmidt-Russnak,Andre Schmidt-Russnak (Wolfenbüttel),2100/2100 Singles/Doubles Points EXPERT
 Andre Sekulla,Andre Sekulla (Netphen),3100/3100 Singles/Doubles Points PRO
 ANDRE STRASBORG,ANDRE STRASBORG (TX),1800/1800 Singles/Doubles Points AMATEUR
-ANDREA CAIN,ANDREA CAIN (AZ),1800/1800 Singles/Doubles Points AMATEUR
-ANDREA HATTON,ANDREA HATTON (TX),1800/1800 Singles/Doubles Points / Women's Singles/Doubles Points
+ANDREA CAIN,ANDRE STRASBORG (TX),1800/1800 Singles/Doubles Points AMATEUR
+ANDREA HATTON,ANDREA CAIN (AZ),1800/1800 Singles/Doubles Points AMATEUR
 Andrea Lanfer,Andrea Lanfer (Landsberg),1600/1600 Singles/Doubles Points AMATEUR
 ANDREA MCINNIS,ANDREA MCINNIS (GA),1182/1182 Singles/Doubles Points ROOKIE
 Andrea Sagi,Andrea Sagi (Budapest),1600/1600 Singles/Doubles Points AMATEUR
@@ -574,8 +573,8 @@ ANDREW ROMO JR,ANDREW ROMO JR (TX),801/801 Singles/Doubles Points BEGINNER
 Andrew Sine,Andrew Sine (FL),801/801 Singles/Doubles Points BEGINNER
 ANDREW SPOONER,ANDREW SPOONER (NY),1800/1800 Singles/Doubles Points AMATEUR
 Andrew Steele,Andrew Steele (MI),1098/1082 Singles/Doubles Points ROOKIE
-ANDREW THOMAS,ANDREW THOMAS (WA),1800/1800 Singles/Doubles Points AMATEUR
-ANDREW UDELL,ANDREW UDELL (CAN),1800/1800 Singles/Doubles Points AMATEUR
+ANDREW THOMAS,Andrew Steele (MI),1098/1082 Singles/Doubles Points ROOKIE
+ANDREW UDELL,ANDREW THOMAS (WA),1800/1800 Singles/Doubles Points AMATEUR
 Andrew Wall,Andrew Wall (NC),1182/1182 Singles/Doubles Points ROOKIE
 Andrew Wilkes,Andrew Wilkes (UT),800/800 Singles/Doubles Points BEGINNER
 Andrew Williams,Andrew Williams (UT),800/800 Singles/Doubles Points BEGINNER
@@ -592,8 +591,8 @@ ANDY BURKART,ANDY BURKART (CO),1182/1182 Singles/Doubles Points ROOKIE
 ANDY CARNEY,ANDY CARNEY (CO),1800/1800 Singles/Doubles Points AMATEUR
 ANDY COESENS,ANDY COESENS (BE),1800/1800 Singles/Doubles Points AMATEUR
 ANDY COLLETT,ANDY COLLETT (UK),1800/1800 Singles/Doubles Points AMATEUR
-ANDY DELEON,ANDY DELEON (TX),1800/1800 Singles/Doubles Points AMATEUR
-ANDY DUERR,ANDY DUERR (PA),1800/1800 Singles/Doubles Points AMATEUR
+ANDY DELEON,ANDY COLLETT (UK),1800/1800 Singles/Doubles Points AMATEUR
+ANDY DUERR,ANDY DELEON (TX),1800/1800 Singles/Doubles Points AMATEUR
 ANDY DUNN,ANDY DUNN (CA),1800/1800 Singles/Doubles Points AMATEUR
 ANDY E KERT,ANDY E KERT (),1800/1800 Singles/Doubles Points AMATEUR
 ANDY ELLARD,ANDY ELLARD (TX),1800/1800 Singles/Doubles Points AMATEUR
@@ -655,8 +654,8 @@ ANGELIQUE DODGEN,ANGELIQUE DODGEN (AL),1800/1800 Singles/Doubles Points AMATEUR
 ANGELIQUE MCCLOUD,ANGELIQUE MCCLOUD (TX),1800/1800 Singles/Doubles Points AMATEUR
 ANGELLE CANNATELLA,ANGELLE CANNATELLA (LA),1800/1800 Singles/Doubles Points AMATEUR
 Angelo Di Placido,Angelo Di Placido (PA),1182/1182 Singles/Doubles Points ROOKIE
-ANGELO GUERCIA,ANGELO GUERCIA (MO),1800/1800 Singles/Doubles Points AMATEUR
-ANGELO KONIDAS,ANGELO KONIDAS (CAN),1182/1182 Singles/Doubles Points ROOKIE
+ANGELO GUERCIA,Angelo Di Placido (PA),1182/1182 Singles/Doubles Points ROOKIE
+ANGELO KONIDAS,ANGELO GUERCIA (MO),1800/1800 Singles/Doubles Points AMATEUR
 ANGELO MATHEOU,ANGELO MATHEOU (CA),1600/1600 Singles/Doubles Points AMATEUR
 Angelo Miller,Angelo Miller (CO),1600/1792 Singles/Doubles Points AMATEUR
 ANGELO SIMONE,ANGELO SIMONE (MN),1800/1800 Singles/Doubles Points AMATEUR
@@ -675,8 +674,8 @@ ANIL SEHGAL,ANIL SEHGAL (UK),1800/1800 Singles/Doubles Points AMATEUR
 ANITA PENA,ANITA PENA (TX),1800/1800 Singles/Doubles Points AMATEUR
 ANITPAL SINGH,ANITPAL SINGH (II),1800/1800 Singles/Doubles Points AMATEUR
 Anja Klemusch,Anja Klemusch (Köln),1600/1600 Singles/Doubles Points AMATEUR
-ANN ASH,Anja Klemusch (Köln),1600/1600 Singles/Doubles Points AMATEUR
-ann ramey,ANN ASH (WI),1800/1800 Singles/Doubles Points AMATEUR
+ANN ASH,ANN ASH (WI),1800/1800 Singles/Doubles Points AMATEUR
+ann ramey,ann ramey (CA),1800/1800 Singles/Doubles Points AMATEUR
 ANN WILLIAMS,ANN WILLIAMS (OK),1800/1800 Singles/Doubles Points AMATEUR
 ANNA LUERAS,ANNA LUERAS (TX),1800/1800 Singles/Doubles Points / Women's Singles/Doubles Points
 Anna Maischatz,Anna Maischatz (Recklinghausen),1600/1600 Singles/Doubles Points AMATEUR
@@ -693,17 +692,17 @@ Annie Davis,Annie Davis (UT),800/800 Singles/Doubles Points BEGINNER
 ANNIE DIETZEL,ANNIE DIETZEL (OR),1800/1800 Singles/Doubles Points AMATEUR
 Annika P.,Annika P. (),1600/1600 Singles/Doubles Points AMATEUR
 Anouar Laamari,Anouar Laamari (Brüssel),1600/1600 Singles/Doubles Points AMATEUR
-Anson Ballard,Anson Ballard (MS),1990/2165 Singles/Doubles Points EXPERT
-Anthony Appel,Anthony Appel (MD),1182/1182 Singles/Doubles Points ROOKIE
+Anson Ballard,Anouar Laamari (Brüssel),1600/1600 Singles/Doubles Points AMATEUR
+Anthony Appel,Anson Ballard (MS),1990/2165 Singles/Doubles Points EXPERT
 Anthony ASTUA,Anthony ASTUA (CR),3067/2116 Singles/Doubles Points PRO
 ANTHONY BARRETT,ANTHONY BARRETT (OK),1800/1800 Singles/Doubles Points AMATEUR
 ANTHONY BETHANY,ANTHONY BETHANY (MS),1182/1182 Singles/Doubles Points ROOKIE
 Anthony Biancaniello,Anthony Biancaniello (FL),801/801 Singles/Doubles Points BEGINNER
 ANTHONY BONURA,ANTHONY BONURA (LA),1182/1201 Singles/Doubles Points ROOKIE
-ANTHONY BRANNUM,ANTHONY BRANNUM (MD),3100/3068 Singles/Doubles Points PRO
-ANTHONY BYNUM,ANTHONY BYNUM (TX),1800/1800 Singles/Doubles Points AMATEUR
-ANTHONY CANDELARIA,ANTHONY CANDELARIA (GA),1800/1800 Singles/Doubles Points AMATEUR
-ANTHONY CAPUTO,ANTHONY CAPUTO (FL),1800/1800 Singles/Doubles Points AMATEUR
+ANTHONY BRANNUM,ANTHONY BONURA (LA),1182/1201 Singles/Doubles Points ROOKIE
+ANTHONY BYNUM,ANTHONY BRANNUM (MD),3100/3068 Singles/Doubles Points PRO
+ANTHONY CANDELARIA,ANTHONY BRANNUM (MD),3100/3068 Singles/Doubles Points PRO
+ANTHONY CAPUTO,ANTHONY CANDELARIA (GA),1800/1800 Singles/Doubles Points AMATEUR
 ANTHONY CARSON,ANTHONY CARSON (TX),1800/1800 Singles/Doubles Points AMATEUR
 ANTHONY CARUSO,ANTHONY CARUSO (KY),1182/1182 Singles/Doubles Points ROOKIE
 Anthony Christensen,Anthony Christensen (UT),800/800 Singles/Doubles Points BEGINNER
@@ -772,13 +771,13 @@ Antonio Stappaerts,Antonio Stappaerts (Antwerpen),1600/1600 Singles/Doubles Poin
 Antonius M.,Antonius M. (),1600/1600 Singles/Doubles Points AMATEUR
 Antz Wetting,Antz Wetting (KY),1182/1182 Singles/Doubles Points ROOKIE
 APRIL FOLKERTS,APRIL FOLKERTS (IA),1800/1800 Singles/Doubles Points AMATEUR
-APRIL RODEFER,APRIL RODEFER (TN),1800/1800 Singles/Doubles Points AMATEUR
-APRIL SMITH,APRIL SMITH (FL),1800/1800 Singles/Doubles Points AMATEUR
+APRIL RODEFER,APRIL FOLKERTS (IA),1800/1800 Singles/Doubles Points AMATEUR
+APRIL SMITH,APRIL RODEFER (TN),1800/1800 Singles/Doubles Points AMATEUR
 APRIL WENDT,APRIL WENDT (MT),1800/1800 Singles/Doubles Points AMATEUR
 ARAM HAMAYAK,ARAM HAMAYAK (CA),1800/1800 Singles/Doubles Points AMATEUR
 ARBI BAGHOOMIAN,ARBI BAGHOOMIAN (CA),1800/1800 Singles/Doubles Points AMATEUR
-Arceo Yela Carlos,Arceo Yela Carlos (Guadalajara),1600/1600 Singles/Doubles Points AMATEUR
-ARCHIE BRODIE,ARCHIE BRODIE (TX),801/801 Singles/Doubles Points BEGINNER
+Arceo Yela Carlos,ARBI BAGHOOMIAN (CA),1800/1800 Singles/Doubles Points AMATEUR
+ARCHIE BRODIE,Arceo Yela Carlos (Guadalajara),1600/1600 Singles/Doubles Points AMATEUR
 ARCHIE GORDON,ARCHIE GORDON (OK),1800/1800 Singles/Doubles Points AMATEUR
 ARCHIE RANDALL,ARCHIE RANDALL (MN),1800/1800 Singles/Doubles Points AMATEUR
 ARIC WILSON,ARIC WILSON (WI),1800/1800 Singles/Doubles Points AMATEUR
@@ -791,8 +790,8 @@ ARMANDO GALVIN,ARMANDO GALVIN (TX),1182/1182 Singles/Doubles Points ROOKIE
 ARMANDO HERRERA,ARMANDO HERRERA (FL),1937/1937 Singles/Doubles Points AMATEUR
 Armin Frommer,Armin Frommer (Rangendingen),1900/1900 Singles/Doubles Points AMATEUR
 Armin Summa,Armin Summa (Veitshöchheim),2100/2100 Singles/Doubles Points EXPERT
-Arn H.,Armin Summa (Veitshöchheim),2100/2100 Singles/Doubles Points EXPERT
-Arne Ahrens,Arn H. (),1600/1600 Singles/Doubles Points AMATEUR
+Arn H.,Arn H. (),1600/1600 Singles/Doubles Points AMATEUR
+Arne Ahrens,Arne Ahrens (Mainz),1600/1600 Singles/Doubles Points AMATEUR
 Arne Ortolf,Arne Ortolf (Ihringen),1600/1600 Singles/Doubles Points AMATEUR
 Arne Zellentin,Arne Zellentin (Siegen),1600/1600 Singles/Doubles Points AMATEUR
 ARNEL MANGOSING,ARNEL MANGOSING (CA),1800/1800 Singles/Doubles Points AMATEUR
@@ -808,18 +807,18 @@ ARNOLD WALKER,ARNOLD WALKER (ON),1182/1182 Singles/Doubles Points ROOKIE
 ARON HARDY,ARON HARDY (BC),1800/1800 Singles/Doubles Points AMATEUR
 Arpad Major,Arpad Major (Friedberg),2100/2100 Singles/Doubles Points EXPERT
 Arpad Wicki,Arpad Wicki (Ebikon),2100/2100 Singles/Doubles Points EXPERT
-Arron Ingold,Arron Ingold (CA),2779/2612 Singles/Doubles Points EXPERT
+Arron Ingold,Arron Ingold (CA),2731/2572 Singles/Doubles Points EXPERT
 ARSENIO QUINDARA,ARSENIO QUINDARA (TX),1182/1182 Singles/Doubles Points ROOKIE
 ART BURNS,ART BURNS (CA),1960/2146 Singles/Doubles Points EXPERT
-ART MILLER,ART MILLER (OH),2197/2174 Singles/Doubles Points EXPERT
-ART PENA,ART PENA (TX),1800/1800 Singles/Doubles Points AMATEUR
+ART MILLER,ART BURNS (CA),1960/2146 Singles/Doubles Points EXPERT
+ART PENA,ART MILLER (OH),2197/2174 Singles/Doubles Points EXPERT
 ART RAMAGLIA,ART RAMAGLIA (FL),1182/1182 Singles/Doubles Points ROOKIE
 ART TERSTAGE,ART TERSTAGE (OH),1182/1182 Singles/Doubles Points ROOKIE
 ART WARICK,ART WARICK (NY),1182/1182 Singles/Doubles Points ROOKIE
 Arthur Bagwell,Arthur Bagwell (AL),1081/1036 Singles/Doubles Points ROOKIE
 ARTHUR LINDSLEY,ARTHUR LINDSLEY (AR),1800/1800 Singles/Doubles Points AMATEUR
 ARTHUR LOTT,ARTHUR LOTT (FL),1182/1182 Singles/Doubles Points ROOKIE
-Arthur MITCHELL,Arthur MITCHELL (TX),2135/3664 Singles/Doubles Points PRO
+Arthur MITCHELL,Arthur MITCHELL (TX),2135/3612 Singles/Doubles Points PRO
 ARTHUR SCHEREN,ARTHUR SCHEREN (GA),1182/1182 Singles/Doubles Points ROOKIE
 ARTHUR SCHNUR,ARTHUR SCHNUR (TX),1182/1182 Singles/Doubles Points ROOKIE
 ARTHURO CARLETTA,ARTHURO CARLETTA (),3500/3500 Singles/Doubles Points PRO
@@ -830,8 +829,8 @@ ARTUR CHOJECKI,ARTUR CHOJECKI (UK),1800/1800 Singles/Doubles Points AMATEUR
 Artur Frauenhofer,Artur Frauenhofer (Odenthal),1600/1600 Singles/Doubles Points AMATEUR
 ARTUR MARIANO,ARTUR MARIANO (CA),2538/3407 Singles/Doubles Points PRO
 ARTURO CARLETTA,ARTURO CARLETTA (BE),3100/3100 Singles/Doubles Points PRO
-ARTURO ENRIQUEZ GARCIA,ARTURO ENRIQUEZ GARCIA (),1800/1800 Singles/Doubles Points AMATEUR
-ARTURO VALLE,ARTURO VALLE (TX),1182/1182 Singles/Doubles Points ROOKIE
+ARTURO ENRIQUEZ GARCIA,ARTURO CARLETTA (BE),3100/3100 Singles/Doubles Points PRO
+ARTURO VALLE,ARTURO ENRIQUEZ GARCIA (),1800/1800 Singles/Doubles Points AMATEUR
 ARVIL GUY COPELAND,ARVIL GUY COPELAND (AL),1800/1800 Singles/Doubles Points AMATEUR
 Arwed Kalin,Arwed Kalin (CH),1193/1096 Singles/Doubles Points ROOKIE
 Asher Candelario,Asher Candelario (TX),800/800 Singles/Doubles Points BEGINNER
@@ -850,8 +849,8 @@ ATOM BERG,ATOM BERG (MA),1182/1182 Singles/Doubles Points ROOKIE
 Atticus Sanchez,Atticus Sanchez (TX),800/800 Singles/Doubles Points BEGINNER
 Attila Boi,Attila Boi (Schieling),1600/1600 Singles/Doubles Points AMATEUR
 Attila Olah,Attila Olah (),1600/1600 Singles/Doubles Points AMATEUR
-ATUL VANMALI,ATUL VANMALI (TX),1800/1800 Singles/Doubles Points AMATEUR
-AUBREY KURT,AUBREY KURT (IA),1800/1800 Singles/Doubles Points AMATEUR
+ATUL VANMALI,Attila Olah (),1600/1600 Singles/Doubles Points AMATEUR
+AUBREY KURT,ATUL VANMALI (TX),1800/1800 Singles/Doubles Points AMATEUR
 AUBURY QUIBODEAUX,AUBURY QUIBODEAUX (LA),1800/1800 Singles/Doubles Points AMATEUR
 AUDREY HATTON,AUDREY HATTON (TX),1800/1800 Singles/Doubles Points AMATEUR
 AUDREY WELLS,AUDREY WELLS (TX),1800/1800 Singles/Doubles Points AMATEUR
@@ -859,19 +858,19 @@ AUDY BARCLAY,AUDY BARCLAY (TX),1800/1800 Singles/Doubles Points AMATEUR
 AUGUST CRAFT,AUGUST CRAFT (NV),801/801 Singles/Doubles Points BEGINNER
 AUGUSTO ZANNONI,AUGUSTO ZANNONI (IT),1800/1800 Singles/Doubles Points AMATEUR
 AURELIE SERANITO,AURELIE SERANITO (FR),1800/1800 Singles/Doubles Points AMATEUR
-Austin Babcock,Austin Babcock (NY),200/200 Singles/Doubles Points JUNIOR AMATEUR
-Austin Barcomb,Austin Barcomb (NY),200/200 Singles/Doubles Points JUNIOR AMATEUR
+Austin Babcock,AURELIE SERANITO (FR),1800/1800 Singles/Doubles Points AMATEUR
+Austin Barcomb,Austin Babcock (NY),200/200 Singles/Doubles Points JUNIOR AMATEUR
 Austin Britton,Austin Britton (SD),400/400 Singles/Doubles Points JUNIOR AMATEUR
 Austin Cannon,Austin Cannon (CO),800/800 Singles/Doubles Points BEGINNER
 Austin goble,austin goble (NY),200/200 Singles/Doubles Points JUNIOR AMATEUR
 austin goble,austin goble (NY),200/200 Singles/Doubles Points JUNIOR AMATEUR
 Austin Goetz,Austin Goetz (NE),800/800 Singles/Doubles Points BEGINNER
 AUSTIN HARRIS,AUSTIN HARRIS (LA),801/801 Singles/Doubles Points BEGINNER
-AUSTIN HOOD,AUSTIN HOOD (TX),801/801 Singles/Doubles Points BEGINNER
-Austin Kriete,Austin Kriete (CO),1100/1736 Singles/Doubles Points AMATEUR
+AUSTIN HOOD,AUSTIN HARRIS (LA),801/801 Singles/Doubles Points BEGINNER
+Austin Kriete,AUSTIN HOOD (TX),801/801 Singles/Doubles Points BEGINNER
 AUSTIN MILLER,AUSTIN MILLER (MO),801/801 Singles/Doubles Points BEGINNER
-Austin Montgomery,Austin Montgomery (FL),801/801 Singles/Doubles Points BEGINNER
-Austin Rees,Austin Rees (UT),800/800 Singles/Doubles Points BEGINNER
+Austin Montgomery,AUSTIN MILLER (MO),801/801 Singles/Doubles Points BEGINNER
+Austin Rees,Austin Montgomery (FL),801/801 Singles/Doubles Points BEGINNER
 AUSTIN ROTHSCHILD,AUSTIN ROTHSCHILD (TX),1800/1800 Singles/Doubles Points AMATEUR
 AUSTIN WALRON,AUSTIN WALRON (IA),1800/1800 Singles/Doubles Points AMATEUR
 AUSTIN WARD,AUSTIN WARD (OK),1800/1800 Singles/Doubles Points AMATEUR
@@ -979,8 +978,8 @@ BECKY REED,BECKY REED (CA),1800/1800 Singles/Doubles Points AMATEUR
 BECKY REUTER,BECKY REUTER (WI),1800/1800 Singles/Doubles Points AMATEUR
 BECKY SMITH,BECKY SMITH (FL),1800/1800 Singles/Doubles Points AMATEUR
 BECKY ZIMMERMAN,BECKY ZIMMERMAN (OH),1800/1800 Singles/Doubles Points AMATEUR
-Behrouz Aghevli,Behrouz Aghevli (VA),801/801 Singles/Doubles Points BEGINNER
-BEKIM RETKOCERI,BEKIM RETKOCERI (KY),1182/1182 Singles/Doubles Points ROOKIE
+Behrouz Aghevli,BECKY ZIMMERMAN (OH),1800/1800 Singles/Doubles Points AMATEUR
+BEKIM RETKOCERI,Behrouz Aghevli (VA),801/801 Singles/Doubles Points BEGINNER
 BELA GAL,BELA GAL (HU),1916/2020 Singles/Doubles Points EXPERT
 BELAL ABOUKARR,BELAL ABOUKARR (ON),1800/1800 Singles/Doubles Points AMATEUR
 BELINDA RIVENBARK,BELINDA RIVENBARK (NC),1800/1800 Singles/Doubles Points AMATEUR
@@ -1002,8 +1001,8 @@ BEN CASTAGNERI,BEN CASTAGNERI (MN),1800/1800 Singles/Doubles Points AMATEUR
 BEN CHERRY,BEN CHERRY (TX),1182/1182 Singles/Doubles Points ROOKIE
 BEN COLE,BEN COLE (NY),1182/1182 Singles/Doubles Points ROOKIE
 BEN CRAWFORD,BEN CRAWFORD (PA),1800/1800 Singles/Doubles Points AMATEUR
-Ben Davis,BEN H DAVIS (FL),1412/1597 Singles/Doubles Points AMATEUR
-BEN DAVIS,BEN H DAVIS (FL),1412/1597 Singles/Doubles Points AMATEUR
+Ben Davis,BEN H DAVIS (FL),1460/1597 Singles/Doubles Points AMATEUR
+BEN DAVIS,BEN H DAVIS (FL),1460/1597 Singles/Doubles Points AMATEUR
 BEN DEWOLF,BEN DEWOLF (MN),1800/1800 Singles/Doubles Points AMATEUR
 BEN DUPLECHIN,BEN DUPLECHIN (LA),1182/1182 Singles/Doubles Points ROOKIE
 BEN ELIZER,BEN ELIZER (CA),1800/1800 Singles/Doubles Points AMATEUR
@@ -1019,8 +1018,8 @@ BEN GRAHAM,BEN GRAHAM (TX),1182/1182 Singles/Doubles Points ROOKIE
 ben grenon,ben grenon (NC),801/801 Singles/Doubles Points BEGINNER
 Ben Grothe,Ben Grothe (WI),1925/1965 Singles/Doubles Points AMATEUR
 Ben Hansen,Ben Hansen (MO),801/801 Singles/Doubles Points BEGINNER
-Ben Hanzel,Ben Hanzel (UT),800/800 Singles/Doubles Points BEGINNER
-BEN HARRELSON,BEN HARRELSON (IA),1974/1894 Singles/Doubles Points AMATEUR
+Ben Hanzel,Ben Hansen (MO),801/801 Singles/Doubles Points BEGINNER
+BEN HARRELSON,Ben Hanzel (UT),800/800 Singles/Doubles Points BEGINNER
 BEN HASSON,BEN HASSON (WA),1800/1800 Singles/Doubles Points AMATEUR
 Ben Holt,Ben Holt (UT),800/800 Singles/Doubles Points BEGINNER
 Ben Hunt,Ben Hunt (KY),800/800 Singles/Doubles Points BEGINNER
@@ -1068,8 +1067,8 @@ Benedikt Oppermann,Benedikt Oppermann (Gelnhausen),1600/1600 Singles/Doubles Poi
 Benedikt Schaal,Benedikt Schaal (DE),1800/1800 Singles/Doubles Points AMATEUR
 Benedikt Scherer,Benedikt Scherer (),1600/1600 Singles/Doubles Points AMATEUR
 Bengt Langer,Bengt Langer (),1600/1600 Singles/Doubles Points AMATEUR
-BENITO GUEVARA,BENITO GUEVARA (MX),1800/1800 Singles/Doubles Points AMATEUR
-Benito Guevara-Esquivel,Benito Guevara-Esquivel (MX),1848/1800 Singles/Doubles Points AMATEUR
+BENITO GUEVARA,Bengt Langer (),1600/1600 Singles/Doubles Points AMATEUR
+Benito Guevara-Esquivel,BENITO GUEVARA (MX),1800/1800 Singles/Doubles Points AMATEUR
 Benjamin Allen,Benjamin Allen (TX),801/801 Singles/Doubles Points BEGINNER
 BENJAMIN BRUESEKE,BENJAMIN BRUESEKE (NV),1800/1800 Singles/Doubles Points AMATEUR
 Benjamin Caldwell,Benjamin Caldwell (UT),800/800 Singles/Doubles Points BEGINNER
@@ -1134,21 +1133,21 @@ BERT WRIGHT,BERT WRIGHT (MS),801/801 Singles/Doubles Points BEGINNER
 BETH HALL,BETH HALL (TX),1800/1800 Singles/Doubles Points AMATEUR
 BETH MYER,BETH MYER (LA),1800/1800 Singles/Doubles Points AMATEUR
 BETH RYTKONEN,BETH RYTKONEN (MN),1800/1800 Singles/Doubles Points AMATEUR
-BETH STEWART,BETH RYTKONEN (MN),1800/1800 Singles/Doubles Points AMATEUR
-BETO ESTRADA,BETH STEWART (TX),1800/1800 Singles/Doubles Points AMATEUR
-BETSY BOMBARDIER,BETH STEWART (TX),1800/1800 Singles/Doubles Points AMATEUR
+BETH STEWART,BETH STEWART (TX),1800/1800 Singles/Doubles Points AMATEUR
+BETO ESTRADA,BETO ESTRADA (TX),1800/1800 Singles/Doubles Points AMATEUR
+BETSY BOMBARDIER,BETO ESTRADA (TX),1800/1800 Singles/Doubles Points AMATEUR
 BETSY HANSEN,BETSY BOMBARDIER (MN),1800/1800 Singles/Doubles Points AMATEUR
 BETSY SMITH,BETSY SMITH (CO),1800/1800 Singles/Doubles Points AMATEUR
 BEVERLY HENDRIX,BEVERLY HENDRIX (MI),1800/1800 Singles/Doubles Points AMATEUR
 BEVERLY SYJANSKY,BEVERLY SYJANSKY (TX),1800/1800 Singles/Doubles Points / Women's Singles/Doubles Points
 Beydin Ladue,Beydin Ladue (NY),200/200 Singles/Doubles Points JUNIOR AMATEUR
-Bharath Hariharan,Bharath Hariharan (CA),817/1145 Singles/Doubles Points ROOKIE
+Bharath Hariharan,Bharath Hariharan (CA),851/1145 Singles/Doubles Points ROOKIE
 BHIV RAMLUKAN,BHIV RAMLUKAN (IL),1800/1800 Singles/Doubles Points AMATEUR
 BIANCA STARREN,BIANCA STARREN (NL),1800/1800 Singles/Doubles Points AMATEUR
 Bianca Wegener,Bianca Wegener (Köln),1600/1600 Singles/Doubles Points AMATEUR
 BIG JIM,BIG JIM (OH),1182/1182 Singles/Doubles Points ROOKIE
-BIGGY THOMPSON,BIGGY THOMPSON (IA),1800/1800 Singles/Doubles Points AMATEUR
-BILL ABRAHAM,BILL ABRAHAM (PA),1182/1182 Singles/Doubles Points ROOKIE
+BIGGY THOMPSON,BIG JIM (OH),1182/1182 Singles/Doubles Points ROOKIE
+BILL ABRAHAM,BIGGY THOMPSON (IA),1800/1800 Singles/Doubles Points AMATEUR
 BILL ANDRES,BILL ANDRES (NY),1800/1800 Singles/Doubles Points AMATEUR
 Bill Bailey,Bill Bailey (OK),808/1073 Singles/Doubles Points ROOKIE
 BILL BANKS,BILL BANKS (NY),1800/1800 Singles/Doubles Points AMATEUR
@@ -1165,8 +1164,8 @@ Bill Briggs,Bill Briggs (VA),1182/1182 Singles/Doubles Points ROOKIE
 BILL BROMBAUGH,BILL BROMBAUGH (MT),1800/1800 Singles/Doubles Points AMATEUR
 BILL CALDWELL,BILL CALDWELL (CO),1182/1182 Singles/Doubles Points ROOKIE
 BILL CAREY,BILL CAREY (NY),1800/1800 Singles/Doubles Points AMATEUR
-BILL CARTER,BILL CARTER (IL),1800/1800 Singles/Doubles Points AMATEUR
-BILL CHANCE,BILL CHANCE (OK),1182/1510 Singles/Doubles Points AMATEUR
+BILL CARTER,BILL CAREY (NY),1800/1800 Singles/Doubles Points AMATEUR
+BILL CHANCE,BILL CARTER (IL),1800/1800 Singles/Doubles Points AMATEUR
 BILL CHIU,BILL CHIU (CN),1182/1182 Singles/Doubles Points ROOKIE
 BILL CHMURA,BILL CHMURA (IL),1600/1600 Singles/Doubles Points AMATEUR
 BILL CONNER,BILL CONNER (CO),1182/1182 Singles/Doubles Points ROOKIE
@@ -1191,8 +1190,7 @@ BILL EVERETT,BILL EVERETT (CT),1182/1182 Singles/Doubles Points ROOKIE
 BILL FLEMING,BILL FLEMING (CO),1800/1800 Singles/Doubles Points AMATEUR
 BILL FOSBERG,BILL FOSBERG (MO),1800/1800 Singles/Doubles Points AMATEUR
 BILL FOSTER,BILL FOSTER (MI),1182/1182 Singles/Doubles Points ROOKIE
-BILL FOX,BILL FOSTER (MI),1182/1182 Singles/Doubles Points ROOKIE
-BILL FREIER,BILL FOX (OH),1800/1800 Singles/Doubles Points AMATEUR
+BILL FOX,BILL FOX (OH),1800/1800 Singles/Doubles Points AMATEUR
 BILL FRENCH,BILL FRENCH (MA),1182/1182 Singles/Doubles Points ROOKIE
 BILL GALLAGHER,BILL GALLAGHER (UT),802/802 Singles/Doubles Points BEGINNER
 BILL GARNOS,BILL GARNOS (MO),1800/1800 Singles/Doubles Points AMATEUR
@@ -1211,12 +1209,12 @@ BILL HALPIN,BILL HALPIN (NY),1800/1800 Singles/Doubles Points AMATEUR
 BILL HARTSELL,BILL HARTSELL (AL),1800/1800 Singles/Doubles Points AMATEUR
 Bill Hawes,"Bill ""Bill"" Hawes (NH)",1182/1182 Singles/Doubles Points ROOKIE
 BILL HAWKINS,BILL HAWKINS (TX),1800/1800 Singles/Doubles Points AMATEUR
-Bill HAYDON,Bill HAYDON (KY),3118/4517 Singles/Doubles Points PRO
-BILL HAYNES,BILL HAYNES (WA),1182/1182 Singles/Doubles Points ROOKIE
-BILL HEALY,BILL HEALY (FL),1800/1800 Singles/Doubles Points AMATEUR
+Bill HAYDON,Bill HAYDON (KY),3020/4583 Singles/Doubles Points PRO
+BILL HAYNES,Bill HAYDON (KY),3020/4583 Singles/Doubles Points PRO
+BILL HEALY,BILL HAYNES (WA),1182/1182 Singles/Doubles Points ROOKIE
 BILL HEMAUER,BILL HEMAUER (MN),1800/1800 Singles/Doubles Points AMATEUR
 Bill Henderson,"Bill ""billhfoos"" Henderson (TX)",2252/2369 Singles/Doubles Points EXPERT
-BILL HICKS,BILL HICKS (OR),1800/1800 Singles/Doubles Points AMATEUR
+BILL HICKS,BILL HICKS (OR),1824/1860 Singles/Doubles Points AMATEUR
 BILL HUTSON,BILL HUTSON (MS),1182/1182 Singles/Doubles Points ROOKIE
 BILL JAKEWAY,BILL JAKEWAY (FL),1800/1800 Singles/Doubles Points AMATEUR
 BILL KANDRAVI,BILL KANDRAVI (TX),1182/1182 Singles/Doubles Points ROOKIE
@@ -1233,8 +1231,8 @@ Bill Lee,Bill Lee (AB),1800/1800 Singles/Doubles Points AMATEUR
 BILL LEVAN,BILL LEVAN (MO),1182/1182 Singles/Doubles Points ROOKIE
 Bill Lewallen,Bill Lewallen (PA),1840/1824 Singles/Doubles Points AMATEUR
 BILL LIST,BILL LIST (OK),1800/1800 Singles/Doubles Points AMATEUR
-Bill Lotridge,Bill Lotridge (NY),801/801 Singles/Doubles Points BEGINNER
-BILL LUNSFORD,BILL LUNSFORD (CA),1800/1800 Singles/Doubles Points AMATEUR
+Bill Lotridge,BILL LIST (OK),1800/1800 Singles/Doubles Points AMATEUR
+BILL LUNSFORD,Bill Lotridge (NY),801/801 Singles/Doubles Points BEGINNER
 BILL LUZNICKY,BILL LUZNICKY (TX),1800/1800 Singles/Doubles Points AMATEUR
 BILL MALONEY,BILL D MALONEY (WI),3100/3100 Singles/Doubles Points PRO
 BILL MASHEK,BILL MASHEK (IA),1800/1800 Singles/Doubles Points AMATEUR
@@ -1325,18 +1323,18 @@ BILLY HINOV,BILLY HINOV (XX),1800/1800 Singles/Doubles Points AMATEUR
 BILLY IVINS,BILLY IVINS (OK),1800/1800 Singles/Doubles Points AMATEUR
 BILLY JARRELL,BILLY JARRELL (GA),1182/1182 Singles/Doubles Points ROOKIE
 BILLY KIDWELL,BILLY KIDWELL (TX),1182/1182 Singles/Doubles Points ROOKIE
-Billy Klinetop,Billy Klinetop (UT),800/800 Singles/Doubles Points BEGINNER
-BILLY LEWIS,BILLY LEWIS (OK),1999/2100 Singles/Doubles Points EXPERT
+Billy Klinetop,BILLY KIDWELL (TX),1182/1182 Singles/Doubles Points ROOKIE
+BILLY LEWIS,Billy Klinetop (UT),800/800 Singles/Doubles Points BEGINNER
 BILLY MADDOX,BILLY MADDOX (TX),1800/1800 Singles/Doubles Points AMATEUR
 BILLY MCCALL,BILLY MCCALL (NC),1800/1800 Singles/Doubles Points AMATEUR
 Billy Meppiel,Billy Meppiel (MO),1800/1800 Singles/Doubles Points AMATEUR
 BILLY MILLER,BILLY MILLER (FL),1182/1182 Singles/Doubles Points ROOKIE
 BILLY PAGAN,BILLY PAGAN (MS),1182/1182 Singles/Doubles Points ROOKIE
-BILLY PAPPAS,BILLY PAPPAS (MA),5410/5200 Singles/Doubles Points MASTER
+BILLY PAPPAS,BILLY PAPPAS (MA),5410/5263 Singles/Doubles Points MASTER
 BILLY RAMAGE,BILLY RAMAGE (GA),1800/1800 Singles/Doubles Points AMATEUR
 BILLY RAMIREZ,BILLY RAMIREZ (OK),1800/1800 Singles/Doubles Points AMATEUR
-BILLY RAMSEY,BILLY RAMIREZ (OK),1800/1800 Singles/Doubles Points AMATEUR
-Billy Robbins,BILLY RAMSEY (OK),1182/1182 Singles/Doubles Points ROOKIE
+BILLY RAMSEY,BILLY RAMSEY (OK),1182/1182 Singles/Doubles Points ROOKIE
+Billy Robbins,Billy Robbins (TX),800/856 Singles/Doubles Points BEGINNER
 BILLY ROEMHILD,BILLY ROEMHILD (MN),1800/1800 Singles/Doubles Points AMATEUR
 BILLY SARGENT,BILLY SARGENT (NC),2255/2062 Singles/Doubles Points EXPERT
 BILLY SHIPP,BILLY SHIPP (IA),1800/1800 Singles/Doubles Points AMATEUR
@@ -1346,10 +1344,10 @@ BILLY TANG,BILLY TANG (HI),1800/1800 Singles/Doubles Points AMATEUR
 BILLY THOMAS,BILLY THOMAS (AL),1800/1800 Singles/Doubles Points AMATEUR
 BILLY THOMPSON,BILLY THOMPSON (IL),1800/1800 Singles/Doubles Points AMATEUR
 billy valdez,billy j valdez (TX),1182/1182 Singles/Doubles Points ROOKIE
-BILLY VARGAS,billy j valdez (TX),1182/1182 Singles/Doubles Points ROOKIE
-BILLY WELBORN,BILLY VARGAS (NY),1800/1800 Singles/Doubles Points AMATEUR
+BILLY VARGAS,BILLY VARGAS (NY),1800/1800 Singles/Doubles Points AMATEUR
+BILLY WELBORN,BILLY WELBORN (MS),1182/1182 Singles/Doubles Points ROOKIE
 BILLY WOODS,BILLY WOODS (AL),1182/1182 Singles/Doubles Points ROOKIE
-Bing Yep,Bing Yep (CA),806/806 Singles/Doubles Points BEGINNER
+Bing Yep,Bing Yep (CA),816/816 Singles/Doubles Points BEGINNER
 BINH THAI,BINH THAI (CA),1280/1543 Singles/Doubles Points AMATEUR
 BIREA SHAH,BIREA SHAH (IL),800/800 Singles/Doubles Points BEGINNER
 Birgit Bertrand,Birgit Bertrand (Kerkrade),1600/1600 Singles/Doubles Points AMATEUR
@@ -1370,7 +1368,7 @@ Blake Downing,Blake Downing (OK),801/801 Singles/Doubles Points BEGINNER
 BLAKE HOWARD,BLAKE HOWARD (NV),1800/1800 Singles/Doubles Points AMATEUR
 BLAKE IRWIN,BLAKE IRWIN (TX),1182/1182 Singles/Doubles Points ROOKIE
 BLAKE NELSON,BLAKE NELSON (MN),1182/1182 Singles/Doubles Points ROOKIE
-Blake ROBERTSON,Blake ROBERTSON (FL),5522/5639 Singles/Doubles Points MASTER
+Blake ROBERTSON,Blake ROBERTSON (FL),5585/5734 Singles/Doubles Points MASTER
 Blake Rutherford,Blake Rutherford (KY),1182/1182 Singles/Doubles Points ROOKIE
 Blake SHEPHERD,Blake SHEPHERD (KY),801/892 Singles/Doubles Points BEGINNER
 BLAKE SHERRILL,BLAKE SHERRILL (SC),801/801 Singles/Doubles Points BEGINNER
@@ -1387,4 +1385,558 @@ Bo Walker,Bo Walker (NC),801/801 Singles/Doubles Points BEGINNER
 BOB ALBERTSON,BOB ALBERTSON (TX),1800/1800 Singles/Doubles Points AMATEUR
 BOB BAILEY,BOB BAILEY (CO),1800/1800 Singles/Doubles Points AMATEUR
 BOB BARKER,BOB BARKER (),1800/1800 Singles/Doubles Points AMATEUR
-BOB BARNETT,BOB BARKER (),1800/1800 Singles/Doubles Points AMATEUR
+BOB BARNETT,BOB BARNETT (OR),1884/2168 Singles/Doubles Points EXPERT
+BOB BENNETT,BOB BENNETT (OK),1800/1800 Singles/Doubles Points AMATEUR
+BOB BISHOP,BOB BISHOP (WI),1800/1800 Singles/Doubles Points AMATEUR
+BOB BRAAKSMA,BOB BRAAKSMA (AZ),1800/1800 Singles/Doubles Points AMATEUR
+BOB BROWN,BOB BROWN (TX),1800/1800 Singles/Doubles Points AMATEUR
+BOB BRYAN,BOB BRYAN (AZ),1182/1182 Singles/Doubles Points ROOKIE
+BOB BURKE,BOB BRYAN (AZ),1182/1182 Singles/Doubles Points ROOKIE
+BOB Bush,BOB BURKE (IL),1800/1800 Singles/Doubles Points AMATEUR
+BOB CARTER,BOB CARTER (IL),801/801 Singles/Doubles Points BEGINNER
+BOB CHASE,BOB CHASE (CO),1182/1182 Singles/Doubles Points ROOKIE
+BOB CHRISTIAN,BOB CHRISTIAN (NY),1800/1800 Singles/Doubles Points AMATEUR
+BOB CLIFFORD,BOB CLIFFORD (NY),1800/1800 Singles/Doubles Points AMATEUR
+BOB COOK,BOB COOK (IL),1800/1800 Singles/Doubles Points AMATEUR
+BOB COSTELLO,BOB COSTELLO (MI),1182/1182 Singles/Doubles Points ROOKIE
+Bob Curtin,Bob Curtin (MI),2062/2208 Singles/Doubles Points EXPERT
+BOB DENUCCI,BOB DENUCCI (MN),1800/1800 Singles/Doubles Points AMATEUR
+BOB DETTLOFF,BOB DETTLOFF (MN),1800/1800 Singles/Doubles Points AMATEUR
+BOB DEWITT,BOB DEWITT (NY),1182/1182 Singles/Doubles Points ROOKIE
+BOB DILLON,BOB DILLON (CO),1800/1800 Singles/Doubles Points AMATEUR
+BOB DUBINICK,BOB DUBINICK (MO),1182/1182 Singles/Doubles Points ROOKIE
+BOB DUNCAN,BOB DUNCAN (AZ),1800/1800 Singles/Doubles Points AMATEUR
+BOB DYKE,BOB DYKE (OH),1182/1182 Singles/Doubles Points ROOKIE
+BOB ESTRADA,BOB ESTRADA (TX),1824/1828 Singles/Doubles Points AMATEUR
+BOB FORD,BOB FORD (NY),1800/1800 Singles/Doubles Points AMATEUR
+BOB GEORGE,BOB GEORGE (NY),1857/1808 Singles/Doubles Points AMATEUR
+BOB GIBSON,BOB GIBSON (CO),2264/2280 Singles/Doubles Points EXPERT
+BOB GOULET,BOB GOULET (MT),1800/1800 Singles/Doubles Points AMATEUR
+BOB GRAY,BOB GRAY (CO),1800/1800 Singles/Doubles Points AMATEUR
+BOB GRIFFITH,BOB GRIFFITH (GA),801/801 Singles/Doubles Points BEGINNER
+BOB GRUNDEN,BOB GRUNDEN (NJ),1800/1800 Singles/Doubles Points AMATEUR
+BOB HALVERSON,BOB HALVERSON (WI),2166/2358 Singles/Doubles Points EXPERT
+BOB HANSEN,BOB HANSEN (CT),1182/1182 Singles/Doubles Points ROOKIE
+Bob Hardin,Bob Hardin (MO),1182/1182 Singles/Doubles Points ROOKIE
+BOB HARRIS,BOB HARRIS (IL),1800/1800 Singles/Doubles Points AMATEUR
+BOB HASTINGS,BOB HASTINGS (IL),1800/1800 Singles/Doubles Points AMATEUR
+BOB HINKLE,BOB HINKLE (IL),1800/1800 Singles/Doubles Points AMATEUR
+BOB HOMA,BOB HOMA (NJ),1800/1800 Singles/Doubles Points AMATEUR
+BOB JAMES,BOB JAMES (NY),1800/1832 Singles/Doubles Points AMATEUR
+BOB JAMES,BOB JAMES (NY),1800/1832 Singles/Doubles Points AMATEUR
+BOB KAJIMOTO,BOB KAJIMOTO (CA),1800/1800 Singles/Doubles Points AMATEUR
+BOB KAS,BOB KAS (MI),1800/1800 Singles/Doubles Points AMATEUR
+BOB KELLY,BOB KAS (MI),1800/1800 Singles/Doubles Points AMATEUR
+BOB KILB,BOB KELLY (PA),1800/1800 Singles/Doubles Points AMATEUR
+BOB LOCHLEIN,BOB LOCHLEIN (WI),1800/1800 Singles/Doubles Points AMATEUR
+BOB LOPES,BOB LOCHLEIN (WI),1800/1800 Singles/Doubles Points AMATEUR
+BOB LOVELL,BOB LOPES (MA),1182/1182 Singles/Doubles Points ROOKIE
+BOB MARES,BOB MARES (CO),1800/1800 Singles/Doubles Points AMATEUR
+BOB MARTIN,BOB MARTIN (CA),1182/1182 Singles/Doubles Points ROOKIE
+BOB MATHIS,BOB MATHIS (MD),1182/1182 Singles/Doubles Points ROOKIE
+BOB MCGONAGLE,BOB MCGONAGLE (PA),1800/1800 Singles/Doubles Points AMATEUR
+BOB MCLAUGHLIN,BOB MCLAUGHLIN (SD),1800/1800 Singles/Doubles Points AMATEUR
+BOB MENN,BOB MENN (OK),1800/1800 Singles/Doubles Points AMATEUR
+BOB MILLER,BOB MILLER (OH),1182/1182 Singles/Doubles Points ROOKIE
+BOB MITCHELL,BOB MITCHELL (IN),1800/1800 Singles/Doubles Points AMATEUR
+BOB MOLIC,BOB MOLIC (TX),1182/1182 Singles/Doubles Points ROOKIE
+BOB MOONEY,BOB MOONEY (NC),2166/2166 Singles/Doubles Points EXPERT
+BOB NADERESHI,BOB NADERESHI (NY),1800/1800 Singles/Doubles Points AMATEUR
+BOB OLIVER,BOB OLIVER (CA),1800/1800 Singles/Doubles Points AMATEUR
+BOB O'NEILL,BOB O'NEILL (NY),1800/1800 Singles/Doubles Points AMATEUR
+BOB PALMA,BOB PALMA (NY),1800/1800 Singles/Doubles Points AMATEUR
+BOB PARKER,BOB PARKER (CA),1800/1800 Singles/Doubles Points AMATEUR
+BOB PECHAN,BOB PECHAN (MN),1800/1800 Singles/Doubles Points AMATEUR
+BOB PERRY,BOB PERRY (NC),1800/1800 Singles/Doubles Points AMATEUR
+BOB PORZELT,BOB PORZELT (MO),1800/1800 Singles/Doubles Points AMATEUR
+BOB POTERALSKI,BOB POTERALSKI (NY),1800/1800 Singles/Doubles Points AMATEUR
+Bob PRIMEAUX,Bob PRIMEAUX (LA),1980/2113 Singles/Doubles Points EXPERT
+BOB PYRITZ,BOB PYRITZ (WI),1800/1800 Singles/Doubles Points AMATEUR
+BOB RICHARDS,BOB RICHARDS (AZ),1800/1800 Singles/Doubles Points AMATEUR
+BOB RIVERA,BOB RIVERA (TX),1800/1800 Singles/Doubles Points AMATEUR
+BOB ROGERS,BOB ROGERS (TX),1800/1800 Singles/Doubles Points AMATEUR
+BOB ROLLINS,BOB ROLLINS (WA),1800/1800 Singles/Doubles Points AMATEUR
+BOB RUKOSNIK,BOB RUKOSNIK (CO),1800/1800 Singles/Doubles Points AMATEUR
+BOB RUSSEL JUNIOR,BOB RUSSEL JUNIOR (MI),2166/2166 Singles/Doubles Points EXPERT
+BOB SALAZAR,BOB SALAZAR (CO),1182/1182 Singles/Doubles Points ROOKIE
+BOB SANDLER,BOB SANDLER (WI),1800/1800 Singles/Doubles Points AMATEUR
+BOB SARRASIN,BOB SARRASIN (NY),1800/1800 Singles/Doubles Points AMATEUR
+BOB SHAKIB,BOB SHAKIB (CA),1800/1800 Singles/Doubles Points AMATEUR
+BOB SHAW,BOB SHAW (WI),1800/1800 Singles/Doubles Points AMATEUR
+BOB SHELTON,BOB SHELTON (CA),1182/1182 Singles/Doubles Points ROOKIE
+BOB SIEBER,BOB SIEBER (CA),1182/1182 Singles/Doubles Points ROOKIE
+BOB SPARKS,BOB SPARKS (TX),1800/1800 Singles/Doubles Points AMATEUR
+BOB ST.HELENS,BOB ST.HELENS (CO),1182/1182 Singles/Doubles Points ROOKIE
+BOB STEPHENSON,BOB STEPHENSON (MI),2166/2141 Singles/Doubles Points EXPERT
+BOB STOPPARD,BOB STOPPARD (PA),1800/1800 Singles/Doubles Points AMATEUR
+BOB STROER,BOB STROER (MO),1800/1800 Singles/Doubles Points AMATEUR
+BOB SUTALSKI,BOB SUTALSKI (IL),1800/1800 Singles/Doubles Points AMATEUR
+BOB TARTINO,BOB TARTINO (WI),1800/1800 Singles/Doubles Points AMATEUR
+BOB TEOREY,BOB TEOREY (MN),2157/2100 Singles/Doubles Points EXPERT
+BOB THOMA,BOB THOMA (CA),1800/1800 Singles/Doubles Points AMATEUR
+BOB THORUD,BOB THORUD (IL),1800/1800 Singles/Doubles Points AMATEUR
+Bob Todhunter,Bob Todhunter (TX),801/801 Singles/Doubles Points BEGINNER
+BOB TURNER,BOB TURNER (KS),1800/1800 Singles/Doubles Points AMATEUR
+BOB WECKERLIN JR,BOB WECKERLIN JR (TX),1800/1800 Singles/Doubles Points AMATEUR
+BOB WEISSE,BOB WEISSE (MA),1182/1182 Singles/Doubles Points ROOKIE
+Bob Wiig,Bob Wiig (MI),801/801 Singles/Doubles Points BEGINNER
+Bob Wilms,Bob Wilms (),1600/1600 Singles/Doubles Points AMATEUR
+BOB WILSON,BOB WILSON (KS),1800/1800 Singles/Doubles Points AMATEUR
+BOB WOOLEY,BOB WOOLEY (OR),1800/1800 Singles/Doubles Points AMATEUR
+Bob Zaffarese,Bob Zaffarese (),1182/1182 Singles/Doubles Points ROOKIE
+BOB ZANKOWSKI,BOB ZANKOWSKI (NY),1800/1800 Singles/Doubles Points AMATEUR
+BOBBI JONES,BOBBI JONES (MS),1182/1182 Singles/Doubles Points ROOKIE
+BOBBIE ESPOSITO,BOBBIE ESPOSITO (FL),1182/1182 Singles/Doubles Points ROOKIE
+BOBBIE JENKINS,BOBBIE JENKINS (CA),1800/1800 Singles/Doubles Points AMATEUR
+BOBBY BENAVIDEZ,BOBBY BENAVIDEZ (TX),1800/1800 Singles/Doubles Points AMATEUR
+BOBBY BENSON,BOBBY BENSON (CO),1800/1800 Singles/Doubles Points AMATEUR
+BOBBY BIRCHLER,BOBBY BIRCHLER (GA),1800/1800 Singles/Doubles Points AMATEUR
+BOBBY BLEVINS,BOBBY BLEVINS (NJ),1800/1800 Singles/Doubles Points AMATEUR
+BOBBY BRANDENBURG,BOBBY BRANDENBURG (FL),1800/1800 Singles/Doubles Points AMATEUR
+Bobby Bucci,Bobby Bucci (FL),1600/1600 Singles/Doubles Points AMATEUR
+BOBBY CHIASSON,BOBBY CHIASSON (LA),1182/1182 Singles/Doubles Points ROOKIE
+Bobby Clue,Bobby I Clue (KY),1664/1688 Singles/Doubles Points AMATEUR
+BOBBY COLLUMS,BOBBY COLLUMS (TX),1182/1182 Singles/Doubles Points ROOKIE
+BOBBY CONN,BOBBY CONN (OK),1800/1800 Singles/Doubles Points AMATEUR
+BOBBY CREDAR,BOBBY CREDAR (TX),1800/1800 Singles/Doubles Points AMATEUR
+BOBBY CURTIS,BOBBY CURTIS (AL),1800/1800 Singles/Doubles Points AMATEUR
+BOBBY CUSTER,BOBBY CURTIS (AL),1800/1800 Singles/Doubles Points AMATEUR
+BOBBY DAVIS,BOBBY CUSTER (OK),1800/1800 Singles/Doubles Points AMATEUR
+BOBBY DAVIS,BOBBY DAVIS (NC),1800/1800 Singles/Doubles Points AMATEUR
+BOBBY DELEON,BOBBY DELEON (TX),1816/1800 Singles/Doubles Points AMATEUR
+BOBBY DIAZ,BOBBY DIAZ (FL),5277/5410 Singles/Doubles Points MASTER
+BOBBY DINEEN,BOBBY DINEEN (NC),1788/1951 Singles/Doubles Points AMATEUR
+BOBBY DODSON,BOBBY DODSON (VA),1800/1800 Singles/Doubles Points AMATEUR
+BOBBY EUBANKS,BOBBY EUBANKS (TX),1800/1800 Singles/Doubles Points AMATEUR
+BOBBY FOOSNICK,BOBBY EUBANKS (TX),1800/1800 Singles/Doubles Points AMATEUR
+BOBBY FULLER,BOBBY FOOSNICK (LA),1800/1800 Singles/Doubles Points AMATEUR
+BOBBY GLOUNER JR,BOBBY GLOUNER JR (NV),1800/1800 Singles/Doubles Points AMATEUR
+BOBBY GOLWITZER,BOBBY GOLWITZER (),1600/1600 Singles/Doubles Points AMATEUR
+BOBBY HOOD,BOBBY HOOD (OK),1800/1800 Singles/Doubles Points AMATEUR
+BOBBY HUGHES,BOBBY HUGHES (TX),1800/1800 Singles/Doubles Points AMATEUR
+BOBBY HYNES,BOBBY HYNES (FL),1970/2152 Singles/Doubles Points EXPERT
+BOBBY KING,BOBBY KING (OK),1800/1800 Singles/Doubles Points AMATEUR
+BOBBY LADD,BOBBY LADD (NC),1182/1182 Singles/Doubles Points ROOKIE
+Bobby LOCKLEAR,Bobby LOCKLEAR (NC),1824/1796 Singles/Doubles Points AMATEUR
+Bobby MARTIN,Bobby MARTIN (MS),1098/1301 Singles/Doubles Points ROOKIE
+BOBBY MCALISTER,BOBBY MCALISTER (OK),1182/1182 Singles/Doubles Points ROOKIE
+BOBBY MCCALLIE,BOBBY MCCALLIE (OK),1800/1800 Singles/Doubles Points AMATEUR
+BOBBY MCCOY,BOBBY MCCOY (MS),1182/1182 Singles/Doubles Points ROOKIE
+BOBBY MYERS,BOBBY MYERS (AR),1800/1800 Singles/Doubles Points AMATEUR
+BOBBY NEESE,BOBBY NEESE (MS),1800/1800 Singles/Doubles Points AMATEUR
+Bobby Nicholson,Bobby Nicholson (TN),801/854 Singles/Doubles Points BEGINNER
+BOBBY PARKER,BOBBY PARKER (TX),1182/1182 Singles/Doubles Points ROOKIE
+BOBBY PRESTIGIACOMO,BOBBY PRESTIGIACOMO (KY),1600/1600 Singles/Doubles Points AMATEUR
+BOBBY RYAN,BOBBY RYAN (VA),1182/1182 Singles/Doubles Points ROOKIE
+BOBBY SCHUTTE,BOBBY SCHUTTE (NE),1800/1800 Singles/Doubles Points AMATEUR
+BOBBY SCHWIEGER,BOBBY SCHWIEGER (IA),1800/1800 Singles/Doubles Points AMATEUR
+BOBBY SIMS,BOBBY SIMS (MS),2166/2166 Singles/Doubles Points EXPERT
+BOBBY SMITH,BOBBY SMITH (OK),1800/1800 Singles/Doubles Points AMATEUR
+BOBBY STEVENS,BOBBY STEVENS (TX),1800/1800 Singles/Doubles Points AMATEUR
+BOBBY STIDHAM,BOBBY STIDHAM (AR),1800/1800 Singles/Doubles Points AMATEUR
+BOBBY THOMAS,BOBBY THOMAS (CA),1800/1800 Singles/Doubles Points AMATEUR
+BOBBY VANOVER,BOBBY VANOVER (TX),1800/1800 Singles/Doubles Points AMATEUR
+BOBBY WAYNE,BOBBY WAYNE (AR),1800/1800 Singles/Doubles Points AMATEUR
+BOBBY WHITE,BOBBY WHITE (NC),1800/1800 Singles/Doubles Points AMATEUR
+Bobby Wood,Bobby Wood (TX),801/801 Singles/Doubles Points BEGINNER
+BOBBY YANG,BOBBY YANG (NV),801/801 Singles/Doubles Points BEGINNER
+Bodo Fripan,BOBBY YANG (NV),801/801 Singles/Doubles Points BEGINNER
+Bodo Henkel,Bodo Fripan (Mainz),2100/2100 Singles/Doubles Points EXPERT
+BOHDAN JAKIWCZYK,BOHDAN JAKIWCZYK (SK),1800/1800 Singles/Doubles Points AMATEUR
+BOK BEATY,BOK BEATY (MN),1800/1800 Singles/Doubles Points AMATEUR
+Bom Cao,Bom Cao (TX),1230/1273 Singles/Doubles Points ROOKIE
+BONNIE CLARK,BONNIE CLARK (TX),1182/1182 Singles/Doubles Points / Women's Singles/Doubles Points
+BONNIE VICKERY,BONNIE VICKERY (LA),1800/1800 Singles/Doubles Points AMATEUR
+BOO RESSEGUIE,BOO RESSEGUIE (PA),1800/1800 Singles/Doubles Points AMATEUR
+Boogie Ayers,Boogie Ayers (AL),801/815 Singles/Doubles Points BEGINNER
+BOOMER REYNOLDS,BOOMER REYNOLDS (OH),1182/1182 Singles/Doubles Points ROOKIE
+Boris Atha,Boris Atha (UK),3100/3100 Singles/Doubles Points PRO
+Botond Veres,Botond Veres (Freiburg),1600/1600 Singles/Doubles Points AMATEUR
+BRAD ALTMAN,BRAD ALTMAN (NC),3100/3056 Singles/Doubles Points PRO
+Brad Anderson,Brad Anderson (MN),1800/1800 Singles/Doubles Points AMATEUR
+BRAD BACH,BRAD BACH (WI),1800/1800 Singles/Doubles Points AMATEUR
+BRAD BAXLEY,BRAD BAXLEY (CA),1772/1800 Singles/Doubles Points AMATEUR
+BRAD BENSON,BRAD BENSON (UT),802/802 Singles/Doubles Points BEGINNER
+BRAD BOWHAY,BRAD BOWHAY (KS),1182/1182 Singles/Doubles Points ROOKIE
+BRAD CARTER,BRAD CARTER (AR),1800/1800 Singles/Doubles Points AMATEUR
+BRAD CHAMBERLAIN,BRAD CHAMBERLAIN (AZ),1688/1640 Singles/Doubles Points AMATEUR
+BRAD COLBY,BRAD COLBY (SD),1800/1800 Singles/Doubles Points AMATEUR
+BRAD COOD,BRAD COOD (TX),1800/1800 Singles/Doubles Points AMATEUR
+BRAD COOK,BRAD COOK (KS),1182/1182 Singles/Doubles Points ROOKIE
+Brad Coomer,Brad Coomer (KY),1182/1182 Singles/Doubles Points ROOKIE
+BRAD CORNELL,BRAD CORNELL (WI),1800/1800 Singles/Doubles Points AMATEUR
+BRAD DISHNER,BRAD DISHNER (TN),1800/1800 Singles/Doubles Points AMATEUR
+BRAD DOMAS,BRAD DISHNER (TN),1800/1800 Singles/Doubles Points AMATEUR
+BRAD DOMINGUE,BRAD DOMAS (SD),1800/1800 Singles/Doubles Points AMATEUR
+BRAD DUNKIN,BRAD DUNKIN (KY),1182/1182 Singles/Doubles Points ROOKIE
+BRAD FORREST,BRAD FORREST (MN),1800/1800 Singles/Doubles Points AMATEUR
+BRAD FORTMAN,BRAD FORTMAN (MO),1800/1800 Singles/Doubles Points AMATEUR
+Brad Frank,Brad Frank (MI),1182/1182 Singles/Doubles Points ROOKIE
+BRAD FREDELLA,BRAD FREDELLA (NV),1300/1300 Singles/Doubles Points ROOKIE
+BRAD GOLDSTROM,BRAD GOLDSTROM (CO),1800/1800 Singles/Doubles Points AMATEUR
+BRAD GRANT,BRAD GRANT (WA),1182/1182 Singles/Doubles Points ROOKIE
+BRAD HASKELL,BRAD HASKELL (MA),1182/1182 Singles/Doubles Points ROOKIE
+BRAD HAYES,BRAD HAYES (WI),1800/1800 Singles/Doubles Points AMATEUR
+BRAD HEINS,BRAD HEINS (WI),1800/1800 Singles/Doubles Points AMATEUR
+BRAD HUFF,BRAD HUFF (NM),1800/1800 Singles/Doubles Points AMATEUR
+BRAD HURT,BRAD HURT (AZ),1800/1800 Singles/Doubles Points AMATEUR
+BRAD HYDE,BRAD HYDE (AR),1800/1800 Singles/Doubles Points AMATEUR
+BRAD JEAN,BRAD JEAN (GA),1182/1182 Singles/Doubles Points ROOKIE
+BRAD KEEN,BRAD KEEN (GA),1182/1182 Singles/Doubles Points ROOKIE
+BRAD KIEGER,BRAD KIEGER (WV),1182/1182 Singles/Doubles Points ROOKIE
+BRAD KIGER,BRAD KIGER (WV),1182/1182 Singles/Doubles Points ROOKIE
+BRAD KIRK,BRAD KIGER (WV),1182/1182 Singles/Doubles Points ROOKIE
+Brad Klaus,BRAD KIRK (IA),1182/1182 Singles/Doubles Points ROOKIE
+BRAD LANGAN,BRAD LANGAN (CA),1800/1800 Singles/Doubles Points AMATEUR
+BRAD LAURINE,BRAD LAURINE (OR),3100/3135 Singles/Doubles Points PRO
+Brad Lessem,Brad Lessem (TX),1992/2209 Singles/Doubles Points EXPERT
+BRAD LINDAHL,BRAD LINDAHL (MT),1800/1800 Singles/Doubles Points AMATEUR
+BRAD LITTLETON,BRAD LITTLETON (SD),1800/1800 Singles/Doubles Points AMATEUR
+Brad Lowe,Brad Lowe (IN),1800/1800 Singles/Doubles Points AMATEUR
+BRAD MALCOME,BRAD MALCOME (NE),1800/1800 Singles/Doubles Points AMATEUR
+BRAD MASCARO,BRAD MASCARO (LA),1182/1182 Singles/Doubles Points ROOKIE
+BRAD MASTERS,BRAD MASTERS (AL),801/801 Singles/Doubles Points BEGINNER
+BRAD MCKINNEY,BRAD MCKINNEY (TX),1800/1800 Singles/Doubles Points AMATEUR
+BRAD MCWATERS,BRAD MCWATERS (NC),2200/2184 Singles/Doubles Points EXPERT
+Brad ODonnell,Brad ODonnell (TX),1300/1300 Singles/Doubles Points ROOKIE
+BRAD OLSON,BRAD OLSON (CO),1178/1248 Singles/Doubles Points ROOKIE
+BRAD PADGENT,BRAD PADGENT (TX),1182/1182 Singles/Doubles Points ROOKIE
+BRAD PARKER,BRAD PARKER (CO),1800/1800 Singles/Doubles Points AMATEUR
+BRAD PIRSIG,BRAD PIRSIG (MN),1800/1800 Singles/Doubles Points AMATEUR
+BRAD PIZZO,BRAD PIZZO (FL),1800/1796 Singles/Doubles Points AMATEUR
+Brad Rachlin,Brad Rachlin (IL),800/800 Singles/Doubles Points BEGINNER
+Brad Rhodes,Brad Rhodes (OH),801/801 Singles/Doubles Points BEGINNER
+Brad Ripp,Brad Ripp (WI),1134/1190 Singles/Doubles Points ROOKIE
+BRAD SACHS,BRAD SACHS (WI),1800/1800 Singles/Doubles Points AMATEUR
+BRAD SCHARF,BRAD SCHARF (IA),1800/1800 Singles/Doubles Points AMATEUR
+BRAD SCHINDLER,BRAD SCHINDLER (OK),1182/1182 Singles/Doubles Points ROOKIE
+BRAD SCHMIDT,BRAD SCHMIDT (CO),1800/1800 Singles/Doubles Points AMATEUR
+BRAD SCHUTT,BRAD SCHUTT (MO),1182/1182 Singles/Doubles Points ROOKIE
+BRAD SHIRTS,BRAD SHIRTS (ID),1224/1200 Singles/Doubles Points ROOKIE
+BRAD SIMONS,BRAD SIMONS (TX),1800/1800 Singles/Doubles Points AMATEUR
+BRAD SITES,BRAD SITES (MO),1182/1182 Singles/Doubles Points ROOKIE
+BRAD SLATTENOW,BRAD SLATTENOW (ON),1800/1800 Singles/Doubles Points AMATEUR
+BRAD SMITH,BRAD SLATTENOW (ON),1800/1800 Singles/Doubles Points AMATEUR
+BRAD SPETH,BRAD SMITH (MN),2006/2120 Singles/Doubles Points EXPERT
+BRAD STANELLE,BRAD STANELLE (),1800/1800 Singles/Doubles Points AMATEUR
+BRAD STEPHENSON,BRAD STEPHENSON (AZ),1800/1800 Singles/Doubles Points AMATEUR
+BRAD TATE,BRAD TATE (TX),1800/1800 Singles/Doubles Points AMATEUR
+BRAD TAYLOR,BRAD TAYLOR (OH),1800/1800 Singles/Doubles Points AMATEUR
+BRAD TELEP,BRAD TELEP (PA),1800/1800 Singles/Doubles Points AMATEUR
+BRAD THOMPSON,BRAD THOMPSON (OK),1800/1800 Singles/Doubles Points AMATEUR
+Brad VanDam,Brad VanDam (CA),1800/1800 Singles/Doubles Points AMATEUR
+BRAD WATERMAN,BRAD WATERMAN (MI),1800/1800 Singles/Doubles Points AMATEUR
+BRAD WESTBERRY,BRAD WATERMAN (MI),1800/1800 Singles/Doubles Points AMATEUR
+BRAD WHITTAKER,BRAD WESTBERRY (MS),1182/1182 Singles/Doubles Points ROOKIE
+BRAD WILSON,BRAD WILSON (OK),1800/1800 Singles/Doubles Points AMATEUR
+BRAD WOOD,BRAD WILSON (OK),1800/1800 Singles/Doubles Points AMATEUR
+BRAD YORK,BRAD WOOD (TX),1800/1800 Singles/Doubles Points AMATEUR
+BRADEN COOLIDGE,BRADEN COOLIDGE (CA),1182/1182 Singles/Doubles Points ROOKIE
+BRADEN KEITH,BRADEN KEITH (IA),1800/1800 Singles/Doubles Points AMATEUR
+BRADLEY DANIEL,BRADLEY DANIEL (TN),1182/1182 Singles/Doubles Points ROOKIE
+BRADLEY ETHERTON,BRADLEY ETHERTON (KY),1800/1800 Singles/Doubles Points AMATEUR
+Bradley Gibson,Bradley Gibson (KY),400/400 Singles/Doubles Points JUNIOR AMATEUR
+BRADLEY MILLS,BRADLEY MILLS (NE),1800/1800 Singles/Doubles Points AMATEUR
+Bradley Pridmore,Bradley Pridmore (KY),1182/1182 Singles/Doubles Points ROOKIE
+BRADLEY RUNYAN,"BRADLEY ""CHOIRBOY"" A RUNYAN (IL)",1983/1908 Singles/Doubles Points AMATEUR
+BRADLY NEUSCHWANGER,BRADLY NEUSCHWANGER (TX),1800/1800 Singles/Doubles Points AMATEUR
+bradon russell,bradon russell (TX),1800/1800 Singles/Doubles Points AMATEUR
+BRADY FLESZAR,BRADY FLESZAR (MI),300/300 Singles/Doubles Points JUNIOR AMATEUR
+BRADY PATTERSON,BRADY PATTERSON (TX),1800/1800 Singles/Doubles Points AMATEUR
+Brady Weyrowske,Brady Weyrowske (MI),801/801 Singles/Doubles Points BEGINNER
+Brady Williams,Brady Williams (UT),800/800 Singles/Doubles Points BEGINNER
+BRAINARD ASIS,BRAINARD ASIS (CA),1951/1812 Singles/Doubles Points AMATEUR
+Brallyn LaGas,Brallyn LaGas (),200/200 Singles/Doubles Points JUNIOR AMATEUR
+BRAM DARRAS,BRAM DARRAS (BE),1800/1800 Singles/Doubles Points AMATEUR
+BRAN LESTAROVIC,BRAN LESTAROVIC (CO),1182/1182 Singles/Doubles Points ROOKIE
+BRANDEE KNOWLES,BRANDEE KNOWLES (IA),1800/1800 Singles/Doubles Points AMATEUR
+Branden Westlund,Branden Westlund (WI),801/816 Singles/Doubles Points BEGINNER
+BRANDI GORI,BRANDI GORI (TX),1800/1800 Singles/Doubles Points AMATEUR
+BRANDI HAYNES,BRANDI HAYNES (TX),1800/1800 Singles/Doubles Points / Women's Singles/Doubles Points
+BRANDI SECREST,BRANDI SECREST (CO),1800/1800 Singles/Doubles Points AMATEUR
+BRANDI WATKINS,BRANDI WATKINS (OK),1800/1800 Singles/Doubles Points AMATEUR
+BRANDI WELLS,BRANDI WELLS (TX),1800/1800 Singles/Doubles Points AMATEUR
+BRANDIE DEETS,BRANDIE DEETS (OK),1800/1800 Singles/Doubles Points AMATEUR
+BRANDON ANDERSON,BRANDON ANDERSON (UT),802/802 Singles/Doubles Points BEGINNER
+Brandon Barker,Brandon Barker (NULL),1182/1182 Singles/Doubles Points ROOKIE
+BRANDON BARTZ,BRANDON BARTZ (IL),1182/1182 Singles/Doubles Points ROOKIE
+brandon blevins,"brandon ""bb"" f blevins (NC)",1600/1600 Singles/Doubles Points AMATEUR
+BRANDON BLUM,BRANDON BLUM (WI),1800/1800 Singles/Doubles Points AMATEUR
+Brandon Calderon,Brandon Calderon (CR),2300/2300 Singles/Doubles Points EXPERT
+BRANDON CHAVEZ,BRANDON CHAVEZ (WA),1182/1182 Singles/Doubles Points ROOKIE
+BRANDON DANOS,BRANDON DANOS (LA),1135/850 Singles/Doubles Points ROOKIE
+BRANDON DUKE,BRANDON DUKE (KY),1182/1182 Singles/Doubles Points ROOKIE
+BRANDON DURHAM,BRANDON DURHAM (OK),1800/1800 Singles/Doubles Points AMATEUR
+Brandon Frazer,Brandon Frazer (CO),801/801 Singles/Doubles Points BEGINNER
+Brandon Gettert,Brandon Gettert (TX),801/875 Singles/Doubles Points BEGINNER
+Brandon Gibson,Brandon Gibson (KY),400/400 Singles/Doubles Points JUNIOR AMATEUR
+BRANDON GOFF,BRANDON GOFF (KY),1182/1182 Singles/Doubles Points ROOKIE
+Brandon Goldstein,Brandon Goldstein (CO),801/801 Singles/Doubles Points BEGINNER
+Brandon Goss,Brandon Goss (FL),811/811 Singles/Doubles Points BEGINNER
+Brandon Hayes,Brandon Hayes (CO),801/801 Singles/Doubles Points BEGINNER
+Brandon Henneforth,Brandon Henneforth (NY),400/400 Singles/Doubles Points JUNIOR AMATEUR
+BRANDON HOANG,BRANDON HOANG (UT),802/802 Singles/Doubles Points BEGINNER
+Brandon Johnson,Brandon Johnson (CO),1108/1238 Singles/Doubles Points ROOKIE
+Brandon Kennedy,Brandon Kennedy (UT),800/800 Singles/Doubles Points BEGINNER
+BRANDON KING,BRANDON KING (MS),1800/1800 Singles/Doubles Points AMATEUR
+BRANDON KOK,BRANDON KOK (OH),801/801 Singles/Doubles Points BEGINNER
+BRANDON KUHLENGEL,BRANDON KUHLENGEL (TX),1800/1800 Singles/Doubles Points AMATEUR
+Brandon Lapeyrouse,Brandon Lapeyrouse (LA),801/801 Singles/Doubles Points BEGINNER
+Brandon Lisle,Brandon Lisle (OK),2287/2502 Singles/Doubles Points EXPERT
+BRANDON MAJERUS,BRANDON MAJERUS (WI),1800/1800 Singles/Doubles Points AMATEUR
+Brandon Maria,Brandon Maria (NM),801/801 Singles/Doubles Points BEGINNER
+BRANDON MCCLENAHAN,BRANDON MCCLENAHAN (CA),1800/1800 Singles/Doubles Points AMATEUR
+BRANDON MEANS,BRANDON MEANS (KY),1182/1182 Singles/Doubles Points ROOKIE
+Brandon Mendrick,Brandon Mendrick (MI),801/801 Singles/Doubles Points BEGINNER
+BRANDON MERCER,BRANDON MERCER (TX),1800/1800 Singles/Doubles Points AMATEUR
+Brandon Moreland,Brandon Moreland (TX),5540/5598 Singles/Doubles Points MASTER
+Brandon Munoz,Brandon Munoz (CR),4272/3762 Singles/Doubles Points PRO
+BRANDON MURRAY,BRANDON MURRAY (GA),1632/1608 Singles/Doubles Points AMATEUR
+BRANDON NICHOLS,BRANDON NICHOLS (CA),1800/1800 Singles/Doubles Points AMATEUR
+Brandon Paddock,Brandon Paddock (MN),1800/1800 Singles/Doubles Points AMATEUR
+BRANDON PFLEIDERER,BRANDON PFLEIDERER (MN),1800/1800 Singles/Doubles Points AMATEUR
+Brandon Plush,Brandon K Plush (KS),1800/1800 Singles/Doubles Points AMATEUR
+BRANDON POWERS,BRANDON POWERS (UT),802/802 Singles/Doubles Points BEGINNER
+BRANDON RAFFERTY,BRANDON RAFFERTY (KY),1182/1182 Singles/Doubles Points ROOKIE
+BRANDON RAY,BRANDON RAY (NC),1182/1182 Singles/Doubles Points ROOKIE
+BRANDON ROSE,BRANDON ROSE (NJ),1800/1800 Singles/Doubles Points AMATEUR
+BRANDON SAMUEL WHYNAUCHT,BRANDON SAMUEL WHYNAUCHT (CA),1800/1800 Singles/Doubles Points AMATEUR
+Brandon Scott,Brandon Scott (SD),801/801 Singles/Doubles Points BEGINNER
+BRANDON SEIDL,BRANDON SEIDL (WI),1600/1836 Singles/Doubles Points AMATEUR
+BRANDON SILVA,BRANDON SILVA (OH),400/400 Singles/Doubles Points JUNIOR AMATEUR
+BRANDON SLUDER,BRANDON SLUDER (NC),1800/1800 Singles/Doubles Points AMATEUR
+BRANDON SMITH,BRANDON SMITH (TX),1182/1182 Singles/Doubles Points ROOKIE
+Brandon Swenson,Brandon Swenson (UT),800/800 Singles/Doubles Points BEGINNER
+BRANDON TACKETT,BRANDON TACKETT (GA),1800/1800 Singles/Doubles Points AMATEUR
+BRANDON TUBERA,BRANDON TUBERA (CA),1800/1800 Singles/Doubles Points AMATEUR
+Brandon UNDERHILL,Brandon UNDERHILL (TN),800/1015 Singles/Doubles Points ROOKIE
+BRANDON VEST,BRANDON VEST (KY),400/400 Singles/Doubles Points JUNIOR AMATEUR
+BRANDON WALLACE,BRANDON VEST (KY),400/400 Singles/Doubles Points JUNIOR AMATEUR
+BRANDON WATSON,BRANDON WALLACE (TX),1800/1800 Singles/Doubles Points AMATEUR
+BRANDON WHITEN,BRANDON WHITEN (TX),3100/3100 Singles/Doubles Points PRO
+BRANDON WHITTINGTON,BRANDON WHITTINGTON (LA),1800/1800 Singles/Doubles Points AMATEUR
+BRANDT TARUMOTO,BRANDT TARUMOTO (CA),3440/3440 Singles/Doubles Points PRO
+BRANDY MADRID,BRANDY MADRID (UT),1800/1800 Singles/Doubles Points / Women's Singles/Doubles Points
+Brannan Conrad,Brannan Conrad (IL),801/801 Singles/Doubles Points BEGINNER
+BRANT COCHRAN,BRANT COCHRAN (GA),1800/1800 Singles/Doubles Points AMATEUR
+BRANTLEY DELASHMUTT,BRANTLEY DELASHMUTT (TX),1800/1800 Singles/Doubles Points AMATEUR
+Braxton Myler,Braxton Myler (UT),800/800 Singles/Doubles Points BEGINNER
+BRAXTON WILHELMSEN,BRAXTON WILHELMSEN (UT),809/809 Singles/Doubles Points BEGINNER
+BRAYDEN ABBEY,BRAYDEN ABBEY (MI),1194/1600 Singles/Doubles Points AMATEUR
+BRAYDEN FOUST,BRAYDEN FOUST (GA),801/801 Singles/Doubles Points BEGINNER
+Brayden JONES,Brayden JONES (NC),801/801 Singles/Doubles Points BEGINNER
+Brean Roman,Brean Roman (CO),801/801 Singles/Doubles Points BEGINNER
+Brecht Pynoo,Brecht Pynoo (),1600/1600 Singles/Doubles Points AMATEUR
+BRENDA BROWN,BRENDA BROWN (IA),1800/1800 Singles/Doubles Points AMATEUR
+BRENDA CAMPBELL,BRENDA CAMPBELL (MN),1800/1800 Singles/Doubles Points AMATEUR
+BRENDA LACH,BRENDA LACH (NJ),1800/1800 Singles/Doubles Points AMATEUR
+BRENDA MYERS,BRENDA MYERS (OK),1800/1800 Singles/Doubles Points AMATEUR
+BRENDA RAMIREZ,BRENDA RAMIREZ (ID),1800/1800 Singles/Doubles Points AMATEUR
+BRENDA REMER,BRENDA REMER (IL),1800/1800 Singles/Doubles Points AMATEUR
+BRENDA TANKERSLEY,BRENDA TANKERSLEY (OK),1800/1800 Singles/Doubles Points AMATEUR
+BRENDA VETSCH,BRENDA VETSCH (MN),1800/1800 Singles/Doubles Points AMATEUR
+BRENDA WILSON,BRENDA WILSON (SC),1800/1800 Singles/Doubles Points AMATEUR
+BRENDA WIND,BRENDA WIND (TX),1800/1800 Singles/Doubles Points AMATEUR
+BRENDAN BARKER,BRENDAN BARKER (PA),1800/1800 Singles/Doubles Points AMATEUR
+Brendan Benson,Brendan Benson (CO),801/1005 Singles/Doubles Points ROOKIE
+Brendan Biondi,Brendan Biondi (MD),801/801 Singles/Doubles Points BEGINNER
+Brendan Blair,Brendan Blair (MO),400/400 Singles/Doubles Points JUNIOR AMATEUR
+BRENDAN BURNS,BRENDAN BURNS (OH),1182/1206 Singles/Doubles Points ROOKIE
+Brendan Dillon,Brendan Dillon (NY),1521/1558 Singles/Doubles Points AMATEUR
+Brendan FLAHERTY,Brendan M FLAHERTY (CA),1992/2375 Singles/Doubles Points EXPERT
+Brendan Johnston,Brendan Johnston (MO),400/400 Singles/Doubles Points JUNIOR AMATEUR
+BRENDAN KING,BRENDAN KING (SK),1800/1800 Singles/Doubles Points AMATEUR
+BRENDAN LOONEY,BRENDAN LOONEY (TX),1800/1800 Singles/Doubles Points AMATEUR
+Brendan ODonnell,Brendan ODonnell (NJ),800/831 Singles/Doubles Points BEGINNER
+BRENDEN LOGAN,BRENDEN LOGAN (CA),1800/1800 Singles/Doubles Points AMATEUR
+Brendon Westra,Brendon Westra (UT),802/802 Singles/Doubles Points BEGINNER
+Brennan Barney,"Brennan ""Surly"" M Barney (MI)",2312/2178 Singles/Doubles Points EXPERT
+brennan larue,brennan larue (NY),200/200 Singles/Doubles Points JUNIOR AMATEUR
+Brennan Louque,Brennan Louque (LA),828/1032 Singles/Doubles Points ROOKIE
+Brennan Stoltz,Brennan Stoltz (LA),801/801 Singles/Doubles Points BEGINNER
+BRENT ANDERSON,BRENT ANDERSON (MN),1800/1800 Singles/Doubles Points AMATEUR
+BRENT BEDNAR,BRENT BEDNAR (MN),3100/3100 Singles/Doubles Points PRO
+BRENT BLACK,BRENT BLACK (MS),1182/1182 Singles/Doubles Points ROOKIE
+Brent BROWN,Brent BROWN (KY),801/801 Singles/Doubles Points BEGINNER
+BRENT COLE,BRENT COLE (WI),1800/1800 Singles/Doubles Points AMATEUR
+BRENT CRAFT,BRENT CRAFT (MS),1182/1182 Singles/Doubles Points ROOKIE
+BRENT DESJARDINS,BRENT DESJARDINS (MN),1800/1800 Singles/Doubles Points AMATEUR
+BRENT DICKEY,BRENT DICKEY (TX),1800/1800 Singles/Doubles Points AMATEUR
+BRENT DOUGLAS,BRENT DICKEY (TX),1800/1800 Singles/Doubles Points AMATEUR
+BRENT FREDRICKSON,BRENT DOUGLAS (OK),1800/1800 Singles/Doubles Points AMATEUR
+BRENT GEARY,BRENT GEARY (NY),1800/1800 Singles/Doubles Points AMATEUR
+BRENT GRAVES,BRENT GRAVES (TX),1800/1800 Singles/Doubles Points AMATEUR
+BRENT GREATHOUSE,BRENT GREATHOUSE (MO),1182/1182 Singles/Doubles Points ROOKIE
+BRENT GUINN,BRENT GUINN (NC),1182/1182 Singles/Doubles Points ROOKIE
+BRENT HALES,BRENT HALES (IA),1800/1800 Singles/Doubles Points AMATEUR
+BRENT JAIME,BRENT JAIME (MI),1182/1182 Singles/Doubles Points ROOKIE
+Brent JONES,Brent JONES (AL),800/834 Singles/Doubles Points BEGINNER
+BRENT KINNISON,BRENT KINNISON (MS),1182/1182 Singles/Doubles Points ROOKIE
+BRENT KRUKEWITT,BRENT KRUKEWITT (IL),1182/1182 Singles/Doubles Points ROOKIE
+BRENT LANGLINAIS,BRENT LANGLINAIS (LA),1800/1800 Singles/Doubles Points AMATEUR
+BRENT LAROCHE,BRENT LAROCHE (NC),1800/1800 Singles/Doubles Points AMATEUR
+BRENT LEWALLEN,BRENT LEWALLEN (WI),1800/1800 Singles/Doubles Points AMATEUR
+BRENT MATSUNO,BRENT MATSUNO (),1800/1800 Singles/Doubles Points AMATEUR
+BRENT REAVES,BRENT REAVES (TN),1182/1182 Singles/Doubles Points ROOKIE
+BRENT RITTER,BRENT RITTER (TX),1800/1800 Singles/Doubles Points AMATEUR
+BRENT SCHARF,BRENT SCHARF (IA),1800/1800 Singles/Doubles Points AMATEUR
+Brent Stewart,Brent Stewart (TX),800/823 Singles/Doubles Points BEGINNER
+Brent Yates,Brent Yates (CAN),1576/1945 Singles/Doubles Points AMATEUR
+BRENYN ALBRIGHT,BRENYN ALBRIGHT (AZ),1800/1800 Singles/Doubles Points AMATEUR
+BRET BECKWITH,BRET BECKWITH (WA),1182/1182 Singles/Doubles Points ROOKIE
+BRET ERICKSON,BRET ERICKSON (MN),1800/1800 Singles/Doubles Points AMATEUR
+Bret Everman,Bret Everman (OH),801/801 Singles/Doubles Points BEGINNER
+BRET HAMNER,BRET HAMNER (TX),1800/1800 Singles/Doubles Points AMATEUR
+BRET LIVINGSTON,BRET LIVINGSTON (NM),1800/1800 Singles/Doubles Points AMATEUR
+BRET MARTIN,BRET MARTIN (TX),1182/1182 Singles/Doubles Points ROOKIE
+BRET STRONSACK,BRET STRONSACK (FL),1800/1800 Singles/Doubles Points AMATEUR
+BRET THOMAS,BRET THOMAS (MD),1182/1182 Singles/Doubles Points ROOKIE
+BRETT ANDERSON,BRETT ANDERSON (UT),802/802 Singles/Doubles Points BEGINNER
+BRETT AUSTIN,BRETT AUSTIN (IA),1800/1800 Singles/Doubles Points AMATEUR
+BRETT BREWER,BRETT BREWER (IL),866/1101 Singles/Doubles Points ROOKIE
+BRETT BURNS,BRETT BURNS (SD),1001/801 Singles/Doubles Points ROOKIE
+BRETT CARRINGONE,BRETT CARRINGONE (LA),1800/1800 Singles/Doubles Points AMATEUR
+Brett Chapman,Brett Chapman (CO),801/801 Singles/Doubles Points BEGINNER
+BRETT COIGNARD,BRETT COIGNARD (NY),1182/1182 Singles/Doubles Points ROOKIE
+BRETT CRANE,BRETT CRANE (),1600/1600 Singles/Doubles Points AMATEUR
+BRETT DAVIS,BRETT DAVIS (TX),1800/1800 Singles/Doubles Points AMATEUR
+BRETT DUE,BRETT DUE (WI),1800/1800 Singles/Doubles Points AMATEUR
+BRETT HANSEN,BRETT HANSEN (TX),1800/1800 Singles/Doubles Points AMATEUR
+BRETT HARPER,BRETT HARPER (CO),1800/1800 Singles/Doubles Points AMATEUR
+BRETT HEWETT,BRETT HARPER (CO),1800/1800 Singles/Doubles Points AMATEUR
+BRETT HRNCIR,BRETT HEWETT (NC),801/801 Singles/Doubles Points BEGINNER
+BRETT KENYON,BRETT KENYON (TX),1800/1800 Singles/Doubles Points AMATEUR
+BRETT KUSCIENKO,BRETT KUSCIENKO (MN),1800/1800 Singles/Doubles Points AMATEUR
+BRETT LUNNING,BRETT LUNNING (MN),1800/1800 Singles/Doubles Points AMATEUR
+BRETT MCGUIRE,BRETT MCGUIRE (OH),1800/1800 Singles/Doubles Points AMATEUR
+BRETT MONSON,BRETT MONSON (ON),1800/1800 Singles/Doubles Points AMATEUR
+Brett Nooyen,Brett Nooyen (WI),1840/2068 Singles/Doubles Points EXPERT
+BRETT P. HATTAWAY,BRETT P. HATTAWAY (TX),1800/1800 Singles/Doubles Points AMATEUR
+Brett Palmer,Brett Palmer (NY),200/201 Singles/Doubles Points JUNIOR AMATEUR
+BRETT RADEBAUGH,BRETT RADEBAUGH (CO),1800/1800 Singles/Doubles Points AMATEUR
+Brett Ramey,Brett Ramey (OH),1789/1594 Singles/Doubles Points AMATEUR
+BRETT SABIO,BRETT SABIO (NC),1800/1800 Singles/Doubles Points AMATEUR
+Brett Sather,Brett T Sather (NC),1600/1600 Singles/Doubles Points AMATEUR
+BRETT STRAWN,BRETT STRAWN (ON),1800/1800 Singles/Doubles Points AMATEUR
+BRETT TOUPS,BRETT TOUPS (LA),1800/1895 Singles/Doubles Points AMATEUR
+BRETT WALKER,BRETT WALKER (TX),1800/1800 Singles/Doubles Points AMATEUR
+Brett WEST,Brett WEST (TX),835/841 Singles/Doubles Points BEGINNER
+"BRIAN ""BUBBA"" STEADMAN","BRIAN ""BUBBA"" STEADMAN (UT)",1182/1182 Singles/Doubles Points ROOKIE
+BRIAN ABLER,BRIAN ABLER (WI),1800/1800 Singles/Doubles Points AMATEUR
+BRIAN ABSTON,BRIAN ABSTON (OK),1800/1800 Singles/Doubles Points AMATEUR
+BRIAN ADAMS,BRIAN ADAMS (TX),1800/1800 Singles/Doubles Points AMATEUR
+BRIAN AFRICK,BRIAN AFRICK (NV),1800/1800 Singles/Doubles Points AMATEUR
+BRIAN ALLAN,BRIAN ALLAN (TX),1800/1800 Singles/Doubles Points AMATEUR
+BRIAN ANDERSON,BRIAN ANDERSON (IN),1800/1800 Singles/Doubles Points AMATEUR
+BRIAN AREGOOD,BRIAN AREGOOD (CO),1800/1800 Singles/Doubles Points AMATEUR
+BRIAN ASHER,BRIAN ASHER (WI),1800/1800 Singles/Doubles Points AMATEUR
+BRIAN BAKER,BRIAN S BAKER (LA),1182/1182 Singles/Doubles Points ROOKIE
+BRIAN BALM,BRIAN BALM (IA),1800/1800 Singles/Doubles Points AMATEUR
+BRIAN BANNON,BRIAN BANNON (MO),1800/1800 Singles/Doubles Points AMATEUR
+Brian BARKER,Brian BARKER (OH),800/800 Singles/Doubles Points BEGINNER
+BRIAN BARNETT,BRIAN BARNETT (TN),1800/1800 Singles/Doubles Points AMATEUR
+Brian Barowsky,Brian Barowsky (TX),800/800 Singles/Doubles Points BEGINNER
+BRIAN BAUMGARTNER,BRIAN BAUMGARTNER (OH),1800/1800 Singles/Doubles Points AMATEUR
+BRIAN BAYLIFF,BRIAN BAYLIFF (NY),1800/1800 Singles/Doubles Points AMATEUR
+BRIAN BEAN,BRIAN BEAN (TX),1800/1800 Singles/Doubles Points AMATEUR
+BRIAN BERG,BRIAN BERG (MN),1800/1800 Singles/Doubles Points AMATEUR
+BRIAN BERNADET,BRIAN BERNADET (NY),1800/1800 Singles/Doubles Points AMATEUR
+BRIAN BLUM,BRIAN BLUM (WI),1800/1800 Singles/Doubles Points AMATEUR
+BRIAN BOLCAVAGE,BRIAN BOLCAVAGE (PA),1800/1800 Singles/Doubles Points AMATEUR
+BRIAN BOUCHARD,BRIAN BOUCHARD (VT),1182/1182 Singles/Doubles Points ROOKIE
+BRIAN BRANKIS,BRIAN BRANKIS (IA),1843/1800 Singles/Doubles Points AMATEUR
+BRIAN BROTZ,BRIAN BROTZ (WI),1800/1800 Singles/Doubles Points AMATEUR
+BRIAN BULLOCK,BRIAN BULLOCK (TX),1800/1800 Singles/Doubles Points AMATEUR
+Brian Burgess,Brian Burgess (CAN),1362/1889 Singles/Doubles Points AMATEUR
+BRIAN BURKAANBT,BRIAN BURKAANBT (MI),1800/1800 Singles/Doubles Points AMATEUR
+BRIAN BURKE,BRIAN BURKE (MD),1182/1182 Singles/Doubles Points ROOKIE
+BRIAN BURNS,BRIAN BURNS (MA),1182/1182 Singles/Doubles Points ROOKIE
+BRIAN CADDELL,BRIAN CADDELL (MD),1182/1182 Singles/Doubles Points ROOKIE
+BRIAN CAREY,BRIAN CAREY (TX),1800/1800 Singles/Doubles Points AMATEUR
+BRIAN CAWHERN,BRIAN CAWHERN (NC),1800/1800 Singles/Doubles Points AMATEUR
+Brian Chang,Brian Chang (MI),1182/1182 Singles/Doubles Points ROOKIE
+BRIAN CHAUVIN,BRIAN CHAUVIN (LA),1600/1600 Singles/Doubles Points AMATEUR
+Brian CHISHOLM,Brian CHISHOLM (MI),2172/2299 Singles/Doubles Points EXPERT
+BRIAN CIFOR,BRIAN CIFOR (TX),1800/1800 Singles/Doubles Points AMATEUR
+BRIAN CLOTHIER,BRIAN CLOTHIER (KY),1800/1800 Singles/Doubles Points AMATEUR
+BRIAN COHEN,BRIAN COHEN (MA),1182/1182 Singles/Doubles Points ROOKIE
+BRIAN COHN,BRIAN COHN (OH),1800/1800 Singles/Doubles Points AMATEUR
+BRIAN COOKE,BRIAN COOKE (NC),1600/1600 Singles/Doubles Points AMATEUR
+BRIAN COOLIDGE,BRIAN COOLIDGE (GA),1800/1800 Singles/Doubles Points AMATEUR
+BRIAN COPPERSMITH,BRIAN COPPERSMITH (CA),1800/1800 Singles/Doubles Points AMATEUR
+BRIAN COSTELLO,BRIAN COSTELLO (CO),1999/2278 Singles/Doubles Points EXPERT
+BRIAN COX,BRIAN COX (MO),1800/1800 Singles/Doubles Points AMATEUR
+BRIAN CRISWELL,BRIAN CRISWELL (OH),1800/1800 Singles/Doubles Points AMATEUR
+BRIAN DAHLHEIMER,BRIAN DAHLHEIMER (PA),1800/1800 Singles/Doubles Points AMATEUR
+BRIAN DALLMANN,BRIAN DALLMANN (MN),1800/1800 Singles/Doubles Points AMATEUR
+BRIAN DEEHAN,BRIAN DEEHAN (FL),1800/1800 Singles/Doubles Points AMATEUR
+BRIAN DEGENER,BRIAN DEGENER (NY),1800/1800 Singles/Doubles Points AMATEUR
+BRIAN DENSON,BRIAN DENSON (GA),1182/1182 Singles/Doubles Points ROOKIE
+BRIAN DILLON,BRIAN DILLON (MN),1800/1800 Singles/Doubles Points AMATEUR
+BRIAN DOLLAR,BRIAN DOLLAR (MS),1182/1182 Singles/Doubles Points ROOKIE
+BRIAN DUBE,BRIAN DUBE (NH),2323/2821 Singles/Doubles Points EXPERT
+BRIAN DUNEFSKY,BRIAN DUNEFSKY (NY),1800/1800 Singles/Doubles Points AMATEUR
+Brian Dye,Brian Dye (CO),1010/1119 Singles/Doubles Points ROOKIE
+Brian Eaton,Brian Eaton (CA),1033/1661 Singles/Doubles Points AMATEUR
+BRIAN EICKHOLT,BRIAN EICKHOLT (MI),1800/1800 Singles/Doubles Points AMATEUR
+BRIAN ELLIOTT,BRIAN ELLIOTT (MI),1800/1800 Singles/Doubles Points AMATEUR
+BRIAN ELLSWORTH,BRIAN ELLSWORTH (TN),801/801 Singles/Doubles Points BEGINNER
+BRIAN EMRICH,BRIAN EMRICH (NY),1800/1800 Singles/Doubles Points AMATEUR
+BRIAN FALKOWSKI,BRIAN FALKOWSKI (MI),1986/1962 Singles/Doubles Points AMATEUR
+BRIAN FARLEY,BRIAN FARLEY (IA),1800/1800 Singles/Doubles Points AMATEUR
+BRIAN FERGUSON,BRIAN FERGUSON (CO),1800/1800 Singles/Doubles Points AMATEUR
+BRIAN FLEMING,BRIAN FLEMING (IL),1800/1800 Singles/Doubles Points AMATEUR
+BRIAN FLUELAN,BRIAN FLUELAN (OK),1182/1182 Singles/Doubles Points ROOKIE
+BRIAN FOLEY,BRIAN FOLEY (CO),1800/1800 Singles/Doubles Points AMATEUR
+BRIAN FRENCH,BRIAN FRENCH (TX),1800/1800 Singles/Doubles Points AMATEUR
+BRIAN FRIEDRICH,BRIAN FRIEDRICH (IA),1800/1800 Singles/Doubles Points AMATEUR
+BRIAN FUKASHIMA,BRIAN FUKASHIMA (XX),1800/1800 Singles/Doubles Points AMATEUR
+BRIAN GENIK,BRIAN GENIK (MI),1800/1800 Singles/Doubles Points AMATEUR
+BRIAN GERDING,BRIAN J GERDING (OH),2197/2331 Singles/Doubles Points EXPERT
+BRIAN GREEN,BRIAN GREEN (TX),1800/1800 Singles/Doubles Points AMATEUR
+BRIAN GRIGGS,BRIAN GRIGGS (NC),801/801 Singles/Doubles Points BEGINNER
+Brian Guaiana,"Brian ""Beeg"" Guaiana (NY)",3440/3440 Singles/Doubles Points PRO
+Brian Gustavel,Brian Gustavel (NY),1182/1182 Singles/Doubles Points ROOKIE
+BRIAN HAHNLEN,BRIAN HAHNLEN (OH),1800/1800 Singles/Doubles Points AMATEUR
+BRIAN HAINES,BRIAN HAINES (NC),1182/1182 Singles/Doubles Points ROOKIE
+BRIAN HALEY,BRIAN HALEY (MS),1182/1182 Singles/Doubles Points ROOKIE
+BRIAN HANSON,BRIAN HANSON (MN),1800/1800 Singles/Doubles Points AMATEUR
+BRIAN HARMS,BRIAN HARMS (EN),1800/1800 Singles/Doubles Points AMATEUR
+Brian Harrington,Brian Harrington (TX),1800/1800 Singles/Doubles Points AMATEUR
+BRIAN HATTON,BRIAN HATTON (GA),1800/1800 Singles/Doubles Points AMATEUR
+BRIAN HEGLER,BRIAN HEGLER (OR),1800/1800 Singles/Doubles Points AMATEUR
+BRIAN HICKS,BRIAN HICKS (WA),1800/1800 Singles/Doubles Points AMATEUR
+BRIAN HILL,BRIAN HILL (OH),1182/1182 Singles/Doubles Points ROOKIE
+BRIAN HOGAN,BRIAN P HOGAN (LA),1994/2228 Singles/Doubles Points EXPERT
+BRIAN HOLLAND,BRIAN HOLLAND (SD),1800/1800 Singles/Doubles Points AMATEUR
+BRIAN HOLMAN,BRIAN HOLMAN (CT),1182/1182 Singles/Doubles Points ROOKIE
+BRIAN HORNER,BRIAN HOLMAN (CT),1182/1182 Singles/Doubles Points ROOKIE
+BRIAN HOWARD,BRIAN HORNER (IL),1182/1182 Singles/Doubles Points ROOKIE
+BRIAN HUNT,BRIAN HUNT (NC),1182/1182 Singles/Doubles Points ROOKIE
+BRIAN HUNT,BRIAN HUNT (NC),1182/1182 Singles/Doubles Points ROOKIE
+BRIAN INGRAM,BRIAN INGRAM (MS),1889/2101 Singles/Doubles Points EXPERT
+BRIAN IVERSON,BRIAN IVERSON (ND),1800/1800 Singles/Doubles Points AMATEUR
+BRIAN IVINS,BRIAN IVINS (OK),1800/1800 Singles/Doubles Points AMATEUR
+Brian Jackson,"Brian ""Action"" C Jackson (TN)",1800/1800 Singles/Doubles Points AMATEUR
+Brian Jaggers,BRIAN JAGGERS (CA),1800/1800 Singles/Doubles Points AMATEUR
+BRIAN JAGGERS,BRIAN JAGGERS (CA),1800/1800 Singles/Doubles Points AMATEUR
+BRIAN JANSEN,BRIAN JANSEN (MN),1800/1800 Singles/Doubles Points AMATEUR
+BRIAN JEAGER,BRIAN JEAGER (WI),1800/1800 Singles/Doubles Points AMATEUR
+BRIAN JOHNSON,BRIAN JOHNSON (CA),1800/1800 Singles/Doubles Points AMATEUR
+BRIAN JOHNSON,BRIAN JOHNSON (CA),1800/1800 Singles/Doubles Points AMATEUR
+BRIAN JOHNSTON,BRIAN JOHNSTON (KS),1800/1800 Singles/Doubles Points AMATEUR
+BRIAN JOLLY,BRIAN JOLLY (OK),1800/1800 Singles/Doubles Points AMATEUR
+BRIAN JONES,BRIAN JONES (MS),1182/1182 Singles/Doubles Points ROOKIE
+BRIAN KACZANOWSKI,BRIAN KACZANOWSKI (MI),1182/1182 Singles/Doubles Points ROOKIE
+BRIAN KELGS,BRIAN KELGS (KS),1800/1800 Singles/Doubles Points AMATEUR
+BRIAN KELLEY,BRIAN KELLEY (MO),1800/1800 Singles/Doubles Points AMATEUR
+BRIAN KELLY,BRIAN KELLY (NM),1800/1800 Singles/Doubles Points AMATEUR
+BRIAN KEMMERFELL,BRIAN KEMMERFELL (CO),1800/1800 Singles/Doubles Points AMATEUR
+BRIAN KING,BRIAN KING (NV),3100/3100 Singles/Doubles Points PRO
+Brian Kirkland,Brian Kirkland (OH),1182/1182 Singles/Doubles Points ROOKIE
+BRIAN KITZMANN,BRIAN KITZMANN (WI),1800/1800 Singles/Doubles Points AMATEUR
+BRIAN KLASSEN,BRIAN KLASSEN (FL),1800/1800 Singles/Doubles Points AMATEUR
+BRIAN KLINE,BRIAN KLINE (NC),1800/1800 Singles/Doubles Points AMATEUR
+BRIAN KOOPMAN,BRIAN KOOPMAN (MN),1800/1800 Singles/Doubles Points AMATEUR
+Brian Kramer,Brian Kramer (FL),1010/1010 Singles/Doubles Points ROOKIE
+BRIAN KULAS,BRIAN KULAS (KS),1800/1800 Singles/Doubles Points AMATEUR

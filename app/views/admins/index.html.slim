@@ -1,4 +1,7 @@
 .container.py-4
   h3.text-center.pb-4 Admin Menu
-  - if Rails.env.development?
-    = link_to "Collect Player Points Job", collect_points_job_rankings_ranks_path, method: :post, class: 'btn btn-outline-primary'
+  .d-block.py-2
+    - if Rails.env.development?
+      = link_to "Collect Player Points Job", collect_points_job_rankings_ranks_path, method: :post, class: 'btn btn-outline-primary'
+  .d-block.py-2
+    = link_to "Create Players Job", create_players_with_points_job_rankings_ranks_path, method: :post, class: 'btn btn-outline-primary'

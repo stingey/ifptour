@@ -1,10 +1,42 @@
-.container.py-4
-  h3.text-center = @player.full_name
-  p.text-center = "Rank: #{@player.ranking_detail.highest_rank}"
-  p.text-center = "Singles Points: #{@player.ranking_detail.singles_points}"
-  p.text-center = "Doubles Points: #{@player.ranking_detail.doubles_points}"
+.container
+  h3.text-center.py-4 = @player.full_name
+  .row
+    .col-3 Singles Rank
+    .col-3 = @player.ranking_detail.singles_position
+  .row
+    .col-3 Singles Class
+    .col-3 = @player.ranking_detail.singles_rank
+  .row
+    .col-3 Singles Points
+    .col-3 = @player.ranking_detail.singles_points
+  .row
+    .col-3 Doubles Rank
+    .col-3 = @player.ranking_detail.doubles_position
+  .row
+    .col-3 Doubles Class
+    .col-3 = @player.ranking_detail.doubles_rank
+  .row
+    .col-3 Doubles Points
+    .col-3 = @player.ranking_detail.doubles_points
   - if @player.ranking_detail.womens_singles_points.present?
-    p.text-center = "Women's Singles Points: #{@player.ranking_detail.womens_singles_points}"
-    p.text-center = "Women's Doubles Points: #{@player.ranking_detail.womens_doubles_points}"
+    .row
+      .col-3 Women's Singles Rank
+      .col-3 = @player.ranking_detail.womens_singles_position
+    .row
+      .col-3 Women's Singles Class
+      .col-3 = @player.ranking_detail.womens_singles_rank
+    .row
+      .col-3 Women's Singles Points
+      .col-3 = @player.ranking_detail.womens_singles_points
+    .row
+      .col-3 Women's Doubles Rank
+      .col-3 = @player.ranking_detail.womens_doubles_position
+    .row
+      .col-3 Women's Doubles Class
+      .col-3 = @player.ranking_detail.womens_doubles_rank
+    .row
+      .col-3 Women's Doubles Point
+      .col-3 = @player.ranking_detail.womens_doubles_points
+
   .button
-    = link_to "edit employee", edit_player_path, class: 'btn btn-outline-primary' if current_user.try(:admin?)
+    = link_to "edit player", edit_player_path, class: 'btn btn-outline-primary' if current_user.try(:admin?)
