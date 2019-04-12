@@ -42,6 +42,8 @@ class CollectPointsChunkJob
         name_and_state = browser.find('#lblName').text
         ranking = browser.find('#lblRating').text
         csv << [row.first, name_and_state, ranking]
+      rescue Capybara::ElementNotFound
+        next
       end
     end
   end
