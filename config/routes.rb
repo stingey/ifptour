@@ -39,6 +39,9 @@ Rails.application.routes.draw do
 
   resources :players, only: %i[index new create show edit update]
 
+  get '/404',       to: 'errors#not_found',             as: :not_found
+  get '/500',       to: 'errors#internal_server_error', as: :internal_server_error
+  get '/422',       to: 'errors#unprocessable_entity',  as: :unprocessable_entity
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
 # rubocop:enable Metrics/BlockLength
