@@ -4,19 +4,20 @@ class PlayerRankingJob
     doubles: :doubles_position=,
     womens_singles: :womens_singles_position=,
     womens_doubles: :womens_doubles_position=
-            }.freeze
+  }.freeze
 
-  def perform
-    rank(singles_players, COLUMNS[:singles])
-    rank(doubles_players, COLUMNS[:doubles])
-    rank(womens_singles_players, COLUMNS[:womens_singles])
-    rank(womens_doubles_players, COLUMNS[:womens_doubles])
-  end
+  # def perform
+  #   rank(singles_players, COLUMNS[:singles])
+  #   rank(doubles_players, COLUMNS[:doubles])
+  #   rank(womens_singles_players, COLUMNS[:womens_singles])
+  #   rank(womens_doubles_players, COLUMNS[:womens_doubles])
+  # end
 
   private
 
   def rank(players, position)
     players.each.with_index(1) do |player, index|
+      player.ranking_detail.send("previous_#{position}".to_sym, player.ranking_detail.send(position.to_s.chop.to_sym))
       player.ranking_detail.send(position, index)
       player.ranking_detail.save
     end

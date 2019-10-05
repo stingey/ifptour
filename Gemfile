@@ -7,10 +7,11 @@ end
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-ruby '2.6.1'
+ruby '2.4.2'
+gem 'rake','12.3.3'
 gem 'rails', '~> 5.1.4'
 gem 'puma', '~> 3.7'
-gem 'sass-rails', '~> 5.0'
+gem 'sass-rails', '~> 5.0.6'
 gem 'uglifier', '>= 1.3.0'
 gem 'autoprefixer-rails'
 gem 'coffee-rails', '~> 4.2'
