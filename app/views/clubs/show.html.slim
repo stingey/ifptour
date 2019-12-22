@@ -3,22 +3,34 @@
     = link_to 'New Tournament', new_club_local_tournament_path(@club), class: 'btn btn-outline-primary' if current_user.try(:admin?)
 .container
   h2 = @club.name
-  table.table
-    thead
-      tr
-        th style="width: 35%" Name
-        th style="width: 45%" Type
-        th style="width: 15%" Date
-    tbody
-      -if @club.local_tournaments.blank?
-        tr
-          td.text-center colspan='3' There are no tournaments to show
-      - else
-        - @club.local_tournaments.each do |tournament|
-          tr.clickable-row data-link="#{edit_club_local_tournament_path(tournament.club, tournament)}"
-            td = tournament.name.titleize
-            td = tournament.tournament_type.titleize
-            td = tournament.created_at.strftime("%b %d, %Y")
+  .row.table-header.py-3.mx-1
+    .col-5 Name
+    .col-5 Type
+    .col-2 Date
+  - if @club.local_tournaments.blank?
+    p.py-3.table-row.text-center
+  - else
+    - @club.local_tournaments.each do |tournament|
+      .row.py-2.mx-1.table-row.clickable-row data-link="#{edit_club_local_tournament_path(tournament.club, tournament)}"
+        .col-5 = tournament.name.titleize
+        .col-5 = tournament.tournament_type.titleize
+        .col-2 = tournament.created_at.strftime("%b %d, %Y")
+  / table.table
+  /   thead
+  /     tr
+  /       th style="width: 35%" Name
+  /       th style="width: 45%" Type
+  /       th style="width: 15%" Date
+  /   tbody
+  /     -if @club.local_tournaments.blank?
+  /       tr
+  /         td.text-center colspan='3' There are no tournaments to show
+  /     - else
+  /       - @club.local_tournaments.each do |tournament|
+  /         tr.clickable-row data-link="#{edit_club_local_tournament_path(tournament.club, tournament)}"
+  /           td = tournament.name.titleize
+  /           td = tournament.tournament_type.titleize
+  /           td = tournament.created_at.strftime("%b %d, %Y")
 
 javascript:
   $("tr[data-link]").click(function() {

@@ -28,7 +28,6 @@ gem 'jquery-fileupload-rails', '~> 0.4.7'
 gem 'simple_form'
 gem 'delayed_job_active_record'
 gem 'pg'
-gem 'challonge-api'
 gem 'httparty', '~> 0.16.2'
 gem 'awesome_print', require:"ap"
 gem 'nokogiri'
