@@ -33,6 +33,6 @@
   /           td = tournament.created_at.strftime("%b %d, %Y")
 
 javascript:
-  $("tr[data-link]").click(function() {
+  $(".clickable-row").click(function() {
     window.location = $(this).data("link")
   })

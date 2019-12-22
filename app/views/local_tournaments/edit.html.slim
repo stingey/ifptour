@@ -10,7 +10,7 @@
     - @tournament.participants.each do |participant|
       li.pb-1
         div style="display:inline-block;width:150px;padding-right: 10px" = participant.humanize
-        = link_to 'remove', club_local_tournament_remove_player_path(@tournament.club, @tournament, participant), method: :delete, class: 'btn btn-outline-primary btn-sm'
+          = link_to 'remove', club_local_tournament_remove_player_path(@tournament.club, @tournament, participant), method: :delete, class: 'btn btn-outline-primary btn-sm'
 
   - if @tournament.started?
     = link_to 'View Bracket', club_local_tournament_path(@tournament.club, @tournament), class: 'btn btn-outline-primary'

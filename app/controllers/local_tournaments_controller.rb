@@ -14,6 +14,7 @@ class LocalTournamentsController < ApplicationController
 
   def edit
     @tournament = LocalTournament.find(params[:id])
+    redirect_to club_local_tournament_path(@tournament.club, @tournament) if @tournament.started?
     authorize! :manage, @tournament
   end
 
@@ -75,7 +76,7 @@ class LocalTournamentsController < ApplicationController
   end
 
   def find_or_create_challonge_tournament(tournament)
-    return Challonge::Tournament.find(tournament.challonge_id) if tournament.challonge_id.present?
+    return ChallongeApi.find_tournament(tournament.challonge_id) if tournament.challonge_id.present?
 
     json_response = ChallongeApi.create_tournament(tournament)
     tournament.update(challonge_url: json_response.parsed_response.dig('tournament', 'live_image_url'),
