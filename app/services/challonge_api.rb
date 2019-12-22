@@ -78,7 +78,6 @@ class ChallongeApi
   def self.start(tournament_id)
     url = "https://api.challonge.com/v1/tournaments/#{tournament_id}/start.json"
     query = { api_key: API_KEY }
-    debugger
     json_response = HTTParty.post(url, query: query)
     check_for_errors(json_response)
     json_response
