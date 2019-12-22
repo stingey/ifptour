@@ -3,7 +3,7 @@
 class Users::PasswordsController < Devise::PasswordsController
   # GET /resource/password/new
   def new
-    authorize! :manage, current_user
+    # authorize! :manage, current_user
     super
   end
 

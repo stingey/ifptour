@@ -6,7 +6,7 @@ class Users::RegistrationsController < Devise::RegistrationsController
 
   # GET /resource/sign_up
   def new
-    authorize! :read, current_user
+    # authorize! :read, current_user
     super
   end
 

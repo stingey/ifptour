@@ -15,19 +15,17 @@ class LocalTournamentsController < ApplicationController
   def edit
     @tournament = LocalTournament.find(params[:id])
     redirect_to club_local_tournament_path(@tournament.club, @tournament) if @tournament.started?
-    authorize! :manage, @tournament
   end
 
   def show
     @tournament = LocalTournament.find(params[:id])
-    authorize! :read, @tournament
     @challonge_tournament = ChallongeApi.find_tournament(@tournament.challonge_id)
     @tournament_matches = ChallongeApi.find_matches(@tournament.challonge_id)
   end
 
   def create
     @club = Club.find(params[:club_id])
-    @local_tournament = @club.local_tournaments.build(local_tournaments_params)
+    @local_tournament = @club.local_tournaments.new(local_tournaments_params)
     if @local_tournament.save
       redirect_to edit_club_local_tournament_path(@local_tournament.club, @local_tournament)
     else
