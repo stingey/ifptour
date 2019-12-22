@@ -1,9 +1,9 @@
-require 'selenium-webdriver'
-require 'nokogiri'
-require 'capybara'
-require 'csv'
+# require 'selenium-webdriver'
+# require 'nokogiri'
+# require 'capybara'
+# require 'csv'
 # Configurations
-class CollectPlayerPointsJob
+# class CollectPlayerPointsJob
   # def perform
   #   csv_text = File.read('spec/scraper/data_input/full_player_master_list.csv')
   #   csv_name_file = CSV.parse(csv_text, headers: false)
@@ -21,4 +21,4 @@ class CollectPlayerPointsJob
   #   Delayed::Job.enqueue(CollectPointsChunkJob.new(ninth, 'nine'))
   #   Delayed::Job.enqueue(CollectPointsChunkJob.new(tenth, 'ten'))
   # end
-end
+# end

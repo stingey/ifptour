@@ -4,32 +4,26 @@ nav.navbar.navbar-toggleable-md.navbar-light.navbar-expand-md.bg-faded.sticky-to
   = link_to image_tag('pft.png', class: 'logo-image'), root_path
   .collapse.navbar-collapse id="navbarNavDropdown"
     ul.navbar-nav
-      li.nav-item.dropdown
-        = link_to 'TOURNAMENTS', '#', class: 'nav-link dropdown-toggle', id: 'navbarDropdownTournamentsLink', 'data-toggle': 'dropdown', 'aria-haspopup': 'true'
-        .dropdown-menu aria-labelledby="navbarDropdownTournamentsLink"
-          = link_to 'TOUR TOURNAMENTS', tournaments_path, class: 'dropdown-item'
-          = link_to 'LOCAL TOURNAMENTS', local_tournaments_path, class: 'dropdown-item'
-      - if ENV['USE_RESULTS'] == 'true'
-        li.nav-item
-          = link_to 'RESULTS', results_path, class: 'nav-link'
-      li.nav-item.dropdown
-        = link_to 'PLAYER RANKINGS', '#', class: 'nav-link dropdown-toggle', id: 'navbarDropdownMenuLink', 'data-toggle': 'dropdown', 'aria-haspopup': 'true'
-        .dropdown-menu aria-labelledby="navbarDropdownMenuLink"
-          = link_to 'SINGLES', rankings_singles_path, class: 'dropdown-item'
-          = link_to 'DOUBLES', rankings_doubles_path, class: 'dropdown-item'
-          = link_to 'WOMENS SINGLES', rankings_womens_singles_path, class: 'dropdown-item'
-          = link_to 'WOMENS DOUBLES', rankings_womens_doubles_path, class: 'dropdown-item'
-      - if ENV['USE_PRO_SHOP'] == 'true'
-        li.nav-item
-          = link_to 'PRO SHOP', pro_shop_show_path, class: 'nav-link'
+      / li.nav-item.dropdown
+      /   = link_to 'TOURNAMENTS', '#', class: 'nav-link dropdown-toggle', id: 'navbarDropdownTournamentsLink', 'data-toggle': 'dropdown', 'aria-haspopup': 'true'
+      /   .dropdown-menu aria-labelledby="navbarDropdownTournamentsLink"
+      /     = link_to 'TOUR TOURNAMENTS', tournaments_path, class: 'dropdown-item'
+      /     = link_to 'LOCAL TOURNAMENTS', local_tournaments_path, class: 'dropdown-item'
+      / - if ENV['USE_RESULTS'] == 'true'
+      /   li.nav-item
+      /     = link_to 'RESULTS', results_path, class: 'nav-link'
+      / li.nav-item.dropdown
+      /   = link_to 'PLAYER RANKINGS', '#', class: 'nav-link dropdown-toggle', id: 'navbarDropdownMenuLink', 'data-toggle': 'dropdown', 'aria-haspopup': 'true'
+      /   .dropdown-menu aria-labelledby="navbarDropdownMenuLink"
+      /     = link_to 'SINGLES', rankings_singles_path, class: 'dropdown-item'
+      /     = link_to 'DOUBLES', rankings_doubles_path, class: 'dropdown-item'
+      /     = link_to 'WOMENS SINGLES', rankings_womens_singles_path, class: 'dropdown-item'
+      /     = link_to 'WOMENS DOUBLES', rankings_womens_doubles_path, class: 'dropdown-item'
       - if ENV['USE_PHOTOS'] == 'true'
         li.nav-item
           = link_to 'PHOTOS', photos_path, class: 'nav-link'
       - if ENV['USE_HALL_OF_FAME'] == 'true'
         li.nav-item
           = link_to 'HALL OF FAME', hall_of_fames_path, class: 'nav-link'
-      - if ENV['USE_RULES_OF_PLAY'] == 'true'
-        li.nav-item
-          = link_to 'RULES OF PLAY', rules_path, class: 'nav-link'
       li.nav-item
         = link_to 'FOOSBALL CLUBS', clubs_path, class: 'nav-link'

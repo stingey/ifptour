@@ -3,7 +3,7 @@
     - if current_user.try(:admin?)
       .search-item.button
           = link_to "new player", new_player_path, class: 'btn btn-outline-primary'
-      .search-item.button
+      / .search-item.button
         / = link_to "re-rank all players", rankings_ranks_path, method: :post, class: 'btn btn-outline-primary'
     .search-item.button.dropdown
       = select_tag :rank_class, options_for_select(RankingDetail::RANKS.map(&:titleize), selected: params[:rank_class]), { include_blank: 'all classes', class: 'btn btn-outline-primary dropdown-toggle class-filter', id: 'RankingClassSelector'}

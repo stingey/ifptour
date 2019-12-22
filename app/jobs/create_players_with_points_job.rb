@@ -1,5 +1,5 @@
 # Delayed::Job.enqueue(CreatePlayersWithPointsJob.new)
-class CreatePlayersWithPointsJob
+# class CreatePlayersWithPointsJob
   # def perform
   #   # Player.destroy_all
   #   csv_text_one = CSV.read('spec/scraper/data_output/name_state_points_one.csv', headers: false)
@@ -54,4 +54,4 @@ class CreatePlayersWithPointsJob
   #     player.save!
   #   end
   # end
-end
+# end

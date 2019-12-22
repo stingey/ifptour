@@ -16,11 +16,11 @@ class PlayerRankingJob
   private
 
   def rank(players, position)
-    players.each.with_index(1) do |player, index|
-      player.ranking_detail.send("previous_#{position}".to_sym, player.ranking_detail.send(position.to_s.chop.to_sym))
-      player.ranking_detail.send(position, index)
-      player.ranking_detail.save
-    end
+    # players.each.with_index(1) do |player, index|
+    #   player.ranking_detail.send("previous_#{position}".to_sym, player.ranking_detail.send(position.to_s.chop.to_sym))
+    #   player.ranking_detail.send(position, index)
+    #   player.ranking_detail.save
+    # end
   end
 
   def singles_players
