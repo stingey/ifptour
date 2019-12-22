@@ -28,4 +28,5 @@
           = f.select :winner, options_for_select([[player_one['name'], player_one['id']], [player_two['name'], player_two['id']]]), { include_blank: 'Select' }, {class: 'card-item'}
           = f.submit
 
+= link_to 'Delete Tournament', club_local_tournament_path(@tournament.club, @tournament), method: :delete, class: 'm-3 btn btn-outline-primary' if current_user.try(:admin?)
 
