@@ -20,14 +20,15 @@ class LocalTournamentsController < ApplicationController
   def show
     @tournament = LocalTournament.find(params[:id])
     authorize! :read, @tournament
-    @challonge_tournament = Challonge::Tournament.find(@tournament.challonge_id)
+    @challonge_tournament = ChallongeApi.find_tournament(@tournament.challonge_id)
+    @tournament_matches = ChallongeApi.find_matches(@tournament.challonge_id)
   end
 
   def create
     @club = Club.find(params[:club_id])
     @local_tournament = @club.local_tournaments.build(local_tournaments_params)
     if @local_tournament.save
-      redirect_to club_local_tournament_path(@local_tournament.club_id, @local_tournament.id)
+      redirect_to edit_club_local_tournament_path(@local_tournament.club, @local_tournament)
     else
       render 'new'
     end
@@ -49,14 +50,14 @@ class LocalTournamentsController < ApplicationController
     tournament = LocalTournament.find(params[:local_tournament_id])
     tournament.participants << params[:players][:name]
     tournament.save
-    redirect_to club_local_tournament_path(tournament.club, tournament)
+    redirect_to edit_club_local_tournament_path(tournament.club, tournament)
   end
 
   def remove_player
     tournament = LocalTournament.find(params[:local_tournament_id])
     tournament.participants.delete(params[:player_name])
     tournament.save
-    redirect_to club_local_tournament_path(tournament.club, tournament)
+    redirect_to edit_club_local_tournament_path(tournament.club, tournament)
   end
 
   def generate_tournament
@@ -87,18 +88,15 @@ class LocalTournamentsController < ApplicationController
 
   def enter_match_result
     tournament = LocalTournament.find(params[:local_tournament_id])
-    challonge_tournament = Challonge::Tournament.find(tournament.challonge_id)
-    match = challonge_tournament.matches.find{|match| match.id == params[:match_id].to_i}
-    match.scores_csv = '3-1,3-2'
-    match.winner_id = params[:match_result][:winner].to_i
-    match.save
+    scores_csv = '3-1,3-2'
+    winner_id = params[:match_result][:winner].to_i
+    ChallongeApi.update_match(tournament.challonge_id, params[:match_result][:match_id], winner_id, scores_csv)
     redirect_to club_local_tournament_path(tournament.club_id, tournament.id)
   end
 
   def finalize
     tournament = LocalTournament.find(params[:local_tournament_id])
-    challonge_tournament = Challonge::Tournament.find(tournament.challonge_id)
-    ChallongeApi.finalize(challonge_tournament.id)
+    ChallongeApi.finalize(tournament.challonge_id)
     tournament.update(finished: true)
     redirect_to club_local_tournament_path(tournament.club_id, tournament.id)
   rescue ChallongeApiError => e

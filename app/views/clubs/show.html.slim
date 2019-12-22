@@ -10,11 +10,15 @@
         th style="width: 45%" Type
         th style="width: 15%" Date
     tbody
-      - @club.local_tournaments.each do |tournament|
-        tr.clickable-row data-link="#{edit_club_local_tournament_path(tournament.club, tournament)}"
-          td = tournament.name.titleize
-          td = tournament.tournament_type.titleize
-          td = tournament.created_at.strftime("%b %d, %Y")
+      -if @club.local_tournaments.blank?
+        tr
+          td.text-center colspan='3' There are no tournaments to show
+      - else
+        - @club.local_tournaments.each do |tournament|
+          tr.clickable-row data-link="#{edit_club_local_tournament_path(tournament.club, tournament)}"
+            td = tournament.name.titleize
+            td = tournament.tournament_type.titleize
+            td = tournament.created_at.strftime("%b %d, %Y")
 
 javascript:
   $("tr[data-link]").click(function() {

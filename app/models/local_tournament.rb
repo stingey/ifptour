@@ -8,8 +8,6 @@ class LocalTournament < ApplicationRecord
 
   ELIMINATIONS = [['single elimination', 'single_elimination'], ['double elimination', 'double_elimination']].freeze
 
-
-
   FORMATS = [%w[singles singles],
              ['double draw your partner', 'double_draw_your_partner'],
              ['single draw your partner', 'single_draw_your_partner'],

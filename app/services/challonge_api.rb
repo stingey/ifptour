@@ -3,6 +3,34 @@ class ChallongeApi
 
   API_KEY = ENV['CHALLONGE_KEY']
 
+  def self.update_match(tournament_id, match_id, winner_id, scores_csv)
+    url = "https://api.challonge.com/v1/tournaments/#{tournament_id}/matches/#{match_id}.json"
+    query = { api_key: API_KEY, match: { winner_id: winner_id, scores_csv: scores_csv } }
+    json_response = HTTParty.put(url, query: query)
+    check_for_errors(json_response)
+    json_response
+  end
+
+  def self.find_participant(tournament_id, participant_id)
+    url = "https://api.challonge.com/v1/tournaments/#{tournament_id}/participants/#{participant_id}.json"
+    query = { api_key: API_KEY }
+    response = HTTParty.get(url, query: query)
+    response&.parsed_response&.dig('participant')
+  end
+
+  def self.find_tournament(tournament_id)
+    url = "https://api.challonge.com/v1/tournaments/#{tournament_id}.json"
+    query = { api_key: API_KEY }
+    response = HTTParty.get(url, query: query)
+    response&.parsed_response&.dig('tournament')
+  end
+
+  def self.find_matches(tournament_id)
+    url = "https://api.challonge.com/v1/tournaments/#{tournament_id}/matches.json"
+    query = { api_key: API_KEY }
+    HTTParty.get(url, query: query)
+  end
+
   def self.create_tournament(tournament)
     url = "https://api.challonge.com/v1/tournaments.json"
     query = { api_key: API_KEY, tournament: { name: tournament.name,
@@ -50,6 +78,7 @@ class ChallongeApi
   def self.start(tournament_id)
     url = "https://api.challonge.com/v1/tournaments/#{tournament_id}/start.json"
     query = { api_key: API_KEY }
+    debugger
     json_response = HTTParty.post(url, query: query)
     check_for_errors(json_response)
     json_response

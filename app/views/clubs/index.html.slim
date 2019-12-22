@@ -7,13 +7,13 @@
   .row.table-header.py-3.mx-1
     .col-6 Name
     .col-6 Location
-  - if @clubs.empty?
-    p.py-3.text-center No Results Found
-
-  - @clubs.each do |club|
-    .row.py-2.mx-1.table-row.clickable-row data-link="#{club_path(club)}"
-      .col-6 = club.name.titleize
-      .col-6 = "#{club.city.titleize}, #{club.state.upcase}"
+  - if @clubs.blank?
+    p.py-3.table-row.text-center No clubs to show
+  - else
+    - @clubs.each do |club|
+      .row.py-2.mx-1.table-row.clickable-row data-link="#{club_path(club)}"
+        .col-6 = club.name.titleize
+        .col-6 = "#{club.city.titleize}, #{club.state.upcase}"
 
 javascript:
   $(".clickable-row").click(function() {
