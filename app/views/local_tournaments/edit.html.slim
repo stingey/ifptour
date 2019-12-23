@@ -15,5 +15,5 @@
   - if @tournament.started?
     = link_to 'View Bracket', club_local_tournament_path(@tournament.club, @tournament), class: 'btn btn-outline-primary'
   - else
-    = link_to 'Generate Bracket', club_local_tournament_generate_tournament_path(@tournament.club, @tournament), class: 'btn btn-outline-primary'
+    = link_to 'Generate Bracket', club_local_tournament_generate_tournament_path(@tournament.club, @tournament), class: 'btn btn-outline-primary mb-5'
 

@@ -20,3 +20,16 @@ thead {
   }
   // border-bottom: blue solid;
 }
+
+
+@media screen and (max-width: 1000px) {
+  .large-bracket {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .mobile-bracket {
+    display: none;
+  }
+}
