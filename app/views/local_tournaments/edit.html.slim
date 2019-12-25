@@ -8,7 +8,7 @@
     .col-6
       i.fa.fa-cog.fa-2x.pt-4.float-right type='input' id='dropdownMenuButton' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'
       .dropdown-menu aria-labelledby='dropdownMenuButton'
-        = link_to 'Delete tournament', club_local_tournament_path(@tournament.club, @tournament), method: :delete, class: 'text-danger dropdown-item', data: {confirm: 'Are you sure?'}
+        = link_to 'Delete tournament', club_local_tournament_path(@tournament.club, @tournament), method: :delete, class: 'text-danger dropdown-item'
         - if @tournament.started?
           = link_to 'View Bracket', club_local_tournament_path(@tournament.club, @tournament), class: 'dropdown-item'
         - else
