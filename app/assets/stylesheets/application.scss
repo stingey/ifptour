@@ -73,3 +73,17 @@ select {
     color: $dark-teal;
   }
 }
+
+.subtitle {
+  margin-top: 15px;
+  margin-bottom: 0px;
+  font-weight: normal;
+  font-size: 75%;
+  color: $light-gray;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.fa-cog {
+  cursor: pointer;
+}

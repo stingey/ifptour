@@ -4,7 +4,7 @@ Rails.application.routes.draw do
     registrations: 'users/registrations',
     passwords: 'users/passwords'
   }
-  root to: 'landing#index'
+  root to: 'clubs#index'
   resources :landing, only: %i[index]
   resources :tournaments, only: %i[index show]
   resources :results, only: %i[index show]
@@ -28,8 +28,7 @@ Rails.application.routes.draw do
   resources :local_tournaments, only: :index
   resources :clubs, only: %i[index new show create] do
     resources :local_tournaments, only: %i[new show edit create destroy] do
-      post '/add-player', to: 'local_tournaments#add_player', as: :add_player
-      delete '/remove-player/:player_name', to: 'local_tournaments#remove_player', as: :remove_player
+      resources :participants, only: %i[create destroy]
       get '/generate-tournament', to: 'local_tournaments#generate_tournament', as: :generate_tournament
       post '/enter-match-result/:match_id', to: 'local_tournaments#enter_match_result', as: :enter_match_result
       post '/finalize', to: 'local_tournaments#finalize', as: :finalize

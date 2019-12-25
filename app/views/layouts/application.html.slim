@@ -10,12 +10,14 @@ html
     = javascript_include_tag 'application'
 
   body
+    = render 'shared/small_nav'
+    = render 'shared/global_nav'
     - if notice
       p.alert.alert-success = notice
     - if alert
       p.alert.alert-danger = alert
-    = render 'shared/small_nav'
-    = render 'shared/global_nav'
+    - if content_for? :alert
+      p.alert.alert-danger = content_for(:alert)
     #toast-messages
 
     = yield

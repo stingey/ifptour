@@ -1,19 +1,41 @@
-.container.pt-4.pb-3
-  .d-inline-block.button
-    = link_to 'Delete Tournament', club_local_tournament_path(@tournament.club, @tournament), method: :delete, class: 'btn btn-outline-primary'
-.container
-  h2 = @tournament.name
-  = render 'players_form'
+= render partial: 'shared/errors', locals: { object: @tournament }
+
+.container.pt-4
+  .row
+    .col-6
+      .subtitle Tournament
+      h3 = @tournament.name.humanize
+    .col-6
+      i.fa.fa-cog.fa-2x.pt-4.float-right type='input' id='dropdownMenuButton' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'
+      .dropdown-menu aria-labelledby='dropdownMenuButton'
+        = link_to 'Delete tournament', club_local_tournament_path(@tournament.club, @tournament), method: :delete, class: 'text-danger dropdown-item', data: {confirm: 'Are you sure?'}
+        - if @tournament.started?
+          = link_to 'View Bracket', club_local_tournament_path(@tournament.club, @tournament), class: 'dropdown-item'
+        - else
+          = link_to 'Start tournament', club_local_tournament_generate_tournament_path(@tournament.club, @tournament), class: 'dropdown-item'
+  .row
+    .col-lg-3.col-sm-6
+      .subtitle Type
+      h5 = @tournament.tournament_type.humanize
+    .col-lg-3.col-sm-6
+      .subtitle Format
+      h5 = @tournament.format.humanize
+    .col-lg-3.col-sm-6
+      .subtitle Status
+      h5 = @tournament.status.humanize
+
   - unless @tournament.participants.empty?
-    h2 Player List
-  ol
-    - @tournament.participants.each do |participant|
-      li.pb-1
-        div style="display:inline-block;width:150px;padding-right: 10px" = participant.humanize
-          = link_to 'remove', club_local_tournament_remove_player_path(@tournament.club, @tournament, participant), method: :delete, class: 'btn btn-outline-primary btn-sm'
+    .subtitle Players
+    ol
+      - @tournament.participants.each do |participant|
+        li.pb-1
+          div style='display:inline-block;width:150px;padding-right: 10px' = participant.humanize
+          = link_to club_local_tournament_participant_path(@tournament.club, @tournament, participant), method: :delete, class: 'btn btn-sm py-1 px-2' do
+            i.fa.fa-minus-circle.mr-1
+            | remove
+  = render 'local_tournaments/players_form'
 
-  - if @tournament.started?
-    = link_to 'View Bracket', club_local_tournament_path(@tournament.club, @tournament), class: 'btn btn-outline-primary'
-  - else
-    = link_to 'Generate Bracket', club_local_tournament_generate_tournament_path(@tournament.club, @tournament), class: 'btn btn-outline-primary mb-5'
-
+  - if @tournament.available_frequent_participants.any?
+    .subtitle Frequent players
+    - @tournament.available_frequent_participants.each do |participant|
+      = link_to participant.humanize, club_local_tournament_participants_path(@tournament.club, @tournament, players: { name: participant }), method: :post, class: 'btn p-1 m-1 btn-outline-primary'

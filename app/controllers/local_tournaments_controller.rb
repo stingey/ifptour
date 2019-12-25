@@ -36,27 +36,12 @@ class LocalTournamentsController < ApplicationController
   def destroy
     @club = Club.find(params[:club_id])
     @local_tournament = LocalTournament.find(params[:id])
-    ChallongeApi.delete_tournament(@local_tournament.challonge_id)
     @local_tournament.destroy
     redirect_to club_path(@club)
   end
 
   def all_local_tournaments
     @local_tournaments = LocalTournament.order(created_at: :desc)
-  end
-
-  def add_player
-    tournament = LocalTournament.find(params[:local_tournament_id])
-    tournament.participants << params[:players][:name]
-    tournament.save
-    redirect_to edit_club_local_tournament_path(tournament.club, tournament)
-  end
-
-  def remove_player
-    tournament = LocalTournament.find(params[:local_tournament_id])
-    tournament.participants.delete(params[:player_name])
-    tournament.save
-    redirect_to edit_club_local_tournament_path(tournament.club, tournament)
   end
 
   def generate_tournament
