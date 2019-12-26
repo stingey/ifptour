@@ -29,7 +29,7 @@
     ol
       - @tournament.participants.each do |participant|
         li.pb-1
-          div style='display:inline-block;width:150px;padding-right: 10px' = participant.humanize
+          div style='display:inline-block;width:150px;padding-right: 10px' = participant.titleize
           = link_to club_local_tournament_participant_path(@tournament.club, @tournament, participant), method: :delete, class: 'btn btn-sm py-1 px-2' do
             i.fa.fa-minus-circle.mr-1
             | remove
@@ -40,4 +40,4 @@
     - if @tournament.available_frequent_participants.any?
       .subtitle Frequent players
       - @tournament.available_frequent_participants.each do |participant|
-        = link_to participant.humanize, club_local_tournament_participants_path(@tournament.club, @tournament, players: { name: participant }), method: :post, data: { disable_with: 'Please wait...'}, class: 'btn p-1 m-1 btn-outline-primary'
+        = link_to participant.humanize, club_local_tournament_participants_path(@tournament.club, @tournament, players: { name: participant }, frequent_list: true), method: :post, data: { disable_with: 'Please wait...'}, class: 'btn p-1 m-1 btn-outline-primary'
