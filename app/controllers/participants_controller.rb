@@ -5,8 +5,7 @@ class ParticipantsController < ApplicationController
     if @tournament.save
       redirect_to edit_club_local_tournament_path(@tournament.club, @tournament)
     else
-      @tournament.participants.pop
-      render 'local_tournaments/edit'
+      redirect_to edit_club_local_tournament_path(@tournament.club, @tournament), alert: @tournament.errors.messages[:base].first
     end
   end
 
