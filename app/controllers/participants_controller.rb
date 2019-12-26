@@ -2,7 +2,11 @@ class ParticipantsController < ApplicationController
   def create
     @tournament = LocalTournament.find(params[:local_tournament_id])
     if @tournament.participants.map(&:downcase).include?(params[:players][:name]&.downcase)
-      redirect_to edit_club_local_tournament_path(@tournament.club, @tournament), alert: 'Names must be unique'
+      puts "\n\n\n\n"
+      puts @tournament.participants.map(&:downcase)
+      puts params[:players][:name]&.downcase
+      puts "\n\n\n\n"
+      redirect_to edit_club_local_tournament_path(@tournament.club, @tournament), alert: 'Names must be uniquer'
     else
       @tournament.participants << params[:players][:name]
       @tournament.save
