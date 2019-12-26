@@ -50,7 +50,7 @@ class LocalTournament < ApplicationRecord
     last = array.pop
     return unless array.map(&:downcase).include?(last.downcase)
 
-    errors.add(:base, 'Names must be unique')
+    errors.add(:base, 'Names must be unique.')
   end
 
   def available_frequent_participants
