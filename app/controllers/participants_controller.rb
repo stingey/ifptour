@@ -8,8 +8,8 @@ class ParticipantsController < ApplicationController
       puts "\n\n\n\n"
       redirect_to edit_club_local_tournament_path(@tournament.club, @tournament), alert: 'Names must be uniquer'
     else
-      @tournament.participants << params[:players][:name]
-      @tournament.save
+      array = @tournament.participants << params[:players][:name]
+      @tournament.update(participants: array)
       redirect_to edit_club_local_tournament_path(@tournament.club, @tournament)
     end
   end
