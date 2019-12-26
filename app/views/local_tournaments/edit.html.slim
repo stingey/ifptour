@@ -35,7 +35,9 @@
             | remove
   = render 'local_tournaments/players_form'
 
-  - if @tournament.available_frequent_participants.any?
-    .subtitle Frequent players
-    - @tournament.available_frequent_participants.each do |participant|
-      = link_to participant.humanize, club_local_tournament_participants_path(@tournament.club, @tournament, players: { name: participant }), method: :post, class: 'btn p-1 m-1 btn-outline-primary'
+
+  .pb-4
+    - if @tournament.available_frequent_participants.any?
+      .subtitle Frequent players
+      - @tournament.available_frequent_participants.each do |participant|
+        = link_to participant.humanize, club_local_tournament_participants_path(@tournament.club, @tournament, players: { name: participant }), method: :post, class: 'btn p-1 m-1 btn-outline-primary'

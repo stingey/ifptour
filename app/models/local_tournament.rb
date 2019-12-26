@@ -45,7 +45,10 @@ class LocalTournament < ApplicationRecord
   end
 
   def participants_names_are_unique
-    return if participants.map(&:downcase).count == participants.map(&:downcase).uniq.count
+    return if participants.count < 2
+    array = participants.dup
+    last = array.pop
+    return unless array.map(&:downcase).include?(last.downcase)
 
     errors.add(:base, 'Names must be unique')
   end
