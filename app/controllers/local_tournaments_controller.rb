@@ -52,7 +52,7 @@ class LocalTournamentsController < ApplicationController
     ChallongeApi.clear_out_participants(tournament.challonge_id)
     format_teams(tournament)
     challonge_bracket = ChallongeApi.start(tournament.challonge_id)
-    tournament.update(started: challonge_bracket.parsed_response.dig('tournament', 'started_at').present?)
+    tournament.update(status: LocalTournament.statuses[:started]) if challonge_bracket.parsed_response.dig('tournament', 'started_at').present?
     redirect_to club_local_tournament_path(tournament.club, tournament)
   rescue TeamFormatterError => e
     redirect_to edit_club_local_tournament_path(tournament.club, tournament), alert: e

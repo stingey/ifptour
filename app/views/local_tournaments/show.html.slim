@@ -8,25 +8,33 @@
   .row
     .col-sm-8.col-md-9.col-lg-10
     .col-12.col-sm-4.col-md-3.col-lg-2.text-center.px-4
-      = link_to 'finalize results', club_local_tournament_finalize_path(@tournament.club, @tournament), method: :post, class: 'w-100 btn btn-outline-primary green-outline' unless @tournament.finished?
+      - unless @tournament_matches.any? { |match| match.dig('match', 'state') == 'open' }
+        = link_to 'finalize results', club_local_tournament_finalize_path(@tournament.club, @tournament), method: :post, class: 'w-100 btn btn-outline-primary green-outline' unless @tournament.finished?
 
 .large-bracket
   <iframe src="#{@challonge_tournament['full_challonge_url']}/module?theme=6441&show_final_results=1&scale_to_fit=0" width="100%" height="900px" frameborder="0" scrolling="auto" allowtransparency="true"></iframe>
 .mobile-bracket
-  <iframe src="#{@challonge_tournament['full_challonge_url']}/module?theme=6441&show_final_results=1&scale_to_fit=0&multiplier=0.7" width="100%" height="500px" frameborder="0" scrolling="auto" allowtransparency="true"></iframe>
+  <iframe src="#{@challonge_tournament['full_challonge_url']}/module?theme=6441&show_final_results=1&scale_to_fit=0&multiplier=0.8" width="100%" height="400px" frameborder="0" scrolling="auto" allowtransparency="true"></iframe>
 / <iframe src="#{@challonge_tournament.full_challonge_url}/module?theme=6441&show_final_results=1&multiplier=1.2" width="100%" height="1000px" frameborder="0" scrolling="auto" allowtransparency="true"></iframe>
 
 .container
   - if @tournament_matches.any? { |match| match.dig('match', 'state') == 'open' }
     h4 Matches
-    - @tournament_matches.select{ |match| match.dig('match', 'state') == 'open' }.each do |match|
-      .card-item = match.dig('match', 'suggested_play_order')
-      = simple_form_for :match_result, url: club_local_tournament_enter_match_result_path(@tournament.club, @tournament, match.dig('match', 'id')), html: { class: "card-item"} do |f|
-        = f.hidden_field :match_id, value: match.dig('match', 'id')
-        - player_one = ChallongeApi.find_participant(@tournament.challonge_id, match.dig('match', 'player1_id'))
-        - player_two = ChallongeApi.find_participant(@tournament.challonge_id, match.dig('match', 'player2_id'))
-        = f.select :winner, options_for_select([[player_one['name'], player_one['id']], [player_two['name'], player_two['id']]]), { include_blank: 'Select' }, {class: 'card-item'}
-        = f.submit
+    - @tournament_matches.select{ |match| match.dig('match', 'state') == 'open' }.each.with_index(1) do |match, index|
+      .card
+        = form_for :match_result, url: club_local_tournament_enter_match_result_path(@tournament.club, @tournament, match.dig('match', 'id')) do |f|
+          = f.hidden_field :match_id, value: match.dig('match', 'id')
+          - player_one = ChallongeApi.find_participant(@tournament.challonge_id, match.dig('match', 'player1_id'))
+          - player_two = ChallongeApi.find_participant(@tournament.challonge_id, match.dig('match', 'player2_id'))
+          .btn-group.btn-group-toggle.w-75 data-toggle='buttons'
+            label.btn.btn-secondary.w-50
+              = f.label player_one['name']
+              = f.radio_button :winner, player_one['id']
+            label.btn.btn-secondary.w-50
+              = f.label player_two['name']
+              = f.radio_button :winner, player_two['id']
+
+          = f.submit 'Submit', class: 'btn btn-primary-outline w-25'
 
 = link_to 'Delete Tournament', club_local_tournament_path(@tournament.club, @tournament), method: :delete, class: 'm-3 btn btn-outline-primary' if current_user.try(:admin?)
 
