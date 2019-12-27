@@ -12,6 +12,10 @@ html
   body
     = render 'shared/small_nav'
     = render 'shared/global_nav'
+    - if content_for? :breadcrumbs
+      nav
+        ol.breadcrumb.p-2.pl-3.mb-0
+          = yield :breadcrumbs
     - if notice
       p.alert.alert-success = notice
     - if alert

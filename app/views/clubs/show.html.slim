@@ -1,7 +1,26 @@
-.container
-  h2.py-4 = @club.name
+- content_for :breadcrumbs
+  li.breadcrumb-item = link_to 'Clubs', clubs_path
+  li.breadcrumb-item.active = @club.name
+.container.pt-4
+  .row
+    .col-6
+      .subtitle Club
+      h3 = @club.name.humanize
+  .row
+    .col-lg-3.col-sm-6
+      .subtitle City
+      h5 = @club.city.titleize
+    .col-lg-3.col-sm-6
+      .subtitle State
+      h5 = @club.state.upcase
+    .col-lg-3.col-sm-6
+      .subtitle Address
+      h5 = @club.address1.humanize + ' ' + @club.address2.humanize
+    .col-lg-3.col-sm-6
+      .subtitle Meeting time
+      h5 = @club.meeting_time
 
-  .row.mx-1
+  .row.pt-5
     .col-12
       h5.mb-1
         span.mr-3 Tournaments
@@ -10,16 +29,18 @@
             i.fa.fa-plus-circle.mr-1
             | New
   .row.table-header.pb-3.pt-1.mx-1
-    .col-5 Name
-    .col-5 Type
+    .col-4 Name
+    .col-4 Status
+    .col-2 Participants
     .col-2 Date
   - if @club.local_tournaments.blank?
     p.py-3.table-row.text-center No tournaments to show
   - else
     - @club.local_tournaments.each do |tournament|
       .row.py-2.mx-1.table-row.clickable-row data-link="#{edit_club_local_tournament_path(tournament.club, tournament)}"
-        .col-5 = tournament.name.titleize
-        .col-5 = tournament.tournament_type.titleize
+        .col-4 = tournament.name.titleize
+        .col-4 = tournament.status.humanize
+        .col-2 = tournament.participants.count
         .col-2 = tournament.created_at.strftime("%b %d, %Y")
 
 javascript:

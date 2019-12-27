@@ -20,7 +20,7 @@ class LocalTournamentsController < ApplicationController
   def show
     @tournament = LocalTournament.find(params[:id])
     @challonge_tournament = ChallongeApi.find_tournament(@tournament.challonge_id)
-    @tournament_matches = ChallongeApi.find_matches(@tournament.challonge_id)
+    @tournament_matches_by_round = ChallongeApi.find_matches(@tournament.challonge_id).select{ |match| match.dig('match', 'state') == 'open' }.group_by {|match| match['match']['round']}
   end
 
   def create

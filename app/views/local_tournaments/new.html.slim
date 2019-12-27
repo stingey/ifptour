@@ -1,3 +1,8 @@
+- content_for :breadcrumbs
+  li.breadcrumb-item = link_to 'Clubs', clubs_path
+  li.breadcrumb-item = link_to "#{@club.name}: Tournaments", club_path(@club)
+  li.breadcrumb-item.active New
+
 .container
   h2 New Local Tournament
   = form_for @local_tournament, url: club_local_tournaments_path(@club) do |f|

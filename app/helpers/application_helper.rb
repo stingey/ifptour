@@ -18,4 +18,12 @@ module ApplicationHelper
     output += '</ul></div>'
     output.html_safe
   end
+
+  def round_name(number)
+    if number.positive?
+      "Round #{number}"
+    else
+      "Loser's round #{number.abs}"
+    end
+  end
 end
