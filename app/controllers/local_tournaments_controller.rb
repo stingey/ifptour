@@ -81,7 +81,7 @@ class LocalTournamentsController < ApplicationController
   def finalize
     tournament = LocalTournament.find(params[:local_tournament_id])
     ChallongeApi.finalize(tournament.challonge_id)
-    tournament.update(finished: true)
+    tournament.update(status: LocalTournament.statuses[:finished])
     redirect_to club_local_tournament_path(tournament.club_id, tournament.id)
   rescue ChallongeApiError => e
     redirect_to club_local_tournament_path(tournament.club_id, tournament.id), alert: e.errors.first
