@@ -8,11 +8,11 @@
     .col-6
       i.fa.fa-cog.fa-2x.pt-4.float-right type='input' id='dropdownMenuButton' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false'
       .dropdown-menu aria-labelledby='dropdownMenuButton'
-        = link_to 'Delete tournament', club_local_tournament_path(@tournament.club, @tournament), method: :delete, class: 'text-danger dropdown-item'
         - if @tournament.started?
           = link_to 'View Bracket', club_local_tournament_path(@tournament.club, @tournament), class: 'dropdown-item'
         - else
-          = link_to 'Start tournament', club_local_tournament_generate_tournament_path(@tournament.club, @tournament), class: 'dropdown-item'
+          = link_to 'Start tournament', club_local_tournament_generate_tournament_path(@tournament.club, @tournament), class: 'dropdown-item py-3'
+        = link_to 'Delete tournament', club_local_tournament_path(@tournament.club, @tournament), method: :delete, class: 'text-danger dropdown-item py-3'
   .row
     .col-lg-3.col-sm-6
       .subtitle Type
