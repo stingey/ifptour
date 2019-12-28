@@ -1,7 +1,14 @@
 - provide(:title, 'New club')
 
-.container
-  h2 New Club
+/ container.pt-4.pt-sm-5.pb-3
+/   .row
+/     .col-12
+/       h5.mb-1
+/         span.mr-3 New club
+.container.pt-4.pt-sm-5.pb-3
+  .row
+    .col-12
+      h5.mb-1 New Club
   = simple_form_for @club do |f|
     .error.pb-2 = f.error_notification
     .row

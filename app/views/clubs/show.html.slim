@@ -3,12 +3,12 @@
 - content_for :breadcrumbs
   li.breadcrumb-item = link_to 'Clubs', clubs_path
   li.breadcrumb-item.active = @club.name
-.container.pt-4
+.container.pt-4.pt-sm-5.pb-3
   .row
     .col-6
       .subtitle Club
       h3 = @club.name.humanize
-  .row
+  .row.pt-4
     .col-lg-3.col-sm-6
       .subtitle City
       h5 = @club.city.titleize
@@ -32,8 +32,8 @@
             | New
   .row.table-header.pb-3.pt-1.mx-1
     .col-4 Name
-    .col-4 Status
-    .col-2 Participants
+    .col-3 Status
+    .col-3 Players
     .col-2 Date
   - if @club.local_tournaments.blank?
     p.py-3.table-row.text-center No tournaments to show
@@ -41,8 +41,8 @@
     - @club.local_tournaments.each do |tournament|
       .row.py-2.mx-1.table-row.clickable-row data-link="#{edit_club_local_tournament_path(tournament.club, tournament)}"
         .col-4 = tournament.name.titleize
-        .col-4 = tournament.status.humanize
-        .col-2 = tournament.participants.count
+        .col-3 = tournament.status.humanize
+        .col-3 = tournament.participants.count
         .col-2 = tournament.created_at.strftime("%b %d, %Y")
 
 javascript:
