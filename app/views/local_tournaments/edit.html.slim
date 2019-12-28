@@ -1,3 +1,4 @@
+- provide(:title, "Edit #{@tournament.name}")
 - content_for :breadcrumbs
   li.breadcrumb-item = link_to 'Clubs', clubs_path
   li.breadcrumb-item = link_to "#{@tournament.club.name}: Tournaments", club_path(@tournament.club)
