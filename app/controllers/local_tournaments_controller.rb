@@ -14,7 +14,7 @@ class LocalTournamentsController < ApplicationController
 
   def edit
     @tournament = LocalTournament.find(params[:id])
-    redirect_to club_local_tournament_path(@tournament.club, @tournament) if @tournament.started?
+    redirect_to club_local_tournament_path(@tournament.club, @tournament) unless @tournament.signing_up?
   end
 
   def show
