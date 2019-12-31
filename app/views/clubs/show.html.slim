@@ -8,17 +8,17 @@
     .col-6
       .subtitle Club
       h3 = @club.name
-  .row.pt-4
-    .col-6.col-lg-3
+  .row
+    .col-6.col-lg-3.pt-4
       .subtitle City
       h5 = @club.city.titleize
-    .col-6.col-lg-3
+    .col-6.col-lg-3.pt-4
       .subtitle State
       h5 = @club.state.upcase
-    .col-6.col-lg-3
+    .col-6.col-lg-3.pt-4
       .subtitle Address
       h5 = @club.address1.humanize + ' ' + @club.address2.humanize
-    .col-6.col-lg-3
+    .col-6.col-lg-3.pt-4
       .subtitle Meeting time
       h5 = @club.meeting_time
 
