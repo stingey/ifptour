@@ -26,4 +26,12 @@ module ApplicationHelper
       "Loser's round #{number.abs}"
     end
   end
+
+  def format_address(club)
+    if club.address2.present?
+      club.address1 + ', ' + club.address2
+    else
+      club.address1
+    end
+  end
 end
