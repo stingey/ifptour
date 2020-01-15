@@ -1,0 +1,137 @@
+// .node {
+//   border: 1px black solid;
+//   padding: 4px 0px;
+//   margin-top: 10px;
+//   // width: 150px;
+// }
+
+// .bottom {
+//   padding-left: 10px;
+// }
+
+// .bracket {
+//   width: 100px;
+//   // height: 300px;
+//   height: 100vh;
+//   overflow-y: auto;
+//   overflow-x: auto;
+//   transform: rotate(-90deg) translateY(-100px);
+//   transform-origin: right top;
+//   div {
+//     width: 100px;
+//     height: 100px;
+//     transform: rotate(90deg);
+//     transform-origin: right top;
+//   }
+// }
+.bye {
+  color: red;
+  font-weight: 350;
+}
+
+.top {
+  border-bottom: 1px black solid;
+}
+
+.winners-bracket {
+  background-color: white;
+  overflow: auto;
+  white-space: nowrap;
+  .round {
+    display: inline-block;
+    color: $dark-gray;
+    text-decoration: none;
+    position: relative;
+    vertical-align: top;
+    padding-left: 20px;
+    padding-right: 40px;
+  }
+}
+
+.losers-bracket {
+  background-color: white;
+  overflow: auto;
+  white-space: nowrap;
+  .round {
+    display: inline-block;
+    color: $dark-gray;
+    text-decoration: none;
+    position: relative;
+    vertical-align: top;
+    padding-left: 20px;
+    padding-right: 40px;
+  }
+}
+
+.node {
+  border-radius: 5px 0 0 5px;
+  border: 1px black solid;
+  width: 200px;
+  div {
+    padding-left: 10px;
+  }
+}
+
+.node-submit {
+  width: 40px;
+  height: 51px;
+  border: 1px solid black;
+  position: relative;
+  float: right;
+  bottom: 10px;
+  left: 40px;
+  bottom: 50px;
+  vertical-align: middle;
+  padding-top: 14px;
+  padding-left: 10px;
+  border-radius: 0 5px 5px 0;
+}
+
+.round-1 {
+  .node {
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+}
+
+.losers-round-1 {
+  .first-node {
+    margin-top: 20px;
+  }
+  .next-nodes {
+    margin: 90px 0px;
+  }
+}
+
+.round-2 {
+  .first-node {
+    margin-top: 55px;
+  }
+  .next-nodes {
+    margin: 90px 0px;
+  }
+}
+
+.losers-round-2 {
+  .first-node {
+    margin-top: 55px;
+  }
+  .next-nodes {
+    margin: 90px 0px;
+  }
+}
+
+.round-3 {
+  .first-node {
+    margin-top: 125px;
+  }
+  .next-nodes {
+    margin: 230px 0px;
+  }
+}
+
+.round-4 {
+  .first-node {
+    margin-top: 270px;
+  }
+}

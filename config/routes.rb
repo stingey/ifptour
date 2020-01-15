@@ -30,12 +30,12 @@ Rails.application.routes.draw do
     resources :local_tournaments, only: %i[new show edit create destroy] do
       resources :participants, only: %i[create destroy]
       get '/generate-tournament', to: 'local_tournaments#generate_tournament', as: :generate_tournament
+      get '/start-tournament', to: 'local_tournaments#start_tournament', as: :start_tournament
       post '/enter-match-result/:match_id', to: 'local_tournaments#enter_match_result', as: :enter_match_result
       post '/finalize', to: 'local_tournaments#finalize', as: :finalize
+      post '/submit-winner', to: 'local_tournaments#submit_winner'
     end
   end
-  resource :pro_shop, only: %i[show]
-
   resources :players, only: %i[index new create show edit update]
 
   get '/404',       to: 'errors#not_found',             as: :not_found
