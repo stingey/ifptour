@@ -1,0 +1,175 @@
+.winner {
+  background-color: $light-gray;
+  color: white;
+}
+
+.bye {
+  color: red;
+  font-weight: 350;
+}
+
+.top {
+  border-bottom: 1px black solid;
+}
+
+.winners-bracket {
+  font-size: 14px;
+  background-color: white;
+  overflow: auto;
+  white-space: nowrap;
+  height: auto;
+  .round {
+    display: inline-block;
+    color: $dark-gray;
+    text-decoration: none;
+    position: relative;
+    vertical-align: top;
+    padding-left: 20px;
+    padding-right: 40px;
+    .node {
+      width: 180px;
+    }
+  }
+}
+
+.losers-bracket {
+  font-size: 14px;
+  background-color: white;
+  overflow: auto;
+  white-space: nowrap;
+  .round {
+    display: inline-block;
+    color: $dark-gray;
+    text-decoration: none;
+    position: relative;
+    vertical-align: top;
+    padding-left: 20px;
+    padding-right: 40px;
+    .node {
+      width: 115px;
+    }
+  }
+}
+
+.node {
+  border-radius: 5px 0 0 5px;
+  border: 1px black solid;
+  // width: 170px;
+  div {
+    padding-left: 10px;
+  }
+}
+
+.node-submit {
+  width: 40px;
+  height: 45px;
+  border: 1px solid black;
+  position: relative;
+  float: right;
+  bottom: 10px;
+  left: 40px;
+  bottom: 44px;
+  vertical-align: middle;
+  padding-top: 14px;
+  padding-left: 10px;
+  border-radius: 0 5px 5px 0;
+}
+
+.round-1 {
+  .node {
+    // margin-bottom: 20px;
+    margin-top: 20px;
+  }
+}
+
+.losers-round-1 {
+  .first-node {
+    margin-top: 20px;
+  }
+  .next-nodes {
+    margin: 90px 0px;
+  }
+}
+
+.round-2 {
+  .first-node {
+    margin-top: 52px;
+  }
+  .next-nodes {
+    margin-top: 84px;
+  }
+}
+
+.losers-round-2 {
+  .first-node {
+    margin-top: 55px;
+  }
+  .next-nodes {
+    margin: 90px 0px;
+  }
+}
+
+.round-3 {
+  .first-node {
+    margin-top: 115px;
+  }
+  .next-nodes {
+    margin-top: 215px;
+  }
+}
+
+.losers-round-3 {
+  .first-node {
+    margin-top: 125px;
+  }
+  .next-nodes {
+    margin: 230px 0px;
+  }
+}
+
+.round-4 {
+  .first-node {
+    margin-top: 250px;
+  }
+}
+
+.losers-round-4 {
+  .first-node {
+    margin-top: 170px;
+  }
+  .next-nodes {
+    margin: 230px 0px;
+  }
+}
+
+.round-5 {
+  .first-node {
+    margin-top: 300px;
+  }
+}
+
+.losers-round-5 {
+  .first-node {
+    margin-top: 310px;
+  }
+}
+
+.round-6 {
+  .first-node {
+    margin-top: 300px;
+    // margin-right: 20px;
+  }
+}
+
+.losers-round-6 {
+  .first-node {
+    margin-top: 355px;
+    // margin-right: 20px;
+  }
+}
+
+.last {
+  .first-node {
+    margin-right: 20px;
+  }
+}

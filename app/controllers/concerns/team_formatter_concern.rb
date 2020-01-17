@@ -19,6 +19,19 @@ module TeamFormatterConcern
     ChallongeApi.bulk_add_teams(tournament.challonge_id, participants_array)
   end
 
+  # def double_draw_your_partner(tournament)
+  #   raise TeamFormatterError.new(msg: 'Double draw your partner requires 4 or more participants') if
+  #     tournament.participants.count < 4
+  #   raise TeamFormatterError.new(msg: 'Double draw your partner requires 16 or less participants') if
+  #     tournament.participants.count > 16
+
+  #   teams_array = make_both_sets(tournament.participants)
+  #   formatted_teams = teams_array.map { |team_set| team_set.map { |team| team.join('/').titleize } }.flatten
+  #   ordered_formatted_teams = order_teams(formatted_teams)
+  #   participants_array = participants_array_hash(ordered_formatted_teams)
+  #   ChallongeApi.bulk_add_teams(tournament.challonge_id, participants_array)
+  # end
+
   def double_draw_your_partner(tournament)
     raise TeamFormatterError.new(msg: 'Double draw your partner requires 4 or more participants') if
       tournament.participants.count < 4
@@ -27,9 +40,70 @@ module TeamFormatterConcern
 
     teams_array = make_both_sets(tournament.participants)
     formatted_teams = teams_array.map { |team_set| team_set.map { |team| team.join('/').titleize } }.flatten
-    ordered_formatted_teams = order_teams(formatted_teams)
-    participants_array = participants_array_hash(ordered_formatted_teams)
-    ChallongeApi.bulk_add_teams(tournament.challonge_id, participants_array)
+    make_tournament_hash(formatted_teams)
+  end
+
+  def make_tournament_hash(teams)
+    split_array = teams.each_slice(teams.count/2).to_a
+    top_half = split_array.first
+    bottom_half = split_array.last
+    {
+      round_1: {
+        match_1: [top_half[0] || 'bye', top_half[7] || 'bye'],
+        match_2: [top_half[3] || 'bye', top_half[4] || 'bye'],
+        match_3: [top_half[2] || 'bye', top_half[5] || 'bye'],
+        match_4: [top_half[1] || 'bye', top_half[6] || 'bye'],
+        match_b_1: [bottom_half[0] || 'bye', bottom_half[7] || 'bye'],
+        match_b_2: [bottom_half[3] || 'bye', bottom_half[4] || 'bye'],
+        match_b_3: [bottom_half[2] || 'bye', bottom_half[5] || 'bye'],
+        match_b_4: [bottom_half[1] || 'bye', bottom_half[6] || 'bye']
+      },
+      round_2: {
+        match_1: [],
+        match_2: [],
+        match_b_1: [],
+        match_b_2: []
+      },
+      round_3: {
+        match_1: [],
+        match_b_1: []
+      },
+      round_4: {
+        match_1: []
+      },
+      round_5: {
+        match_1: []
+      },
+      round_6: {
+        match_1: []
+      },
+      losers_round_1: {
+        match_1: [],
+        match_2: [],
+        match_b_1: [],
+        match_b_2: []
+      },
+      losers_round_2: {
+        match_1: [],
+        match_2: [],
+        match_b_1: [],
+        match_b_2: []
+      },
+      losers_round_3: {
+        match_1: [],
+        match_b_1: []
+      },
+      losers_round_4: {
+        match_1: [],
+        match_b_1: []
+      },
+      losers_round_5: {
+        match_1: []
+      },
+      losers_round_6: {
+        match_1: []
+      }
+    }
   end
 
   def single_draw_your_partner(tournament)

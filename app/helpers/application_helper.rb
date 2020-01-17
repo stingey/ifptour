@@ -34,4 +34,30 @@ module ApplicationHelper
       club.address1
     end
   end
+
+  def did_this_player_win?(player, tournament, round, match)
+    return if player.blank?
+    return if player == 'bye'
+    return 'winner' if round_5_results(player, tournament, round, match)
+    return 'winner' if round_6_results(player, tournament, round, match)
+    winner_route = tournament.winner_mapping_engine(round.to_s, match.to_s)
+    return if winner_route.blank?
+    return unless tournament.tournament_hash.dig(winner_route.first, winner_route.second)[winner_route.last] == player
+
+    'winner'
+  end
+
+  def round_5_results(player, tournament, round, match)
+    return false unless round == :round_5
+    if tournament.tournament_hash.dig(:round_6, :match_1).blank?
+      tournament.results_hash[:first_place] == player
+    else
+      tournament.tournament_hash.dig(:round_5, :match_1)[1] == player
+    end
+  end
+
+  def round_6_results(player, tournament, round, match)
+    return false unless round == :round_6
+    tournament.results_hash[:first_place] == player
+  end
 end

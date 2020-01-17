@@ -6,18 +6,18 @@
 / .large-bracket
 / <iframe src="#{@challonge_tournament['full_challonge_url']}/module?theme=6441&show_final_results=1&scale_to_fit=0" width="100%" height="700px" frameborder="0" scrolling="auto" allowtransparency="true"></iframe>
 / .mobile-bracket
-<iframe src="#{@challonge_tournament['full_challonge_url']}/module?theme=6441&show_final_results=1&scale_to_fit=0&multiplier=0.9" width="100%" height="400px" frameborder="0" scrolling="auto" allowtransparency="true"></iframe>
+/ <iframe src="#{@challonge_tournament['full_challonge_url']}/module?theme=6441&show_final_results=1&scale_to_fit=0&multiplier=0.9" width="100%" height="400px" frameborder="0" scrolling="auto" allowtransparency="true"></iframe>
 / <iframe src="#{@challonge_tournament.full_challonge_url}/module?theme=6441&show_final_results=1&multiplier=1.2" width="100%" height="1000px" frameborder="0" scrolling="auto" allowtransparency="true"></iframe>
 
-.row
-  .col-12.col-md-6
-    .m-3
-      - if @tournament_matches_by_round.any?
-        h4 Matches
-        - @tournament_matches_by_round.each do |round|
-          h5 = round_name(round.first)
-          - round.last.each do |match|
-            .mt-2
+/ .row
+/   .col-12.col-md-6
+/     .m-3
+/       - if @tournament_matches_by_round.any?
+/         h4 Matches
+/         - @tournament_matches_by_round.each do |round|
+/           h5 = round_name(round.first)
+/           - round.last.each do |match|
+/             .mt-2
               = form_for :match_result, url: club_local_tournament_enter_match_result_path(@tournament.club, @tournament, match.dig('match', 'id')) do |f|
                 = f.hidden_field :match_id, value: match.dig('match', 'id')
                 - player_one = ChallongeApi.find_participant(@tournament.challonge_id, match.dig('match', 'player1_id'))
@@ -30,9 +30,83 @@
                     = player_two['name']
                     = f.radio_button :winner, player_two['id']
 
-                = f.submit 'Submit', class: 'btn btn-outline-primary ml-2 pdf-2'
+/                 = f.submit 'Submit', class: 'btn btn-outline-primary ml-2 pdf-2'
 
-- unless @tournament_matches_by_round.any? || @tournament.finished?
-  = link_to 'finalize results', club_local_tournament_finalize_path(@tournament.club, @tournament), method: :post, class: 'btn btn-outline-primary green-outline' unless @tournament.finished?
-= link_to 'Delete Tournament', club_local_tournament_path(@tournament.club, @tournament), method: :delete, class: 'm-3 btn btn-outline-primary' if current_user.try(:admin?)
+/ - unless @tournament_matches_by_round.any? || @tournament.finished?
+/   = link_to 'finalize results', club_local_tournament_finalize_path(@tournament.club, @tournament), method: :post, class: 'btn btn-outline-primary green-outline' unless @tournament.finished?
+/ = link_to 'Delete Tournament', club_local_tournament_path(@tournament.club, @tournament), method: :delete, class: 'm-3 btn btn-outline-primary' if current_user.try(:admin?)
 
+/ - @matches = { round1: {match1: ['spenser', 'jeff'], match2: ['craig', 'corey'], match3: ['josh', 'sam'], match4: ['jill', 'sandy'] }, round2: { match1: ['jeff', 'corey'], match2: ['sam', 'jill']} }
+/ - @matches = { round1: {match1: ['spenser', 'jeff'], match2: ['craig', 'corey'], match3: ['josh', 'sam'], match4: ['jill', 'sandy'], match5: ['spenser', 'jeff'], match6: ['craig', 'corey'], match7: ['josh', 'sam'], match8: ['jill', 'sandy'] }, round2: { match1: ['jeff', 'corey'], match2: ['sam', 'jill'], match3: ['jeff', 'corey'], match4: ['sam', 'jill']} }
+/ - @matches = { round1: {match1: ['spenser', 'jeff'], match2: ['craig', 'corey'] }, round2: { match1: ['jeff', 'corey']} }
+
+.winners-bracket
+  - if @tournament.blank?
+    p.mt-3.ml-3 Tournament has not been started yet
+  - else
+    h4.ml-3.my-2 Winners bracket
+    - @tournament.winners_rounds.each.with_index(1) do |round, index|
+      - unless round.first == :round_6 && round.last[:match_1].blank?
+        .round class="round-#{index} #{round.first == :round_6 ? 'last' : ''}"
+          h6.text-center = round.first == :round_6 ? 'Grand Final' : round.first == :round_5 ? 'Final' : "Round #{index}"
+          - round.last.each.with_index(1) do |match, index|
+            .node class="#{index == 1 ? 'first-node' : 'next-nodes'}"
+              .top class="#{'bye' if match.last[0] == 'bye'} #{did_this_player_win?(match.last[0], @tournament, round.first, match.first)}" = match.last[0] || '-'
+              .bottom class="#{'bye' if match.last[1] == 'bye'} #{did_this_player_win?(match.last[1], @tournament, round.first, match.first)}" = match.last[1] || '-'
+              - if match.last.any? { |player| player == 'bye'} || match.last.count < 2 || @tournament.finished?
+                .node-submit
+              - else
+                = link_to club_local_tournament_path(@tournament.club, @tournament), 'data-toggle': 'modal', 'data-target': '#exampleModal', match: match.first, round: round.first, team_one: match.last[0], team_two: match.last[1], class: 'node-submit' do
+                  i.fa.fa-edit
+.losers-bracket.pt-3
+  h4.ml-3 Losers bracket
+  - @tournament.losers_rounds.each.with_index(1) do |round, index|
+    .round class="losers-round-#{index}"
+      - round.last.each.with_index(1) do |match, index|
+        .node class="#{index == 1 ? 'first-node' : 'next-nodes'}"
+          .top class="#{'bye' if match.last[0] == 'bye'} #{did_this_player_win?(match.last[0], @tournament, round.first, match.first)}" = match.last[0] || '-'
+          .bottom class="#{'bye' if match.last[1] == 'bye'} #{did_this_player_win?(match.last[1], @tournament, round.first, match.first)}" = match.last[1] || '-'
+          - if match.last.any? { |player| player == 'bye'} || match.last.count < 2 || @tournament.finished?
+            .node-submit
+          - else
+              = link_to club_local_tournament_path(@tournament.club, @tournament), 'data-toggle': 'modal', 'data-target': '#exampleModal', match: match.first, round: round.first, team_one: match.last[0], team_two: match.last[1], class: 'node-submit' do
+                i.fa.fa-edit
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Select a winner</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-center">
+        = form_for :match_result, url: club_local_tournament_submit_winner_path(@tournament.club, @tournament) do |f|
+          = f.hidden_field :match_id, id: 'match-id'
+          = f.hidden_field :round_id, id: 'round-id'
+          .btn-group.btn-group-toggle.w-75 data-toggle='buttons'
+            label.btn.btn-outline-secondary.w-50
+              #label-one
+              = f.radio_button :winner, '-', id: 'option-one'
+            label.btn.btn-outline-secondary.w-50
+              #label-two
+              = f.radio_button :winner, '-', id: 'option-two'
+          <div class="modal-footer mt-4">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            = f.submit 'Submit', class: 'btn btn-outline-primary ml-2 pdf-2'
+          </div>
+    </div>
+  </div>
+</div>
+
+javascript:
+  $('.node-submit').click(function() {
+    $('#label-one').text($(this).attr('team_one'));
+    $('#option-one').val($(this).attr('team_one'));
+    $('#label-two').text($(this).attr('team_two'));
+    $('#option-two').val($(this).attr('team_two'));
+    $('#match-id').val($(this).attr('match'));
+    $('#round-id').val($(this).attr('round'));
+  })
