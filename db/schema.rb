@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20200114044856) do
+ActiveRecord::Schema.define(version: 20200117024502) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -54,6 +54,7 @@ ActiveRecord::Schema.define(version: 20200114044856) do
     t.bigint "club_id"
     t.string "status", default: "signing_up", null: false
     t.text "tournament_hash"
+    t.jsonb "results_hash", default: {}
     t.index ["club_id"], name: "index_local_tournaments_on_club_id"
   end
 

@@ -74,6 +74,9 @@ module TeamFormatterConcern
       round_5: {
         match_1: []
       },
+      round_6: {
+        match_1: []
+      },
       losers_round_1: {
         match_1: [],
         match_2: [],

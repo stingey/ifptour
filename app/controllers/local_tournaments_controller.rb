@@ -47,7 +47,17 @@ class LocalTournamentsController < ApplicationController
 
   def submit_winner
     @local_tournament = LocalTournament.find(params[:local_tournament_id])
-    @local_tournament.map_the_win(match_params[:round_id], match_params[:match_id], match_params[:winner])
+    round = match_params[:round_id]
+    match = match_params[:match_id]
+    winner = match_params[:winner]
+    if round == 'round_5'
+      @local_tournament.setup_final(round, match, winner)
+    elsif round == 'round_6'
+      @local_tournament.record_results(round, match, winner)
+    else
+      @local_tournament.map_the_win(round, match, winner, check_for_byes: true)
+      @local_tournament.map_the_loss(round, match, winner, check_for_byes: true)
+    end
 
     redirect_to club_local_tournament_path(@local_tournament.club, @local_tournament)
   end
@@ -59,6 +69,10 @@ class LocalTournamentsController < ApplicationController
   def start_tournament
     @tournament = LocalTournament.find(params[:local_tournament_id])
     @tournament.update(tournament_hash: double_draw_your_partner(@tournament), status: LocalTournament.statuses[:started])
+    4. times do # run 4 times because tournament_hash changes each time
+      @tournament.fill_out_byes
+    end
+    @tournament.shrink_bracket
     redirect_to club_local_tournament_path(@tournament.club, @tournament)
   end
 
@@ -117,33 +131,5 @@ class LocalTournamentsController < ApplicationController
 
   def allow_iframe
     response.headers.except! 'X-Frame-Options'
-  end
-
-  def matches
-    {
-      round1: {
-        match1: ['spenser', 'jeff'],
-        match2: ['spenser', 'jeff'],
-        match3: ['spenser', 'jeff'],
-        match4: ['spenser', 'jeff'],
-        match5: ['spenser', 'jeff'],
-        match6: ['spenser', 'jeff'],
-        match7: ['spenser', 'jeff'],
-        match8: ['spenser', 'jeff'],
-      },
-      round2: {
-        match1: ['spenser', 'jeff'],
-        match2: ['spenser', 'jeff'],
-        match3: ['spenser', 'jeff'],
-        match4: ['spenser', 'jeff'],
-      },
-      round3: {
-        match1: ['spenser', 'jeff'],
-        match2: ['spenser', 'jeff']
-      },
-      round4: {
-        match1: ['spenser', 'jeff']
-      }
-    }
   end
 end

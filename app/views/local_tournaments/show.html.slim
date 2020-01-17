@@ -46,23 +46,29 @@
   - else
     h4.ml-3.my-2 Winners bracket
     - @tournament.winners_rounds.each.with_index(1) do |round, index|
-      .round class="round-#{index}"
-        - round.last.each.with_index(1) do |match, index|
-          .node class="#{index == 1 ? 'first-node' : 'next-nodes'}"
-            .top class="#{'bye' if match.last[0] == 'bye'}" = match.last[0] || '-'
-            .bottom class="#{'bye' if match.last[1] == 'bye'}" = match.last[1] || '-'
-            - unless match.last.any? { |player| player == 'bye'} || match.last.count < 2
-              = link_to club_local_tournament_path(@tournament.club, @tournament), 'data-toggle': 'modal', 'data-target': '#exampleModal', match: match.first, round: round.first, team_one: match.last[0], team_two: match.last[1], class: 'node-submit' do
-                i.fa.fa-edit
-.losers-bracket
+      - unless round.first == :round_6 && round.last[:match_1].blank?
+        .round class="round-#{index} #{round.first == :round_6 ? 'last' : ''}"
+          h6.text-center = round.first == :round_6 ? 'Grand Final' : round.first == :round_5 ? 'Final' : "Round #{index}"
+          - round.last.each.with_index(1) do |match, index|
+            .node class="#{index == 1 ? 'first-node' : 'next-nodes'}"
+              .top class="#{'bye' if match.last[0] == 'bye'} #{did_this_player_win?(match.last[0], @tournament, round.first, match.first)}" = match.last[0] || '-'
+              .bottom class="#{'bye' if match.last[1] == 'bye'} #{did_this_player_win?(match.last[1], @tournament, round.first, match.first)}" = match.last[1] || '-'
+              - if match.last.any? { |player| player == 'bye'} || match.last.count < 2 || @tournament.finished?
+                .node-submit
+              - else
+                = link_to club_local_tournament_path(@tournament.club, @tournament), 'data-toggle': 'modal', 'data-target': '#exampleModal', match: match.first, round: round.first, team_one: match.last[0], team_two: match.last[1], class: 'node-submit' do
+                  i.fa.fa-edit
+.losers-bracket.pt-3
   h4.ml-3 Losers bracket
   - @tournament.losers_rounds.each.with_index(1) do |round, index|
     .round class="losers-round-#{index}"
       - round.last.each.with_index(1) do |match, index|
         .node class="#{index == 1 ? 'first-node' : 'next-nodes'}"
-          .top class="#{'bye' if match.last[0] == 'bye'}" = match.last[0] || '-'
-          .bottom class="#{'bye' if match.last[1] == 'bye'}" = match.last[1] || '-'
-          - unless match.last.any? { |player| player == 'bye'} || match.last.count < 2
+          .top class="#{'bye' if match.last[0] == 'bye'} #{did_this_player_win?(match.last[0], @tournament, round.first, match.first)}" = match.last[0] || '-'
+          .bottom class="#{'bye' if match.last[1] == 'bye'} #{did_this_player_win?(match.last[1], @tournament, round.first, match.first)}" = match.last[1] || '-'
+          - if match.last.any? { |player| player == 'bye'} || match.last.count < 2 || @tournament.finished?
+            .node-submit
+          - else
               = link_to club_local_tournament_path(@tournament.club, @tournament), 'data-toggle': 'modal', 'data-target': '#exampleModal', match: match.first, round: round.first, team_one: match.last[0], team_two: match.last[1], class: 'node-submit' do
                 i.fa.fa-edit
 
