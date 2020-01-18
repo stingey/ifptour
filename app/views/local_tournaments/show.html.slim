@@ -47,7 +47,7 @@
     h4.ml-3.my-2 Winners bracket
     - @tournament.winners_rounds.each.with_index(1) do |round, index|
       - unless round.first == :round_6 && round.last[:match_1].blank?
-        .round class="round-#{index} #{round.first == :round_6 ? 'last' : ''}"
+        .round class="round-#{index}"
           h6.text-center = round.first == :round_6 ? 'Grand Final' : round.first == :round_5 ? 'Final' : "Round #{index}"
           - round.last.each.with_index(1) do |match, index|
             .node class="#{index == 1 ? 'first-node' : 'next-nodes'}"
@@ -62,6 +62,7 @@
   h4.ml-3 Losers bracket
   - @tournament.losers_rounds.each.with_index(1) do |round, index|
     .round class="losers-round-#{index}"
+      h6.text-center = "Losers round #{index}"
       - round.last.each.with_index(1) do |match, index|
         .node class="#{index == 1 ? 'first-node' : 'next-nodes'}"
           .top class="#{'bye' if match.last[0] == 'bye'} #{did_this_player_win?(match.last[0], @tournament, round.first, match.first)}" = match.last[0] || '-'

@@ -24,8 +24,7 @@
     text-decoration: none;
     position: relative;
     vertical-align: top;
-    padding-left: 20px;
-    padding-right: 40px;
+    padding-right: 60px;
     .node {
       width: 180px;
     }
@@ -43,8 +42,7 @@
     text-decoration: none;
     position: relative;
     vertical-align: top;
-    padding-left: 20px;
-    padding-right: 40px;
+    padding-right: 60px;
     .node {
       width: 115px;
     }
@@ -77,12 +75,13 @@
 
 .round-1 {
   .node {
-    // margin-bottom: 20px;
+    margin-left: 20px;
     margin-top: 20px;
   }
 }
 
 .losers-round-1 {
+  margin-left: 20px;
   .first-node {
     margin-top: 20px;
   }
@@ -165,11 +164,5 @@
   .first-node {
     margin-top: 355px;
     // margin-right: 20px;
-  }
-}
-
-.last {
-  .first-node {
-    margin-right: 20px;
   }
 }
