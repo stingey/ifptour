@@ -61,7 +61,7 @@
 .losers-bracket.pt-3
   h4.ml-3 Losers bracket
   - @tournament.losers_rounds.each.with_index(1) do |round, index|
-    .round class="losers-round-#{index}"
+    .round class="#{round.first.to_s.gsub('_', '-')} index-#{index}"
       h6.text-center = "Losers round #{index}"
       - round.last.each.with_index(1) do |match, index|
         .node class="#{index == 1 ? 'first-node' : 'next-nodes'}"
